@@ -1,0 +1,25 @@
+.popularServices{
+  border: 3px solid rgb(223, 79, 187);
+  height: 450px;
+}
+.popularServicesText{
+height: 20%;
+}
+.popularServicesPanels{
+display: flex;
+height: 60%; 
+justify-content: center;
+}
+.Service{
+  border: 3px solid yellow;
+  width: 18%;
+
+}
+.serviceMathImg{
+  height: 100%;
+  width: 100%;
+  
+}
+.serviceMathImg:hover{
+  filter: brightness(120%);
+}

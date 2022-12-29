@@ -26,7 +26,7 @@
   height: 90px;
   border: 5px solid rgb(0, 255, 98);
   padding: 0px;
-  width: 35vw;
+  width: 45%;
   display: flex;
   justify-content: space-between;
 }
@@ -37,10 +37,18 @@
   border: 5px solid blue;
   margin: auto;
   text-decoration: none;
+  max-height: 80%;
+  min-height: 80%;
+  min-width: 15%;
+  max-width: inherit;
 
 
 }
+.displayLd , .displayMd, .displaySd:hover{
+  filter: brightness(120%);
+}
 .signIn{
+  margin: 13% 0px;
   padding: 7px 25px;
   display: inline-block;
   border: 2px solid rgb(0, 128, 0);
