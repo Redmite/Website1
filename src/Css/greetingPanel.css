@@ -1,0 +1,13 @@
+.greetingPanel {
+border: 5px solid rgb(0, 0, 0);
+padding: 0px;
+height: 83%
+}
+.greetingSearch{
+  border: 5px solid green;
+  padding: 25px 25px;
+  width: 45%;
+  height: 445px;
+  margin:0px 25%;
+}
+.trustBar{}

@@ -1,0 +1,22 @@
+html {
+  margin-right: 0!important;
+  min-width: 0px;
+  height: auto;
+}
+body {
+  margin: 0;
+}
+.mainWrapper {
+  border: 5px solid red;
+  width: 100%;
+  max-width: 1350px;
+  min-width: 0px;
+  padding: 0 1em;
+  margin: auto auto;
+  height:100em;
+  min-height:100vh;
+  box-sizing: border-box;
+  padding: 0px;
+  
+
+}

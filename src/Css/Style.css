@@ -1,0 +1,24 @@
+/* this file will not last, and will be integrated into the others eventually, 
+just copying it now for testing */
+
+ul {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+    background-color: green;
+  }
+li {
+    float: right;
+  }
+li a {
+    display: flex;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+.jobButtons {
+    display: inline;
+    width: 20%;
+  }
