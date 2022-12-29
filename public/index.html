@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="Css/greetingPanel.css" />
     <link rel="stylesheet" href="Css/Style.css">
     <link rel="stylesheet" href="Css/popularServices.css">
+    <link rel="stylesheet" href="Css/loginBox.css"> 
 
   </head>
   <body>
@@ -24,7 +25,7 @@
               <li class="displayMd"><a href="#news">Find Job E</a></li>
               <li class="displayLd"><a href="#news">List Job D</a></li>
               <li class="displayMd"><a href="#news">Language C</a></li>
-              <li class="displaySd"><a href="login.html" rel="nofollow" class="signIn" id="show-login" onclick="logPopup()">Sign In B</a></li>
+              <li class="displaySd"><button class="signIn" id="show-login">Sign In B</button></li>
               <li class="displaySd"><a href="#news">Join</a></li>
             </div>
           </div>
@@ -46,5 +47,35 @@
       <div class="bottomContent"></div>
       <div class="tradeworkersExplanation"></div> 
       <div class="bottomLinks"></div>
+
+      <!-- log in pop-up consolidation -->
+    <div class="loginWrapper"> 
+      <div class="LoginContainer">
+        <div class="popup">
+          <div class="close-btn">&times;</div>
+          <div class="form">
+            <h2>Log in</h2>
+            <div class="form-element">
+              <label for="email">Email</label>
+              <input type="text" id="email" placeholder="Enter Email">
+            </div>
+            <div class="form-element">
+              <label for="password">Password</label>
+              <input type="password" id="password" placeholder="Enter Password">
+             </div>
+            <div class="form-element">
+              <input type="checkbox" id="remember-me">
+              <label for="remember-me">Remember me</label>
+            </div>
+            <div class="form-element">
+              <button>Sign in</button>
+            </div>
+            <div class="form-element">
+              <a href="#placeholder">Forgot password?</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
