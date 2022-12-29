@@ -30,25 +30,23 @@
   display: flex;
   justify-content: space-between;
 }
-.displaySd{
-  display: block;
-  text-align: center;
-  margin: auto;
-}
-.displayMd{
+
+.displayLd , .displayMd, .displaySd {
   display: block;
   text-align: center;
   border: 5px solid blue;
   margin: auto;
+  text-decoration: none;
+
+
 }
-.joinLink{
+.signIn{
   padding: 7px 25px;
   display: inline-block;
   border: 2px solid rgb(0, 128, 0);
   cursor: pointer;
   border-radius: 25px;
   color: rgb(255, 255, 255);
-  text-decoration: none;
   background-color: green;
   font-size: larger;
 }
