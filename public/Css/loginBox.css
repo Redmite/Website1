@@ -1,14 +1,14 @@
-.loginWrapper {
+.LoginWrapper, .SignupWrapper {
     Margin: 0px;
     padding:0px;
     box-sizing:border-box;
 }
-.loginContainer {
+.LoginContainer, .SignupWrapper {
     background:linear-gradient(blue);
     font-family:"Raleway",sans-serif;
     height:100vh
 }
-.popup {
+.popup, .LogPopup, .UpPopup {
     position:absolute;
     top:-150%;
     left:50%;
@@ -24,7 +24,7 @@
                 transform 200ms ease-in-out 200 ms;
 
 }
-.popup.active {
+.popup.active, .LogPopup.active, .UpPopup.active {
     top:50%;
     opacity:1;
     transform:translate(-50%,-50%) scale(1);
@@ -32,7 +32,7 @@
             opacity 200ms ease-in-out 200 ms,
             transform 200ms ease-in-out 200 ms;
 }
-.popup .close-btn {
+.popup .close-btn, .LogPopup .close-btn, .UpPopup .close-btn {
     position:absolute;
     top:10px;
     right:10px;
@@ -45,21 +45,25 @@
     border-radius:15px;
     cursor:pointer;
 }
-.popup .form h2 {
+.popup .form h2, .LogPopup .form h2, .UpPopup .form h2 {
     text-align:center;
     color:black;
     margin:10px 0px 20px;
     font: siize 25px;
 }
-.popup .form .form-element {
+.popup .form .form-element, .LogPopup .form .form-element, .UpPopup .form .form-element {
     margin:15px 0px;
 }
-.popup .form .form-element label {
+.popup .form .form-element label, .LogPopup .form .form-element label, .UpPopup .form .form-element label {
     font-size:14px;
     color:black
 }
 .popup .form .form-element input[type="text"],
-.popup .form .form-element input[type="password"] {
+.popup .form .form-element input[type="password"],
+.LogPopup .form .form-element input[type="text"],
+.LogPopup .form .form-element input[type="password"],
+.UpPopup .form .form-element input[type="text"],
+.UpPopup .form .form-element input[type="password"] {
     margin-top:5px;
     display:block;
     width:100%;
