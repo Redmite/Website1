@@ -71,7 +71,7 @@
 .popup .form .form-element input[type="checkbox"] {
     margin-right:5px;
 }
-.popup .form .form-element button {
+.popup .form .form-element input[type="submit"] {
     width:100%;
     height:40px;
     border:none;

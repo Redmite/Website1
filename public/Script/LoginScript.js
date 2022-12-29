@@ -4,5 +4,6 @@ document.querySelector("#show-login").addEventListener("click",function(){
 document.querySelector(".popup .close-btn").addEventListener("click",function(){
     document.querySelector(".popup").classList.remove("active");
 });
-
-console.log(5+5)
+document.querySelector(".popup .form .form-element input[type='submit']").addEventListener("click",function(){
+    document.querySelector(".popup").classList.remove("active");
+});
