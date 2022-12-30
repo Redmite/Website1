@@ -8,12 +8,14 @@
     <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
     <title>Website In Progress</title>
+    <!-- CSS Imports-->
     <link rel="stylesheet" href="Css/main.css" />
     <link rel="stylesheet" href="Css/topBar.css" />
     <link rel="stylesheet" href="Css/greetingPanel.css" />
     <link rel="stylesheet" href="Css/Style.css">
     <link rel="stylesheet" href="Css/popularServices.css">
-
+    <link rel="stylesheet" href="Css/loginBox.css">
+    <!-- javascript Imports-->
   </head>
   <body>
     <div class="mainWrapper">
@@ -24,7 +26,7 @@
               <li class="displayMd"><a href="#news">Find Job E</a></li>
               <li class="displayLd"><a href="#news">List Job D</a></li>
               <li class="displayMd"><a href="#news">Language C</a></li>
-              <li class="displaySd"><a href="login.html" rel="nofollow" class="signIn" onclick="logPopup()">Sign In B</a></li>
+              <li class="displaySd"><button class="signIn" id="show-login">Sign In B</button></li>
               <li class="displaySd"><a href="#news">Join</a></li>
             </div>
           </div>
@@ -46,6 +48,41 @@
       <div class="bottomContent"></div>
       <div class="tradeworkersExplanation"></div> 
       <div class="bottomLinks"></div>
-      
+
+      <!-- log in pop-up elements -->
+    <div class="loginWrapper"> 
+      <div class="LoginContainer">
+        <div class="popup">
+          <div class="close-btn">&times;</div>
+          <div class="form">
+            <h2>Log in</h2>
+            <!-- info to submit-->
+            <div class="form-element">
+              <label for="email">Email</label>
+              <input type="text" id="email" placeholder="Enter Email">
+            </div>
+            <div class="form-element">
+              <label for="password">Password</label>
+              <input type="password" id="password" placeholder="Enter Password">
+             </div>
+            <div class="form-element">
+              <!-- remember me doesn't work yet-->
+              <input type="checkbox" id="remember-me">
+              <label for="remember-me">Remember me</label>
+            </div>
+            <div class="form-element">
+              <input type="submit" value="Continue">
+            </div>
+            <div class="form-element">
+              <!-- forgot password doesn't work yet -->
+              <a href="#placeholder">Forgot password?</a>
+              <a href="#SignUp.html">Need an account?</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- idk why this line needs to be down here, but in order for login to work it has to -->
+    <script src="Script/LoginScript.js"></script>
   </body>
 </html>
