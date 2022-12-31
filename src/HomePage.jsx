@@ -1,4 +1,9 @@
 import React from "react";
+import "./Css/greetingPanel.css";
+import "./Css/loginBox.css";
+import "./Css/main.css";
+import "./Css/popularServices.css";
+import "./Css/topBar.css";
 
 // home page function, this is what we actually see
 
