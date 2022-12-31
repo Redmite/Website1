@@ -1,6 +1,12 @@
 import React from 'react';
+import ReactDOM from 'react';
 import ReactDOMClient from 'react-dom/client';
-import HomePage from "./HomePage";
+import {
+  createBrowserRouter,
+  RouterProvider,
+} from "react-router-dom";
+import HomePage from "./Pages/HomePage";
+import App from "./App";
 
 // this file is in the src because react won't start unless we have it in a src folder in website1
 // from what I've seen we could eject the webpack and make changes so it will start in the public/script folder
@@ -12,4 +18,26 @@ import HomePage from "./HomePage";
 
 // root.render(aElement)
 
-ReactDOMClient.createRoot(document.getElementById("root")).render(<HomePage />);
+// 
+// const router = createBrowserRouter ([
+//   {
+//     path: "/",
+//     element: <HomePage />
+//   }
+// ]);
+
+
+
+// ReactDOM.createRoot(document.getElementById("root")).render(
+//   <React.StrictMode>
+//     <RouterProvider router={router} />
+//   </React.StrictMode>
+// );
+
+// ReactDOMClient.createRoot(document.getElementById("root")).render(
+//   <React.StrictMode>
+//     <RouterProvider Router={router} />
+//   </React.StrictMode>
+// );
+
+ReactDOMClient.createRoot(document.getElementById("root")).render(<App />);
