@@ -16,7 +16,7 @@ import SignInUpPage from "./Pages/SignInUpPage";
 function App() {
   return(<Router>
     <nav>
-      <Link to="/">Home</Link>
+      <Link to="./Pages/LoggedInHomePage.jsx">Home</Link>
     </nav>
     <Routes>
       <Route path="/" element={<HomePage />} />
