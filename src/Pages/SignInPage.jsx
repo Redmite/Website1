@@ -27,7 +27,7 @@ function SignInPage() {
               </div>
               <div class="form-element">
                 <a href="/placeholder">Forgot password?</a>
-                <a href="/SignUpPage"l>Need an account?</a>
+                <a href="/SignUpPage">Need an account?</a>
               </div>
             </div>
           </div>
