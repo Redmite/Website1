@@ -1,9 +1,9 @@
 import React from "react";
 
-//import "./Css/loginBox.css";
+//import "../Css/loginBox.css";
 
 function SignInUpPage () {
-    return (
+  return (
     <>
     <div class="LoginWrapper"> 
       <div class="LoginContainer">
@@ -66,6 +66,6 @@ function SignInUpPage () {
     </div>
     </>
     );
-}
+};
 
-export default SignInUpPage
+export default SignInUpPage;
