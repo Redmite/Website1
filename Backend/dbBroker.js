@@ -23,4 +23,4 @@ function dbNewAccount(EMAIL, USERNAME, PASSWORD, LASTNAME, FIRSTNAME) { //functi
     console.log("1 record inserted"); //if there is no error, print this to the console
 })};
 
-module.exports = {newAccount}; //export the functions so we can use it in other files
+module.exports = {dbNewAccount}; //export the functions so we can use it in other files
