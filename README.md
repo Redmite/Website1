@@ -6,7 +6,7 @@ Notes:
 
 Hello!
 
-henry is very dumb
+David is very dumb
 
 Hi david
 
