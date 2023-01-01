@@ -11,7 +11,7 @@ import "../Css/topBar.css";
 function  HomePage() {
     return (
     
-    <><div class="mainWrapper">
+    <div class="mainWrapper">
             <div class="topBar">
                 <div class="topPanel">
                     <div class="logo"><img src="logo.png" class="logoImg" alt="missing logo" /></div>
@@ -24,7 +24,14 @@ function  HomePage() {
                     </div>
                 </div>
                 <div class="greetingPanel">
-                    <div class="greetingSearch">hi</div>
+                <div class="greetingSearch">
+            <div class="">Learn a new skill</div>
+          <form class="searchForm" action="action_page.html">
+            <input type="text" placeholder="What skill do you want to learn?" class="greetingSearchBar"/>
+            <button type="submit"><i class="submitSearchForm">Search</i></button>
+          </form>
+
+          <div class="">Don't know where to start? Need someone to push you?</div>
                     <div class="trustBar"></div>
                 </div>
             </div>
@@ -74,7 +81,7 @@ function  HomePage() {
                     </div>
                 </div>
             </div>
-        </div><script src="src/Script/LoginScript.js"></script></>
+        </div><script src="src/Script/LoginScript.js"></script></div>
     );
 }
 

@@ -1,13 +1,38 @@
 .greetingPanel {
-border: 5px solid rgb(0, 0, 0);
-padding: 0px;
-height: 83%
-}
-.greetingSearch{
-  border: 5px solid green;
-  padding: 25px 25px;
-  width: 45%;
-  height: 445px;
-  margin:0px 25%;
-}
-.trustBar{}
+  border: 5px solid rgb(0, 0, 0);
+  padding: 0px;
+  height: 83%
+  }
+  .greetingSearch{
+    border: 5px solid green;
+    padding: 25px 25px;
+    width: 45%;
+    height: 445px;
+    margin:0px 25%;
+  }
+  .trustBar{}
+  .greetingSearchBar{
+    height: 10%;
+    width: 45%;
+  }
+  form.searchForm button {
+    float: left;
+    max-width: 15%;
+    min-width: 15%;
+    padding: 10px;
+    background: #2196F3;
+    color: white;
+    font-size: 17px;
+    border: 1px solid grey;
+    border-left: none; /* Prevent double borders */
+    cursor: pointer;
+    height: 42px;
+  }
+  form.searchForm input[type=text] {
+    padding: 10px;
+    font-size: 17px;
+    border: 1px solid grey;
+    float: left;
+    width: 80%;
+    background: #f1f1f1;
+  }
