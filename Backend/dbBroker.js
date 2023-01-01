@@ -23,4 +23,4 @@ function newAccount(EMAIL, USERNAME, PASSWORD, LASTNAME, FIRSTNAME) { //function
     console.log("1 record inserted"); //if there is no error, print this to the console
 })};
 
-module.exports = {newAccount}; //export the newAccount function so we can use it in other files
+module.exports = {newAccount}; //export the functions so we can use it in other files
