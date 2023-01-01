@@ -18,14 +18,15 @@ import LoggedInHomePage from "./Pages/LoggedInHomePage";
 function App() {
   return(<Router>
     <nav>
-    <Link to="./Pages/LoggedInHomePage.jsx">Home</Link>
+    <Link to="./">Home </Link>
+    <Link to="./LoggedInHomePage">  LoggedInHomePage</Link>
     </nav>
     <Routes>
       <Route path="/" element={<HomePage />} />
       <Route path="/SignInPage" element={<SignInPage />} />
       <Route path="/SignUpPage" element={<SignUpPage />} />
-      <Route path="*" element={<ErrorPage/>}/>
       <Route path="/LoggedInHomePage" element={<LoggedInHomePage/>}/>
+      <Route path="*" element={<ErrorPage/>}/>
     </Routes>
   </Router>
   );
