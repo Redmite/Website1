@@ -6,8 +6,19 @@ function newAccount(EMAIL, USERNAME, PASSWORD, LASTNAME, FIRSTNAME) {
         console.log('passed');
         db.dbNewAccount(EMAIL, USERNAME, PASSWORD, LASTNAME, FIRSTNAME);
     } else {
-        console.log('failed');
+        console.log('failed'); //REPLACE FOR ERROR RETURN
     }
 }
 
-module.exports = {newAccount};
+function login(EMAIL, PASSWORD) {
+    if (sqlP.emailInjectProtect(EMAIL) && sqlP.passwordInjectProtect(PASSWORD)) {
+        console.log('passed');
+        //if (db.dbLogin(EMAIL, PASSWORD)) {
+        //    console.log('login success');
+        //}
+    } else {
+        console.log('failed'); //REPLACE FOR ERROR RETURN
+    }
+}
+
+module.exports = {newAccount, login};
