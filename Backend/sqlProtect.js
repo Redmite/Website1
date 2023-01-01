@@ -25,6 +25,16 @@ function usernameInjectProtect(USERNAME) {
     }
 }
 
+function nameInjectProtect(STRING) {
+    const re = /^[a-zA-Z0-9]+$/;
+    if (re.test(STRING)) {
+        return true;
+    } else {
+        return false;
+    }
+}
+
+
 function generalInjectProtect(STRING) {
     const re = /^[a-zA-Z0-9 ]+$/;
     if (re.test(STRING)) {
@@ -34,8 +44,7 @@ function generalInjectProtect(STRING) {
     }
 }
 
-
-
+module.exports = {emailInjectProtect, passwordInjectProtect, usernameInjectProtect, nameInjectProtect, generalInjectProtect};
 
 //var email = 'mrfooder07@gmail.com'
 //var password = '722715'

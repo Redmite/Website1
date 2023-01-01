@@ -11,7 +11,7 @@ connection.connect(function(err) { //connect to the database
   console.log("Connected!");
 });
 
-function newAccount(EMAIL, USERNAME, PASSWORD, LASTNAME, FIRSTNAME) { //function to add a new account to the database
+function dbNewAccount(EMAIL, USERNAME, PASSWORD, LASTNAME, FIRSTNAME) { //function to add a new account to the database
   var sql = "USE userinfo"; //select the database to use. The database is called userinfo and the sql varible is the sql command we pass to the database
   connection.query(sql, function (err, result) { //pass the sql command to the database
     if (err) throw err; //if there is an error, throw it
