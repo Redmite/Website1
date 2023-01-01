@@ -11,7 +11,8 @@ import {
 
 import ErrorPage from "./Pages/ErrorPage";
 import HomePage from "./Pages/HomePage";
-import SignInUpPage from "./Pages/SignInUpPage";
+import SignInPage from "./Pages/SignInPage";
+import SignUpPage from "./Pages/SignUpPage";
 import LoggedInHomePage from "./Pages/LoggedInHomePage";
 
 function App() {
@@ -21,7 +22,8 @@ function App() {
     </nav>
     <Routes>
       <Route path="/" element={<HomePage />} />
-      <Route path="/SignInUpPage" element={<SignInUpPage />} />
+      <Route path="/SignInPage" element={<SignInPage />} />
+      <Route path="/SignUpPage" element={<SignUpPage />} />
       <Route path="*" element={<ErrorPage/>}/>
       <Route path="/LoggedInHomePage" element={<LoggedInHomePage/>}/>
     </Routes>
