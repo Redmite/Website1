@@ -7,7 +7,6 @@ function SignInPage() {
       <div class="LoginWrapper"> 
         <div class="LoginContainer">
           <div class="LogPopup">
-            <div class="close-btn">&times;</div>
             <div class="form">
               <h2>Log in</h2>
               <div class="form-element">

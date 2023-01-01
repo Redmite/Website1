@@ -8,7 +8,6 @@ function SignUpPage () {
     <div class="SignupWrapper"> 
       <div class="SignupContainer">
         <div class="UpPopup">
-          <div class="close-btn">&times;</div>
           <div class="form">
             <h2>Sign Up</h2>
             <div class="form-element">
