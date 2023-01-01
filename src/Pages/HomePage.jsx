@@ -1,10 +1,10 @@
 import React from "react";
 // CSS imports
-import "../Css/greetingPanel.css";
-import "../Css/loginBox.css";
+import "../Css/loggedOut/greetingPanel.css";
+import "../Css/loggedOut/loginBox.css";
 import "../Css/main.css";
-import "../Css/popularServices.css";
-import "../Css/topBar.css";
+import "../Css/loggedOut/popularServices.css";
+import "../Css/loggedOut/topBar.css";
 
 // home page function, this is what we actually see
 
@@ -16,10 +16,10 @@ function  HomePage() {
                 <div class="topPanel">
                     <div class="logo"><img src="logo.png" class="logoImg" alt="missing logo" /></div>
                     <div class="topOptions">
-                        <li class="displayMd"><a href="#news">Find Job A</a></li>
+                        <li class="displayMd"><a href="#news">Find Job A </a></li>
                         <li class="displayLd"><a href="#news">List Job D</a></li>
                         <li class="displayMd"><a href="#news">Language C</a></li>
-                        <li class="displaySd"><button class="signIn" id="show-login">Sign In B</button></li>
+                        <li class="displaySd"><a href="/LoggedInHomePage"><button class="signIn" id="show-login">Sign In B</button></a></li>
                         <li class="displaySd"><a href="/SignInUpPage" id="join-button">Join</a></li>
                     </div>
                 </div>
