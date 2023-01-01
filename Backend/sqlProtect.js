@@ -45,11 +45,3 @@ function generalInjectProtect(STRING) {
 }
 
 module.exports = {emailInjectProtect, passwordInjectProtect, usernameInjectProtect, nameInjectProtect, generalInjectProtect};
-
-//var email = 'mrfooder07@gmail.com'
-//var password = '722715'
-//var username = 'mrfooder07'
-
-//console.log(emailInjectProtect(email))
-//console.log(passwordInjectProtect(password))
-//console.log(usernameInjectProtect(username))
