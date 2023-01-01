@@ -20,7 +20,7 @@ function  HomePage() {
                         <li class="displayLd"><a href="#news">List Job D</a></li>
                         <li class="displayMd"><a href="#news">Language C</a></li>
                         <li class="displaySd"><button class="signIn" id="show-login">Sign In B</button></li>
-                        <li class="displaySd"><a href="SignUp.html" id="join-button">Join</a></li>
+                        <li class="displaySd"><a href="/SignInUpPage" id="join-button">Join</a></li>
                     </div>
                 </div>
                 <div class="greetingPanel">
@@ -50,38 +50,8 @@ function  HomePage() {
             <div class="bottomLinks"></div>
 
 
-            <div class="loginWrapper">
-                <div class="LoginContainer">
-                    <div class="popup">
-                        <div class="close-btn">&times;</div>
-                        <div class="form">
-                            <h2>Log in</h2>
 
-                            <div class="form-element">
-                                <label for="email">Email</label>
-                                <input type="text" id="email" placeholder="Enter Email" />
-                            </div>
-                            <div class="form-element">
-                                <label for="password">Password</label>
-                                <input type="password" id="password" placeholder="Enter Password" />
-                            </div>
-                            <div class="form-element">
-
-                                <input type="checkbox" id="remember-me" />
-                                <label for="remember-me">Remember me</label>
-                            </div>
-                            <div class="form-element">
-                                <input type="submit" value="Continue" />
-                            </div>
-                            <div class="form-element">
-                                <a href="#placeholder">Forgot password?</a>
-                                <a href="#SignUp.html">Need an account?</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div><script src="src/Script/LoginScript.js"></script></div>
+        </div></div>
     );
 }
 
