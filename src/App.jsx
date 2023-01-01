@@ -9,23 +9,26 @@ import {
   Link
 } from "react-router-dom";
 
-import ErrorPage from "./Pages/ErrorPage";
+
 import HomePage from "./Pages/HomePage";
 import SignInPage from "./Pages/SignInPage";
 import SignUpPage from "./Pages/SignUpPage";
 import LoggedInHomePage from "./Pages/LoggedInHomePage";
-
+import MentorInfoPage from "./Pages/MentorInfoPage";
+import ErrorPage from "./Pages/ErrorPage";
 function App() {
   return(<Router>
     <nav>
     <Link to="./">Home </Link>
-    <Link to="./LoggedInHomePage">  LoggedInHomePage</Link>
+    <Link to="./LoggedInHomePage">  LoggedInHomePage  </Link>
+    <Link to="./MentorInfoPage">  MentorInfoPage_Test_Link</Link>
     </nav>
     <Routes>
-      <Route path="/" element={<HomePage />} />
-      <Route path="/SignInPage" element={<SignInPage />} />
-      <Route path="/SignUpPage" element={<SignUpPage />} />
+      <Route path="/" element={<HomePage/>}/>
+      <Route path="/SignInPage" element={<SignInPage/>}/>
+      <Route path="/SignUpPage" element={<SignUpPage/>}/>
       <Route path="/LoggedInHomePage" element={<LoggedInHomePage/>}/>
+      <Route path="/MentorInfoPage" element={<MentorInfoPage/>}/>
       <Route path="*" element={<ErrorPage/>}/>
     </Routes>
   </Router>
