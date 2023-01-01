@@ -18,9 +18,9 @@ function  HomePage() {
                     <div class="topOptions">
                         <li class="displayMd"><a href="#news">Find Job A </a></li>
                         <li class="displayLd"><a href="#news">List Job D</a></li>
-                        <li class="displayMd"><a href="#news">Language C</a></li>
-                        <li class="displaySd"><a href="/LoggedInHomePage"><button class="signIn" id="show-login">Sign In B</button></a></li>
-                        <li class="displaySd"><a href="/SignInUpPage" id="join-button">Join</a></li>
+                        <li class="displayMd"><a href="/LoggedInHomePage">Language C</a></li>
+                        <li class="displaySd"><a href="/SignInPage"><button class="signIn" id="show-login">Sign In B</button></a></li>
+                        <li class="displaySd"><a href="/SignUpPage" id="join-button">Join</a></li>
                     </div>
                 </div>
                 <div class="greetingPanel">
