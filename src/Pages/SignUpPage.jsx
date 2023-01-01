@@ -1,8 +1,8 @@
 import React from "react";
 
-//import "../Css/loginBox.css";
+import "../Css/loggedOut/loginBox.css";
 
-function SignInUpPage () {
+function SignUpPage () {
   return (
     <>
     <div class="SignupWrapper"> 
@@ -12,11 +12,11 @@ function SignInUpPage () {
           <div class="form">
             <h2>Sign Up</h2>
             <div class="form-element">
-              <label for="First-Name">First-Name</label>
+              <label for="First-Name">First Name</label>
               <input type="text" id="First-Name" placeholder="Enter First Name"/>
             </div>
             <div class="form-element">
-              <label for="Last-Name">Email</label>
+              <label for="Last-Name">Last Name</label>
               <input type="text" id="Last-Name" placeholder="Enter Last Name"/>
             </div>
             <div class="form-element">
@@ -32,11 +32,15 @@ function SignInUpPage () {
               <label for="remember-me">Remember me</label>
             </div>
             <div class="form-element">
+              <input type="checkbox" id="Newsletter"/>
+              <label for="Newsletter">Would you like to sign up for our Newsletter?</label>
+            </div>
+            <div class="form-element">
               <input type="submit" value="Continue"/>
             </div>
             <div class="form-element">
               <a href="/placeholder">Forgot password?</a>
-              <a href="/SignInPage"l>Alreadly have an account?</a>
+              <a href="/SignInPage">Already have an account?</a>
             </div>
           </div>
         </div>
@@ -44,6 +48,6 @@ function SignInUpPage () {
     </div>
     </>
     );
-};
+}
 
-export default SignInUpPage;
+export default SignUpPage;

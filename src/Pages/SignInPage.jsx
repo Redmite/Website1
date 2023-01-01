@@ -1,6 +1,6 @@
 import React from "react";
 
-// insert import here
+import "../Css/loggedOut/loginBox.css";
 
 function SignInPage() {
     return (
