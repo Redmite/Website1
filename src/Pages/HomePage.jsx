@@ -38,7 +38,7 @@ function  HomePage() {
             <div class="popularServices">
                 <div class="popularServicesText"></div>
                 <div class="popularServicesPanels">
-                    <div class="Service"><a href="#" class="serviceMath"><img src="logo.png" alt="missing pic" class="serviceMathImg" /></a></div>
+                    <div class="Service"><a href="/placeholder" class="serviceMath"><img src="logo.png" alt="missing pic" class="serviceMathImg" /></a></div>
                     <div class="Service">Language</div>
                     <div class="Service">Website Design</div>
                     <div class="Service">Video Production</div>
@@ -48,10 +48,8 @@ function  HomePage() {
             <div class="bottomContent"></div>
             <div class="tradeworkersExplanation"></div>
             <div class="bottomLinks"></div>
-
-
-
-        </div></div>
+        </div>
+    </div>
     );
 }
 
