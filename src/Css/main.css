@@ -7,7 +7,6 @@ body {
   margin: 0;
 }
 .mainWrapper {
-  border: 5px solid red;
   width: 100%;
   max-width: 1350px;
   min-width: 0px;
@@ -17,6 +16,9 @@ body {
   min-height:100vh;
   box-sizing: border-box;
   padding: 0px;
-  
-
+}
+.bottomBar{
+  height: 300px;
+  border: 4px solid saddlebrown;
+  width: inherit;
 }

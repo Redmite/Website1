@@ -25,6 +25,7 @@ form.topSearch input[type=text] {
   width: 65%;
   background: rgb(255, 255, 255);
   border-radius:15px;
+  min-width: 240px;
   
 }
 .topBar-LoggedInRightSide{
@@ -67,6 +68,10 @@ border-radius: 50%;
   font-size: 20px;
 }
 .topBarSchedule{
+  width: 25%;
+  font-size: 20px;
+}
+.topBarCoach{
   width: 25%;
   font-size: 20px;
 }

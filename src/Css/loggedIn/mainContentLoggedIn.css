@@ -1,0 +1,44 @@
+.mainContentLoggedIn{
+    width: inherit;
+    height: 1200px;
+}
+.reccomendedCategories{
+    width: inherit;
+    height: 380px;
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+
+.reccomendedCategoriesPanel{
+  height: 90%;
+  border: 3px solid red;
+  width: inherit;
+  margin: 1%;
+}
+.reccomendedCoachSession{
+  width: inherit;
+  height: 380px;
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+}
+.reccomendedCoachSessionPanel{
+  height: 90%;
+  border: 3px solid red;
+  width: inherit;
+  margin: 1%;
+}
+.reccomendedCreators{
+  width: inherit;
+  height: 380px;
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+}
+.reccomendedCreatorsPanel{
+  height: 90%;
+  border: 3px solid red;
+  width: inherit;
+  margin: 1%;
+}
