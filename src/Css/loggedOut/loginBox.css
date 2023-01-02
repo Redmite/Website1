@@ -10,13 +10,12 @@
     font-family:"Raleway",sans-serif;
     height:100vh
 }
-.popup, 
 .LogPopup, 
 .UpPopup {
     position:absolute;
-    top:-150%;
+    top:50%;
     left:50%;
-    opacity:0;
+    opacity:1;
     transform:translate(-50%,-50%) scale(1.25);
     width:380px;
     padding:20px 30px;
@@ -26,9 +25,7 @@
     transition: top 0ms ease-in-out 200 ms,
                 opacity 200ms ease-in-out 200 ms,
                 transform 200ms ease-in-out 200 ms;
-
 }
-.popup.active, 
 .LogPopup.active, 
 .UpPopup.active {
     top:50%;
@@ -38,22 +35,6 @@
             opacity 200ms ease-in-out 200 ms,
             transform 200ms ease-in-out 200 ms;
 }
-.popup .close-btn, 
-.LogPopup .close-btn, 
-.UpPopup .close-btn {
-    position:absolute;
-    top:10px;
-    right:10px;
-    width:15px;
-    height:15px;
-    background:grey;
-    color:white;
-    text-align:center;
-    line-height: 15px;
-    border-radius:15px;
-    cursor:pointer;
-}
-.popup .form h2,
 .LogPopup .form h2, 
 .UpPopup .form h2 {
     text-align:center;
@@ -61,17 +42,15 @@
     margin:10px 0px 20px;
     font: siize 25px;
 }
-.popup .form .form-element, .LogPopup .form .form-element, .UpPopup .form .form-element {
+.LogPopup .form .form-element, 
+.UpPopup .form .form-element {
     margin:15px 0px;
 }
-.popup .form .form-element label,
 .LogPopup .form .form-element label,
 .UpPopup .form .form-element label {
     font-size:14px;
     color:black
 }
-.popup .form .form-element input[type="text"],
-.popup .form .form-element input[type="password"],
 .LogPopup .form .form-element input[type="text"],
 .LogPopup .form .form-element input[type="password"],
 .UpPopup .form .form-element input[type="text"],
@@ -84,12 +63,10 @@
     border:1px solid grey;
     border-radius:5px;
 }
-.popup .form .form-element input[type="checkbox"],
 .LogPopup .form .form-element input[type="checkbox"],
 .UpPopup .form .form-element input[type="checkbox"] {
     margin-right:5px;
 }
-.popup .form .form-element input[type="submit"],
 .LogPopup .form .form-element input[type="submit"],
 .UpPopup .form .form-element input[type="submit"] {
     width:100%;
@@ -102,7 +79,6 @@
     border-radius:10px;
     cursor:pointer;
 }
-.popup .form .form-element a,
 .LogPopup .form .form-element a,
 .SignPopup .form .form-element a {
     display: block;

@@ -1,13 +1,12 @@
 import React from "react";
 
-// insert import here
+import "../Css/loggedOut/loginBox.css";
 
 function SignInPage() {
     return (
       <div class="LoginWrapper"> 
         <div class="LoginContainer">
           <div class="LogPopup">
-            <div class="close-btn">&times;</div>
             <div class="form">
               <h2>Log in</h2>
               <div class="form-element">
@@ -27,7 +26,7 @@ function SignInPage() {
               </div>
               <div class="form-element">
                 <a href="/placeholder">Forgot password?</a>
-                <a href="/SignUpPage"l>Need an account?</a>
+                <a href="/SignUpPage">Need an account?</a>
               </div>
             </div>
           </div>

@@ -18,27 +18,27 @@ function  HomePage() {
                     <div class="topOptions">
                         <li class="displayMd"><a href="#news">Find Job A </a></li>
                         <li class="displayLd"><a href="#news">List Job D</a></li>
-                        <li class="displayMd"><a href="#news">Language C</a></li>
-                        <li class="displaySd"><a href="/LoggedInHomePage"><button class="signIn" id="show-login">Sign In B</button></a></li>
-                        <li class="displaySd"><a href="/SignInUpPage" id="join-button">Join</a></li>
+                        <li class="displayMd"><a href="/LoggedInHomePage">Language C</a></li>
+                        <li class="displaySd"><a href="/SignInPage"><button class="signIn" id="show-login">Sign In B</button></a></li>
+                        <li class="displaySd"><a href="/SignUpPage" id="join-button">Join</a></li>
                     </div>
                 </div>
                 <div class="greetingPanel">
                 <div class="greetingSearch">
             <div class="">Learn a new skill</div>
-          <form class="searchForm" action="action_page.html">
-            <input type="text" placeholder="What skill do you want to learn?" class="greetingSearchBar"/>
-            <button type="submit"><i class="submitSearchForm">Search</i></button>
-          </form>
+            <form class="searchForm" action="action_page.html">
+                <input type="text" placeholder="What skill do you want to learn?" class="greetingSearchBar"/>
 
-          <div class="">Don't know where to start? Need someone to push you?</div>
-                    <div class="trustBar"></div>
-                </div>
+            </form>
+            <div class="headerWithLogoWords">
+            Don't know where to start? Need someone to push you?
             </div>
+                </div>
+                </div>
             <div class="popularServices">
                 <div class="popularServicesText"></div>
                 <div class="popularServicesPanels">
-                    <div class="Service"><a href="#" class="serviceMath"><img src="logo.png" alt="missing pic" class="serviceMathImg" /></a></div>
+                    <div class="Service"><a href="/placeholder" class="serviceMath"><img src="logo.png" alt="missing pic" class="serviceMathImg" /></a></div>
                     <div class="Service">Language</div>
                     <div class="Service">Website Design</div>
                     <div class="Service">Video Production</div>
@@ -48,10 +48,8 @@ function  HomePage() {
             <div class="bottomContent"></div>
             <div class="tradeworkersExplanation"></div>
             <div class="bottomLinks"></div>
-
-
-
-        </div></div>
+        </div>
+    </div>
     );
 }
 
