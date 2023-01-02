@@ -26,15 +26,15 @@ function  HomePage() {
                 <div class="greetingPanel">
                 <div class="greetingSearch">
             <div class="">Learn a new skill</div>
-          <form class="searchForm" action="action_page.html">
-            <input type="text" placeholder="What skill do you want to learn?" class="greetingSearchBar"/>
-            <button type="submit"><i class="submitSearchForm">Search</i></button>
-          </form>
+            <form class="searchForm" action="action_page.html">
+                <input type="text" placeholder="What skill do you want to learn?" class="greetingSearchBar"/>
 
-          <div class="">Don't know where to start? Need someone to push you?</div>
-                    <div class="trustBar"></div>
-                </div>
+            </form>
+            <div class="headerWithLogoWords">
+            Don't know where to start? Need someone to push you?
             </div>
+                </div>
+                </div>
             <div class="popularServices">
                 <div class="popularServicesText"></div>
                 <div class="popularServicesPanels">
