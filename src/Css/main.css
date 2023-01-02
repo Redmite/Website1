@@ -6,6 +6,10 @@ html {
 body {
   margin: 0;
 }
+ @font-face {
+  font-family: WarsawGothicFont;
+  src: url(warsawgothic-bnbv.otf);
+} 
 .mainWrapper {
   width: 100%;
   max-width: 1350px;
@@ -16,10 +20,7 @@ body {
   min-height:100vh;
   box-sizing: border-box;
   padding: 0px;
-  @font-face {
-    font-family: WarsawGothicFont;
-    src: url(WarsawGothic-BnBV.oft);
-  }
+  font-family: WarsawGothicFont;
 }
 .bottomBar{
   height: 300px;
