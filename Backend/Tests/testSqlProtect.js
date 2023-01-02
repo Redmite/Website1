@@ -1,4 +1,4 @@
-const sqlInjectProtect = require('./sqlProtect.js') 
+const sqlInjectProtect = require('../sqlProtect.js') 
 
 var email = 'mrfooder07@gmail.com'
 var password = '722715'

@@ -13,9 +13,9 @@ function newAccount(EMAIL, USERNAME, PASSWORD, LASTNAME, FIRSTNAME) {
 function login(EMAIL, PASSWORD) {
     if (sqlP.emailInjectProtect(EMAIL) && sqlP.passwordInjectProtect(PASSWORD)) {
         console.log('passed');
-        //if (db.dbLogin(EMAIL, PASSWORD)) {
-        //    console.log('login success');
-        //}
+        if (db.login(EMAIL, PASSWORD)) {
+            console.log('Login success!');
+        }
     } else {
         console.log('failed'); //REPLACE FOR ERROR RETURN
     }
