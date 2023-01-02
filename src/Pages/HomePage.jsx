@@ -14,14 +14,16 @@ function  HomePage() {
     <div class="mainWrapper">
             <div class="topBar">
                 <div class="topPanel">
-                    <div class="logo"><img src="logo.png" class="logoImg" alt="missing logo" /></div>
-                    <div class="topOptions">
-                        <li class="displayMd"><a href="#news">Find Job A </a></li>
-                        <li class="displayLd"><a href="#news">List Job D</a></li>
-                        <li class="displayMd"><a href="/LoggedInHomePage">Language C</a></li>
+                    <div class="logo"><img src="logo.svg" class="logoImg" alt="missing logo" /></div>
+                    
+                    <div class="topOptionsRightSide">
+                        <li class="displayMd"><a href="#news" class="topBarOptionsLoggedOut">Become a Mentor</a></li>
+                        <li class="displayLd"><a href="#news" class="WIP will be done much later makes no sense rn"></a></li>
+                        <li class="displaySd"><a href="/LoggedInHomePage" class="topBarOptionsLoggedOut">Language C</a></li>
                         <li class="displaySd"><a href="/SignInPage"><button class="signIn" id="show-login">Sign In B</button></a></li>
                         <li class="displaySd"><a href="/SignUpPage" id="join-button">Join</a></li>
                     </div>
+                </div>
                 </div>
                 <div class="greetingPanel">
                 <div class="greetingSearch">
@@ -45,10 +47,8 @@ function  HomePage() {
                     <div class="Service">GamingCoach</div>
                 </div>
             </div>
-            <div class="bottomContent"></div>
-            <div class="tradeworkersExplanation"></div>
-            <div class="bottomLinks"></div>
-        </div>
+            <div class="bottomBar"></div>
+
     </div>
     );
 }

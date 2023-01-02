@@ -1,7 +1,6 @@
 .greetingPanel {
-  border: 5px solid rgb(0, 0, 0);
   padding: 0px;
-  height: 25%
+  height: 500px;
   }
   .greetingSearch{
     border: 5px solid green;

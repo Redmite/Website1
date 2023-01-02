@@ -1,5 +1,5 @@
 .topBar {
-  height: 2000px;
+  height: 105px;
   padding: 0px;
 }
 .topPanel {
@@ -19,24 +19,21 @@
   width: auto;
  
 }
-.topOptions{
+.topOptionsRightSide{
   height: 90px;
   padding: 0px;
-  min-width: 70%;
   display: flex;
-  justify-content: space-between;
+  align-items: center;
+  text-decoration: none;
+  justify-content: flex-end;
 }
 
 .displayLd , .displayMd, .displaySd {
-  display: block;
   text-align: center;
-  margin: auto;
   text-decoration: none;
-  max-height: 80%;
-  min-height: 80%;
-  min-width: 15%;
-  max-width: inherit;
-
+  list-style-type: none;  
+  margin: 0% 30px;
+  
 
 }
 .displayLd , .displayMd, .displaySd:hover{
@@ -51,4 +48,9 @@
   color: rgb(255, 255, 255);
   background-color: green;
   font-size: larger;
+}
+.topBarOptionsLoggedOut{
+  color: black;
+  text-decoration: none;
+  font-size: 19px;
 }
