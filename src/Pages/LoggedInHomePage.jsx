@@ -39,7 +39,7 @@ function  LoggedInHomePage() {
                         <li class="reccomendedCoachSessionPanel"></li>
                         <li class="reccomendedCoachSessionPanel"></li>
                     </div> 
-                    <div> Reccomended Creators Sessions</div>
+                    <div> Reccomended Creators</div>
                     <div class="reccomendedCreators">
                         <li class="reccomendedCreatorsPanel"></li>
                         <li class="reccomendedCreatorsPanel"></li>
