@@ -1,8 +1,15 @@
+import {useState} from 'react';
 import React from "react";
+import Calendar from 'react-calendar'; 
+import 'react-calendar/dist/Calendar.css';
+import Time from '../Script/Time.js';
 
-// imports
+import "../Css/loggedIn/listingCreation.css";
 
 function ListingCreationPage() {
+  const [date, setDate] = useState(new Date());
+  const [showTime, setShowTime] = useState(false) 
+
   return (
     <div class="mainWrapper">
       <div class="container">
@@ -26,7 +33,26 @@ function ListingCreationPage() {
           <p>Project they've worked on</p>
           <input type="file" id="ProjectPic" name="Project Picture"/>
           </div>
-          
+          <h1 className='header'>React Calendar</h1>
+          <div>
+            <Calendar onChange={setDate} value={date} onClickDay={() => setShowTime(true)}/>
+          </div>
+
+          {date.length > 0 ? (
+          <p>
+            <span>Start:</span>
+            {date[0].toDateString()}
+            &nbsp;
+            &nbsp;
+            <span>End:</span>{date[1].toDateString()}
+          </p>
+                  ) : (
+          <p>
+              <span>Default selected date:</span>{date.toDateString()}
+          </p> 
+                  )
+          }
+          <Time showTime={showTime} date={date}/>
         </div>
       </div>       
     </div>
@@ -34,3 +60,10 @@ function ListingCreationPage() {
 }
 
 export default ListingCreationPage;
+
+// to custom style the calendar
+
+// Navigate to node_modules/react-calendar/dist.
+// Copy the code in the stylesheet into listingCreation.css.
+// Remove import 'react-calendar/dist/Calendar.css' from App.js.
+// You can now edit the code according to your taste.
