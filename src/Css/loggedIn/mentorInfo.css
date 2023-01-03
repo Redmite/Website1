@@ -1,10 +1,9 @@
 :root {
-  --textColor: blue;
+  --textColor: darkblue;
   --BackgroundColor:white;
   --accent: lightblue;
+  --black: black;
 }
-
-
 .mentorPageWrapper {
   Margin: 0px;
   padding:0px;
@@ -13,9 +12,19 @@
 .container {
   background:linear-gradient(var(--BackgroundColor));
   font-family:"Raleway",sans-serif;
-  height:100vh
+  height:200vh
 }
-.basicInfoForm {
+ .testContainer {
+  position:absolute;
+  top:90%;
+  left:50%;
+  transform:translate(-50%,-50%) scale(1.25);
+  width:380px;
+  padding:0px 30px;
+  background:var(--BackgroundColor);
+  box-shadow:2px 2px 5px 5px var(--accent);
+}
+/* .basicInfoForm {
   position:absolute;
   top:-100%;
   left:50%;
@@ -44,7 +53,7 @@
   padding:0px 30px;
   background:var(--BackgroundColor);
   box-shadow:2px 2px 5px 5px var(--accent);
-}
+} 
 .basicInfoForm h2,
 .experienceForm h2, 
 .payForm h2 {
@@ -52,7 +61,13 @@
   color:black;
   margin:10px 0px 20px;
   font: siize 25px;
-}
+}*/
+.testContainer h2 {
+  text-align:center;
+  color:var(--black);
+  margin:10px 0px 20px;
+  font: siize 25px;
+}*/
 
 /* remember they don't need the upPopup whatever before this now */
 .form-element {
@@ -60,7 +75,7 @@
 }
 .form-element label {
   font-size:14px;
-  color:black
+  color:var(--black)
 }
 .form-element input[type="text"],
 .form-element input[type="password"] {
@@ -69,17 +84,20 @@
     width:100%;
     padding:10px;
     outline:none;
-    border:1px solid grey;
+    border:1px solid var(--black);
     border-radius:5px;
+    background: var(--accent);
+    color: var(--black)
 }
-.form-element input[type="submit"] {
+input[type="submit"] {
   width:100%;
   height:40px;
+  margin-top:10px;
   border:none;
   outline:none;
-  font: size 16px;
-  background:#222;
-  color: white;
+  font: size 20px;
+  background:var(--black);
+  color: var(--accent);
   border-radius:10px;
   cursor:pointer;
 }
