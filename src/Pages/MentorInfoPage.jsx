@@ -21,89 +21,33 @@ function MentorInfoPage() {
     <h1>Test line while CSS is getting set-up</h1>
     <div class="mentorPageWrapper">
       <div class="container">
-
         <div class="basicInfoForm">
           <h1>Basic Info</h1>
-          <div class="form-element">
-            <label for="Profile Name">Profile Name</label>
-            <input type="text" id="Profession" placeholder="Enter Your profile name"/>
-          </div>
-          <div class="form-element">
-            <label for="Profession">Profession</label>
-            <input type="text" id="Profession" placeholder="Enter Your Profession"/>
-          </div>
-          <div class="form-element">
-            <label for="Professional email">Professional email</label>
-            <input type="email" id="Profession email" placeholder="Enter your professional email"/>
-          </div>
-          <div class="form-element">
-            <label for="Websites">Enter your website URL</label>
-            <input type="text" id="Websites" placeholder="Enter Website URL"/>
-          </div>
-          <div class="form-element">
-            <label for="Social Media">Enter your social medias</label>
-            <input type="text" id="Social Media" placeholder="Enter your professional email"/>
-          </div>
-          <div class="form-element">
-            <label for="Languages">What languagues do you speak</label>
-            <input type="text" id="Languages" placeholder="Enter what languages do you speak"/>
-          </div>
-          <div class="form-element">
-            <label for="Basic Description">Description:</label>
-            <input type="text" id="Basic Description" placeholder="Give a description of yourself"/>
-          </div>
+          <Textf info="Profile Name" id="Profile Name" enter="" />
+          <Textf info="Profession" id="Profession" enter="" />
+          <Textf info="Professional Email" id="Professional Email" enter="" />
+          <Textf info="Your Website Url" id="Website" enter="" />
+          <Textf info="Social Medias" id="Social Medias" enter="" />
+          <Textf info="Languages" id="Languages" enter="" />
+          <Textf info="Description" id="Description" enter="" />
         </div>
 
         <div class="experienceForm">
           <h1>Experience</h1>
-          <div class="form-element">
-            <label for="Ocupation">Current Ocupation</label>
-            <input type="text" id="Ocupation" placeholder="Enter your Current Ocupation"/>
-          </div>
-          <div class="form-element">
-            <label for="PreviousOcupations">Past Experience</label>
-            <input type="text" id="PreviousOcupations" placeholder="Enter your Previous Experience "/>
-          </div>
-          <div class="form-element">
-            <label for="EducationLevel">How smart are you</label>
-            <input type="text" id="EducationLevel" placeholder="high school/college diplomas"/>
-          </div>
-          <div class="form-element">
-            <label for="Diplomas">Diplomas or Certifcations</label>
-            <input type="text" id="Diplomas" placeholder="Enter your Diploma(s) or certifications"/>
-          </div>
-          <div class="form-element">
-            <label for="Languages">Profession:</label>
-            <input type="text" id="Languages" placeholder="Enter what languages do you speak"/>
-          </div>
-          <div class="form-element">
-            <label for="Basic Description">Description:</label>
-            <input type="text" id="Basic Description" placeholder="Give a description of yourself"/>
-          </div>
+          <Textf info="Field of Work" id="Field" enter="" />
+          <Textf info="Current Ocupation" id="Ocupation" enter="" />
+          <Textf info="Past Experience" id="Experience" enter="" />
+          <Textf info="How Smart Are you" id="Education Level" enter="" />
+          <Textf info="Diplomas or Certifications" id="Diplomas" enter="" />
         </div>
 
-        <div class="PayTimeForm">
+        <div class="PayForm">
           <h1>Pay and Time</h1>
-          <div class="form-element">
-            <label for="Ocupation">Current Ocupation:</label>
-            <input type="text" id="Ocupation" placeholder="Enter your Current Ocupation"/>
-          </div>
-          <div class="form-element">
-            <label for="PreviousOcupations">Past Experience</label>
-            <input type="text" id="PreviousOcupations" placeholder="Enter your Previous Experience "/>
-          </div>
-          <div class="form-element">
-            <label for="EducationLevel">How smart are you</label>
-            <input type="text" id="EducationLevel" placeholder="high school/college diplomas"/>
-          </div>
-          <div class="form-element">
-            <label for="Languages">Profession:</label>
-            <input type="text" id="Languages" placeholder="Enter what languages do you speak"/>
-          </div>
-          <div class="form-element">
-            <label for="Basic Description">Description:</label>
-            <input type="text" id="Basic Description" placeholder="Give a description of yourself"/>
-          </div>
+          <Textf info="Your Hourly Rate" id="HourlyRate" enter="" />
+          <Textf info="credit info" id="Field" enter="" />
+          <Textf info="rest of this is placeholder for payment method" id="Field" enter="" />
+          <Textf info="Field of Work" id="Field" enter="" />
+          <Textf info="Field of Work" id="Field" enter="" />
         </div>
       </div>
     </div>
