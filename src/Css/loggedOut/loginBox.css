@@ -5,7 +5,7 @@
     box-sizing:border-box;
 }
 .LoginContainer, 
-.SignupWrapper {
+.SignupContainer {
     background:linear-gradient(blue);
     font-family:"Raleway",sans-serif;
     height:100vh
