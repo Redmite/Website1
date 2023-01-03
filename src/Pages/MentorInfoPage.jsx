@@ -1,8 +1,10 @@
 import React from "react";
 
+import "../Css/loggedIn/mentorInfo.css";
+
 // this is still heavily in development
 
-// imports
+
 
 // working on function to streamline this as there is a lot of repetitiveness
 function Textf(props) {
@@ -13,16 +15,22 @@ function Textf(props) {
   </div>
   );
 }
+function SubButton(props) {
+  return (           
+  <div class="form-element">
+    <button onClick={props.from}>Back</button>
+    <button onClick={props.to}>Next</button>    
+  </div>
+  );
+}
 
 function MentorInfoPage() {
   return (
   <>
-    <Textf info="profession" id="Profession" enter="enter your profession here" />
-    <h1>Test line while CSS is getting set-up</h1>
     <div class="mentorPageWrapper">
       <div class="container">
         <div class="basicInfoForm">
-          <h1>Basic Info</h1>
+          <h2>Basic Info</h2>
           <Textf info="Profile Name" id="Profile Name" enter="" />
           <Textf info="Profession" id="Profession" enter="" />
           <Textf info="Professional Email" id="Professional Email" enter="" />
@@ -33,7 +41,7 @@ function MentorInfoPage() {
         </div>
 
         <div class="experienceForm">
-          <h1>Experience</h1>
+          <h2>Experience</h2>
           <Textf info="Field of Work" id="Field" enter="" />
           <Textf info="Current Ocupation" id="Ocupation" enter="" />
           <Textf info="Past Experience" id="Experience" enter="" />
@@ -41,8 +49,8 @@ function MentorInfoPage() {
           <Textf info="Diplomas or Certifications" id="Diplomas" enter="" />
         </div>
 
-        <div class="PayForm">
-          <h1>Pay and Time</h1>
+        <div class="payForm">
+          <h2>Pay and Time</h2>
           <Textf info="Your Hourly Rate" id="HourlyRate" enter="" />
           <Textf info="credit info" id="Field" enter="" />
           <Textf info="rest of this is placeholder for payment method" id="Field" enter="" />
