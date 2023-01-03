@@ -1,32 +1,35 @@
 :root{
-  --blue:#0b5383
+  --blue:#0b5383;
+  --gray:#c6c7c9;
+  --text:#535457;
 }
 
 html {
   margin-right: 0!important;
   min-width: 0px;
   height: auto;
+  background:linear-gradient(to top, var(--gray), white)
+  
 }
 body {
   margin: 0;
 }
 @font-face {
-  font-family: WarsawGothicFont;
+  font-family: Rubik-Regular;
   src: url(Fonts/Rubik-Regular.ttf);
 }
 .mainWrapper {
   width: 100%;
-  max-width: 1350px;
   min-width: 0px;
-  padding: 0 1em;
+  padding: 20px;
   margin: auto auto;
-  height:100em;
+  height:100%;
   min-height:100vh;
   box-sizing: border-box;
   padding: 0px;
+  justify-content: center;
 }
 .bottomBar{
   height: 300px;
-  border: 4px solid saddlebrown;
   width: inherit;
 }

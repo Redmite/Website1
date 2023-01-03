@@ -1,6 +1,20 @@
+.backgroundTopBar{
+  height: 105px;
+  width: 100%;
+  
+}
 .topBar {
   height: 105px;
   padding: 0px;
+  max-width: 1700px;
+  margin: 0 auto;
+  font-family: Rubik-Regular;
+  color: var(--text);
+  font-size: 20px;
+  font-weight: bold;
+  border-bottom: 1px solid var(--gray);
+
+
 }
 .topPanel {
   height: 100px;
@@ -53,4 +67,14 @@
   color: black;
   text-decoration: none;
   font-size: 19px;
+}
+.searchBar{
+  padding: 10px;
+  font-size: 17px;
+  float: left;
+  width: 65%;
+  background: rgb(255, 255, 255);
+  border-radius:15px;
+  min-width: 240px;
+  max-width: 300px;
 }

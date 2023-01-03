@@ -1,4 +1,6 @@
 .mainContentLoggedIn{
+  max-width: 1700px;
+  margin: 0 auto;
     width: inherit;
     height: 1200px;
 }
