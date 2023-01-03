@@ -17,6 +17,7 @@ import LoggedInHomePage from "./Pages/LoggedInHomePage";
 import MentorInfoPage from "./Pages/MentorInfoPage";
 import ErrorPage from "./Pages/ErrorPage";
 import SearchLoggedOutPage from "./Pages/SearchLoggedOutPage";
+import ListingCreationPage from "./Pages/ListingCreationPage";
 
 function App() {
   return(<Router>
@@ -32,6 +33,7 @@ function App() {
       <Route path="/SignUpPage" element={<SignUpPage/>}/>
       <Route path="/LoggedInHomePage" element={<LoggedInHomePage/>}/>
       <Route path="/MentorInfoPage" element={<MentorInfoPage/>}/>
+      <Route path="/ListingCreationPage" element={<ListingCreationPage/>}/>
       <Route path="*" element={<ErrorPage/>}/>
       <Route path="/SearchLoggedOutPage" element={<SearchLoggedOutPage/>}/>
     </Routes>
