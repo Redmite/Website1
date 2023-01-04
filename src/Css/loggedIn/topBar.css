@@ -17,7 +17,7 @@
 }
 .topSearch{
   padding: 2%;
-  flex: 1;
+  flex: 3;
   
 }
 
@@ -38,7 +38,9 @@ form.topSearch input[type=text] {
   padding: 0;
   align-items: center;
   justify-content: right;
-  flex: 2;
+  display: flex;
+  flex: 1;
+
 }
 .topBarAccountProfile{
   height: 40%;
@@ -65,17 +67,19 @@ border-radius: 50%;
 }
 .topBarInboximg{
   height: 50%;
-  padding-top: 9px;
+  padding-top: 10px;
 }
-.topBarOrders{
+.topBarOrders, .topBarSchedule, .topBarCoach{
+  font-family: Rubik-Regular;
   width: 25%;
   font-size: 20px;
+  margin: 0 30px;
+  width: auto;
+  font-weight: 600;
+  font-size: 16px;
+  color: var(--text);
+
 }
-.topBarSchedule{
-  width: 25%;
-  font-size: 20px;
-}
-.topBarCoach{
-  width: 25%;
-  font-size: 20px;
+.topBarOrders, .topBarSchedule, .topBarCoach:hover{
+  cursor: pointer;
 }
