@@ -26,6 +26,7 @@ function App() {
     <Link to="./LoggedInHomePage">  LoggedInHomePage  </Link>
     <Link to="./MentorInfoPage">  MentorInfoPage_Test_Link</Link>
     <Link to="./SearchLoggedOutPage">SearchLoggedOutPage</Link>
+    <Link to="./ListingCreationPage">ListingCreationPage</Link>
     </nav>
     <Routes>
       <Route path="/" element={<HomePage/>}/>

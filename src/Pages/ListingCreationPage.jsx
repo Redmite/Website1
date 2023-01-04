@@ -1,7 +1,7 @@
 import {useState} from 'react';
 import React from "react";
 import Calendar from 'react-calendar'; 
-import 'react-calendar/dist/Calendar.css';
+import "../Css/loggedIn/listingCreation.css";
 import Time from '../Script/Time.js';
 
 import "../Css/loggedIn/listingCreation.css";
@@ -15,8 +15,10 @@ function ListingCreationPage() {
       <div class="container">
         <div class="form">
           <div class="profilePic">
-            <label for="profilePic">Insert a Picture of yourself here!</label>
-            <input type="file" id="ProfilePic" name="Profile Picture"/>
+            <div class="profilePicInfo">
+              <label for="profilePic">Insert a Picture of yourself here!</label>
+              <input type="file" id="ProfilePic" name="Profile Picture"/>
+            </div>
           </div>
           <div class="experienceQualifications">
             <h3>Name</h3>
@@ -33,7 +35,7 @@ function ListingCreationPage() {
           <p>Project they've worked on</p>
           <input type="file" id="ProjectPic" name="Project Picture"/>
           </div>
-          <h1 className='header'>React Calendar</h1>
+          <h1 className='header'>Dates Avalible</h1>
           <div>
             <Calendar onChange={setDate} value={date} onClickDay={() => setShowTime(true)}/>
           </div>
@@ -46,11 +48,11 @@ function ListingCreationPage() {
             &nbsp;
             <span>End:</span>{date[1].toDateString()}
           </p>
-                  ) : (
+          ) : (
           <p>
-              <span>Default selected date:</span>{date.toDateString()}
+            <span>Default selected date:</span>{date.toDateString()}
           </p> 
-                  )
+          )
           }
           <Time showTime={showTime} date={date}/>
         </div>
