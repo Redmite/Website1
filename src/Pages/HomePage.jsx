@@ -30,26 +30,18 @@ function HomePage() {
                   Become a Mentor
                 </a>
               </li>
-              <li class="displayLd">
-                <a
-                  href="#news"
-                  class="WIP will be done much later makes no sense rn"
-                ></a>
-              </li>
               <li class="displaySd">
                 <a href="/LoggedInHomePage" class="topBarOptionsLoggedOut">
-                  Language C
+                  Language
                 </a>
               </li>
               <li class="displaySd">
-                <a href="/SignInPage">
-                  <button class="signIn" id="show-login">
-                    Sign In B
-                  </button>
+                <a href="/SignInPage" class="signIn" id="show-login">
+                  Sign in
                 </a>
               </li>
               <li class="displaySd">
-                <a href="/SignUpPage" id="join-button">
+                <a href="/SignUpPage" id="join-button" class="joinButton">
                   Join
                 </a>
               </li>

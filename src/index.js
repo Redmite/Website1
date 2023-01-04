@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOMClient from 'react-dom/client';
 
-import App from "./App";
+import App from "./App.jsx";
 
 // this file is in the src because react won't start unless we have it in a src folder in website1
 // from what I've seen we could eject the webpack and make changes so it will start in the public/script folder
