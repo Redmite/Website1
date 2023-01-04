@@ -25,10 +25,11 @@ form.topSearch input[type=text] {
   padding: 10px;
   font-size: 17px;
   float: left;
-  width: 65%;
+  width: 90%;
   background: rgb(255, 255, 255);
-  border-radius:15px;
+  border-radius:3px;
   min-width: 240px;
+  border: 1px solid var(--gray);
   
 }
 .topBar-LoggedInRightSide{

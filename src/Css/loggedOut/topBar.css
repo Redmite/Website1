@@ -61,16 +61,7 @@
   text-decoration: none;
   font-size: 16px;
 }
-.searchBar{
-  padding: 10px;
-  font-size: 17px;
-  float: left;
-  width: 65%;
-  background: rgb(255, 255, 255);
-  border-radius:15px;
-  min-width: 240px;
-  max-width: 300px;
-}
+
 .joinButton{
   font-family: Rubik-Regular;
   margin: 13% 0px;
