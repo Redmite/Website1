@@ -50,7 +50,7 @@ function ListingCreationPage() {
           </p>
           ) : (
           <p>
-            <span>Default selected date:</span>{date.toDateString()}
+            <span>Today is: </span>{date.toDateString()}
           </p> 
           )
           }
