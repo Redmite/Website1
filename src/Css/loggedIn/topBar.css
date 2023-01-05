@@ -54,7 +54,7 @@ form.topSearch input[type=text] {
 
 }
 .topBarAccountProfileImg{
-height: 100%;
+height: 45px;
 border-radius: 50%;
 
 }
@@ -63,7 +63,7 @@ border-radius: 50%;
 
 }
 .topBarInbox{
-  height: 50%;
+  height: 45px;
 
 }
 .topBarInboximg{
