@@ -49,7 +49,16 @@ function HomePage() {
           </div>
         </div>
       </div>
-      <div class="greetingPanel"></div>
+      <div class="greetingPanel">
+        <div class="greetingPanelSideTextBox">
+          <img src="2.svg" class="img-greetingPanel"></img>
+          <h2 class="h2-greetingPanel">Lerom Ipsmu</h2>
+          <button class="getStartedButton" href="/SignUpPage" id="join-button">
+            Get Started
+          </button>
+        </div>
+        <img src="1.svg" class="greetingPanelImg" />
+      </div>
 
       <div class="popularServices">
         <div class="popularServiceText">Popular Services</div>
