@@ -12,9 +12,10 @@ function Times(props) {
 // this is the event that is passed in when the button is clicked. it is the button itself. it is passed in as a parameter in the displayInfo function
  function submitInfo() {
   setInfo(true); // this sets the info (see line 30) to visible
-  sessionTime = startTime + " to " + endTime + " " + props.date.toDateString(); //this gets sent to back end for processing and storage
+  sessionTime = startTime + " to " + endTime + " " + props.date.toDateString(); // this gets sent to back end for processing and storage
 }
-// make it so the function below creates two text boxs where the user can enter the time they want to start and end their session.
+// these functions occur whenever the value in a text box is changed, and change the original value of it to the new value
+// for example, if the original value is 1:00, and the new value is 2:00, the original value will be changed to 2:00
 const handleStart = event => {
   setStartTime(event.target.value);
   setInfo(false)
@@ -39,7 +40,7 @@ return (
 
 
     <div>
-      {info ? `Your session is set from ${startTime} to ${endTime} ${props.date.toDateString()}` : null} 
+      {info ? `A session has been set from ${startTime} to ${endTime} ${props.date.toDateString()}` : null} 
     </div> 
  </div> // this is a ternary operator. if info is true, it will display the time and date. if not, it will display nothing
   ) // why is there a $ in front of the event and props.date.toDateString()? this is a template literal. it allows you to use variables in a string. look at the link below for more info
