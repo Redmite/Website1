@@ -21,7 +21,7 @@ function LoggedInHomePage() {
         </form>
         <div class="topBar-LoggedInRightSide">
           <li class="topBarCoach">
-            <a>Creator</a>
+            <a href="/MentorInfoPage">Creator</a>
           </li>
           <li class="topBarOrders">
             <a>Orders</a>
