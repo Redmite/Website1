@@ -8,6 +8,7 @@
   max-width: 1700px;
   margin:  0 auto 70px;
   border-bottom: 1px solid #c6c7c9;
+  align-items: center;
 }
 .topBar-LoggedInRightSide {
   display: flex;
