@@ -1,7 +1,7 @@
 import React from 'react'
 import {useState} from 'react';
 
-var sessionTime = "no Time Selected";
+var sessionTime = "No Time Selected";
 
 function Times(props) {
 
