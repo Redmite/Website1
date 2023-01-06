@@ -18,6 +18,10 @@ body {
   font-family: Rubik-Regular;
   src: url(Fonts/Rubik-Regular.ttf);
 }
+@font-face {
+  font-family: Trueno;
+  src: url(Fonts/Trueno-wml2.otf);
+}
 .mainWrapper {
   width: 100%;
   min-width: 0px;

@@ -51,8 +51,12 @@ function HomePage() {
       </div>
       <div class="greetingPanel">
         <div class="greetingPanelSideTextBox">
-          <img src="2.svg" class="img-greetingPanel"></img>
-          <h2 class="h2-greetingPanel">Lerom Ipsmu</h2>
+          <h1 class="h1-greetingPanel">Why do we use it?</h1>
+          <h2 class="h2-greetingPanel">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+            ultricies justo sit amet libero iaculis maximus id in felis.
+            Praesent eget gravida odio
+          </h2>
           <button class="getStartedButton" href="/SignUpPage" id="join-button">
             Get Started
           </button>
@@ -63,12 +67,32 @@ function HomePage() {
       <div class="popularServices">
         <div class="popularServiceText">Popular Services</div>
         <div class="reccomendedCategories">
-          <li class="reccomendedCategoriesPanel"></li>
-          <li class="reccomendedCategoriesPanel"></li>
-          <li class="reccomendedCategoriesPanel"></li>
-          <li class="reccomendedCategoriesPanel"></li>
-          <li class="reccomendedCategoriesPanel"></li>
-          <li class="reccomendedCategoriesPanel"></li>
+          <li class="reccomendedCategoriesPanelSD">
+            <a href="#">
+              hi
+              <img src="math.jpeg" class="popularCategoriesImg"></img>
+            </a>
+          </li>
+          <li class="reccomendedCategoriesPanelSD">
+            <a href="#">
+              <img src="" class="popularCategoriesImg"></img>
+            </a>
+          </li>
+          <li class="reccomendedCategoriesPanelSD">
+            <a href="#">
+              <img src="" class="popularCategoriesImg"></img>
+            </a>
+          </li>
+          <li class="reccomendedCategoriesPanelSD">
+            <a href="#">
+              <img src="" class="popularCategoriesImg"></img>
+            </a>
+          </li>
+          <li class="reccomendedCategoriesPanelLD">
+            <a href="#">
+              <img src="" class="popularCategoriesImg"></img>
+            </a>
+          </li>
         </div>
       </div>
       <div class="bottomBar"></div>

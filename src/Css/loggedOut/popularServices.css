@@ -22,9 +22,30 @@
   list-style-type: none;
 }
 
-.reccomendedCategoriesPanel{
+.reccomendedCategoriesPanelSD, .reccomendedCategoriesPanelLD{
 height: 90%;
-border: 3px solid red;
-width: 20%;
-margin: 1%;
+width: 17%;
+margin: 40px 1%;
+}
+
+.popularCategoriesImg{
+max-width: 100%;
+min-height: 100%;
+overflow: hidden;
+border-radius: 5px;
+border: 0.1px solid var(--gray);
+}
+.popularCategoriesImg:hover{
+  filter: brightness(105%) ;
+}
+@media only screen and (max-width: 1400px) {
+  .reccomendedCategoriesPanelLD {
+    display: none
+  }
+  .popularServices{
+    padding-top: 45px;
+  }
+  .reccomendedCategoriesPanelSD{
+    height: 75%;
+  }
 }
