@@ -6,11 +6,14 @@ import "../Css/main.css";
 import "../Css/loggedOut/popularServices.css";
 import "../Css/loggedOut/topBar.css";
 
+import SearchBar from "../Script/SearchBar";
+
 // home page function, this is what we actually see
 
 function HomePage() {
   return (
     <div class="mainWrapper">
+      <SearchBar />
       <div class="backgroundTopBar">
         <div class="topBar">
           <div class="topPanel">
@@ -23,6 +26,7 @@ function HomePage() {
                 placeholder="What skill do you want to learn?"
                 class="searchBar"
               />
+
             </form>
             <div class="topOptionsRightSide">
               <li class="displayMd">
