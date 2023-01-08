@@ -23,8 +23,8 @@
 }
 
 .reccomendedCategoriesPanelSD, .reccomendedCategoriesPanelLD{
-height: 90%;
-width: 17%;
+height: 85%;
+width: 15%;
 margin: 40px 1%;
 }
 
@@ -35,8 +35,10 @@ overflow: hidden;
 border-radius: 5px;
 border: 0.1px solid var(--gray);
 }
+
 .popularCategoriesImg:hover{
   filter: brightness(105%) ;
+  border: 0.1px solid var(--blue);
 }
 @media only screen and (max-width: 1400px) {
   .reccomendedCategoriesPanelLD {
@@ -48,4 +50,5 @@ border: 0.1px solid var(--gray);
   .reccomendedCategoriesPanelSD{
     height: 75%;
   }
+
 }
