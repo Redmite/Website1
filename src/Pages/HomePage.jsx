@@ -13,7 +13,6 @@ import SearchBar from "../Script/SearchBar";
 function HomePage() {
   return (
     <div class="mainWrapper">
-      <SearchBar />
       <div class="backgroundTopBar">
         <div class="topBar">
           <div class="topPanel">
@@ -21,11 +20,7 @@ function HomePage() {
               <img src="logo.svg" class="logoImg" alt="missing logo" />
             </div>
             <form class="topSearch" action="#news">
-              <input
-                type="text"
-                placeholder="What skill do you want to learn?"
-                class="searchBar"
-              />
+              <SearchBar placeholder="What skill do you want to learn?" class="searchBar" />
             </form>
             <div class="topOptionsRightSide">
               <li class="displayMd">

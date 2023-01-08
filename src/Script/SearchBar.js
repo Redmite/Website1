@@ -4,29 +4,45 @@ import React from "react";
 import JSONDATA from "./MockData/MOCK_DATA.json";
 import {useState} from "react";
 
-function SearchBar() {
+var index = 0;
+// var showOptions = false;
+
+function SearchBar(props) {
   const [searchTerm, setSearchTerm] = useState("");
+
+  // showOptions = () => {
+  //   show
+  // }
+
+
   return (
     <div>
       <input 
       type="text" 
-      placeholder="Search" 
+      placeholder={props.placeholder} 
       onChange={event => 
         {setSearchTerm(event.target.value)
         }} 
       />
-      {JSONDATA.filter((val)=> {
+      {JSONDATA.filter((val)=>  {
+        index = 0;
         if (searchTerm === "") {
           return val
         } else if (val.first_name.toLowerCase().includes(searchTerm.toLowerCase())) {
           return val
         }
-      }).map((val, key) => {
-        return (
-        <div className="user" key={key}> 
-          <p> {val.first_name} </p>
-        </div>
-        );
+        }).map((val, key) => { 
+          if ((index <= 4) && (searchTerm !== "")) { // edit the code here to make it so that it shows a different amount of options
+            index++;
+            return (
+            <div className="user" key={key}> 
+              <p> {val.first_name} </p>
+            </div>
+            );
+          } else if (index === JSONDATA.indexOf(val)) {
+            index ++;
+            return null;
+           } 
       })}
     </div>
   );
