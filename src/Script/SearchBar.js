@@ -26,6 +26,7 @@ function SearchBar(props) {
       />
       {JSONDATA.filter((val)=>  {
         index = 0;
+        // checks if the search bar is empty. if not, it will switch everything to lowercase and check if the first name includes the search term
         if (searchTerm === "") {
           return val
         } else if (val.first_name.toLowerCase().includes(searchTerm.toLowerCase())) {
@@ -34,11 +35,12 @@ function SearchBar(props) {
         }).map((val, key) => { 
           if ((index <= 4) && (searchTerm !== "")) { // edit the code here to make it so that it shows a different amount of options
             index++;
-            return (
+            return ( // this is the code that will display the options
             <div className="user" key={key}> 
               <p> {val.first_name} </p>
             </div>
             );
+            // this goes through the rest of the options and returns them as null, as you can't "break" out of a map function
           } else if (index === JSONDATA.indexOf(val)) {
             index ++;
             return null;
