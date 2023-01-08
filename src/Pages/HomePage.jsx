@@ -26,7 +26,6 @@ function HomePage() {
                 placeholder="What skill do you want to learn?"
                 class="searchBar"
               />
-
             </form>
             <div class="topOptionsRightSide">
               <li class="displayMd">
@@ -55,11 +54,10 @@ function HomePage() {
       </div>
       <div class="greetingPanel">
         <div class="greetingPanelSideTextBox">
-          <h1 class="h1-greetingPanel">Why do we use it?</h1>
+          <h1 class="h1-greetingPanel">Seeking a mentor?</h1>
           <h2 class="h2-greetingPanel">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-            ultricies justo sit amet libero iaculis maximus id in felis.
-            Praesent eget gravida odio
+            Do you find it difficult to learn from a video or a website and
+            would like to be taught by an expert?
           </h2>
           <button class="getStartedButton" href="/SignUpPage" id="join-button">
             Get Started
@@ -73,28 +71,44 @@ function HomePage() {
         <div class="reccomendedCategories">
           <li class="reccomendedCategoriesPanelSD">
             <a href="#">
-              hi
-              <img src="math.jpeg" class="popularCategoriesImg"></img>
+              <img src="math.jpeg" class="popularCategoriesImg" />
+              <div class="innerTextPopularCategories">Common Core</div>
             </a>
           </li>
           <li class="reccomendedCategoriesPanelSD">
             <a href="#">
-              <img src="" class="popularCategoriesImg"></img>
+              <img
+                src="websiteDesign.jpeg"
+                class="popularCategoriesImgWebsiteDesign"
+              ></img>
+              <div class="innerTextPopularCategories">Website Design</div>
             </a>
           </li>
           <li class="reccomendedCategoriesPanelSD">
             <a href="#">
-              <img src="" class="popularCategoriesImg"></img>
+              <img
+                src="language.jpeg"
+                class="popularCategoriesImgLanguage"
+              ></img>
+              <div class="innerTextPopularCategories">Language</div>
             </a>
           </li>
           <li class="reccomendedCategoriesPanelSD">
             <a href="#">
-              <img src="" class="popularCategoriesImg"></img>
+              <img
+                src="onlineBusiness.jpeg"
+                class="popularCategoriesImgOnlineBusiness"
+              ></img>
+              <div class="innerTextPopularCategories">Online Business</div>
             </a>
           </li>
           <li class="reccomendedCategoriesPanelLD">
             <a href="#">
-              <img src="" class="popularCategoriesImg"></img>
+              <img
+                src="Illustrations.jpeg"
+                class="popularCategoriesImgIllustrations"
+              ></img>
+              <div class="innerTextPopularCategories">Designing</div>
             </a>
           </li>
         </div>

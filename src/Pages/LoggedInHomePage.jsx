@@ -24,7 +24,7 @@ function LoggedInHomePage() {
             <a href="/MentorInfoPage">Creator</a>
           </li>
           <li class="topBarOrders">
-            <a>Orders</a>
+            <a href="#news">Orders</a>
           </li>
           <li class="topBarSchedule">
             <a>Schedule</a>

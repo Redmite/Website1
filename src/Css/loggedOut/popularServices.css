@@ -1,20 +1,20 @@
-.popularServices{
+.popularServices {
   max-width: 1600px;
   margin: 0 auto;
   width: inherit;
   height: auto;
 }
-.serviceMathImg:hover{
+.serviceMathImg:hover {
   filter: brightness(120%);
 }
-.popularServiceText{
+.popularServiceText {
   margin: 0 auto;
   font-family: Rubik-Regular;
   color: var(--text);
   font-size: 35px;
   font-weight: bold;
 }
-.reccomendedCategories{
+.reccomendedCategories {
   width: 100%;
   height: 380px;
   display: flex;
@@ -22,33 +22,81 @@
   list-style-type: none;
 }
 
-.reccomendedCategoriesPanelSD, .reccomendedCategoriesPanelLD{
-height: 85%;
-width: 15%;
-margin: 40px 1%;
+.reccomendedCategoriesPanelSD,
+.reccomendedCategoriesPanelLD {
+  height: 85%;
+  width: 15%;
+  margin: 40px 1%;
+  position: relative;
+  text-align: center;
+  color: white;
+}
+.popularCategoriesImgWebsiteDesign {
+  object-position: 80% 50%;
+  max-width: 100%;
+  min-height: 100%;
+  border-radius: 5px;
+  object-fit: cover;
+  border: 0.1px solid var(--gray);
+}
+.popularCategoriesImgLanguage {
+  object-position: 4% 50%;
+  max-width: 100%;
+  min-height: 100%;
+  border-radius: 5px;
+  object-fit: cover;
+  border: 0.1px solid var(--gray);
+}
+.popularCategoriesImgOnlineBusiness {
+  object-position: 50% 50%;
+  max-width: 100%;
+  min-height: 100%;
+  border-radius: 5px;
+  object-fit: cover;
+  border: 0.1px solid var(--gray);
+}
+.popularCategoriesImgIllustrations {
+  object-position: 34.2% 50%;
+  max-width: 100%;
+  min-height: 100%;
+  border-radius: 5px;
+  object-fit: cover;
+  border: 0.1px solid var(--gray);
+}
+.popularCategoriesImg {
+  max-width: 100%;
+  min-height: 100%;
+  border-radius: 5px;
+  object-fit: cover;
+  border: 0.1px solid var(--gray);
+  object-position: 100% 0;
 }
 
-.popularCategoriesImg{
-max-width: 100%;
-min-height: 100%;
-overflow: hidden;
-border-radius: 5px;
-border: 0.1px solid var(--gray);
+.innerTextPopularCategories {
+  color: var(--text);
+  text-decoration: none;
+  font-family: Rubik-Regular;
+  font-size: 20px;
+  font-weight: 600;
+
 }
 
-.popularCategoriesImg:hover{
-  filter: brightness(105%) ;
+.popularCategoriesImg:hover,
+.popularCategoriesImgIllustrations:hover,
+.popularCategoriesImgLanguage:hover,
+.popularCategoriesImgOnlineBusiness:hover,
+.popularCategoriesImgWebsiteDesign:hover {
+  filter: brightness(110%);
   border: 0.1px solid var(--blue);
 }
 @media only screen and (max-width: 1400px) {
   .reccomendedCategoriesPanelLD {
-    display: none
+    display: none;
   }
-  .popularServices{
+  .popularServices {
     padding-top: 45px;
   }
-  .reccomendedCategoriesPanelSD{
+  .reccomendedCategoriesPanelSD {
     height: 75%;
   }
-
 }

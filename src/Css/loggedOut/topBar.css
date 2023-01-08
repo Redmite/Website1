@@ -24,9 +24,9 @@
 
 }
 .logo {
-  height: 90px;
-  padding: 0.5%;
-  width: 90px;
+  height: 70px;
+  padding: 0.8%;
+  width: auto;
 }
 .logoImg{
   height: inherit;
@@ -38,13 +38,11 @@
   padding: 9px 0;
   display: flex;
   align-items: center;
-  text-decoration: none;
   justify-content: flex-end;
 }
 
 .displayLd , .displayMd, .displaySd {
   text-align: center;
-  text-decoration: none;
   list-style-type: none;  
   font-size: 16px;
   margin: 0 15px; 
@@ -58,7 +56,6 @@
 
 .topBarOptionsLoggedOut{
   color: var(--text);
-  text-decoration: none;
   font-size: 16px;
 }
 
@@ -73,13 +70,12 @@
   font-size: 16px;
   border: 0px;
   font-weight: 100;
-  text-decoration: none;
+  color: white!important;
 }
 .signIn{
   font-family: Rubik-Regular;
   font-weight: 700;
   font-size: 16px;
-  text-decoration: none;
   color: var(--text);
   
 }
