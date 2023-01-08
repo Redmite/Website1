@@ -1,5 +1,73 @@
 // code I plan on using https:https://www.youtube.com/watch?v=mZvKPtH9Fzo
 
+import React from "react";
+import JSONDATA from "./MockData/MOCK_DATA.json";
+import {useState} from "react";
+
+function SearchBar() {
+  const [searchTerm, setSearchTerm] = useState("");
+  return (
+    <div>
+      <input 
+      type="text" 
+      placeholder="Search" 
+      onChange={event => 
+        {setSearchTerm(event.target.value)
+        }} 
+      />
+      {JSONDATA.filter((val)=> {
+        if (searchTerm === "") {
+          return val
+        } else if (val.first_name.toLowerCase().includes(searchTerm.toLowerCase())) {
+          return val
+        }
+      }).map((val, key) => {
+        return (
+        <div className="user" key={key}> 
+          <p> {val.first_name} </p>
+        </div>
+        );
+      })}
+    </div>
+  );
+}
+
+export default SearchBar;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 // orginally I planned on using all the code below but it gave some errors that I couldn't find any answers to, so once we get backend up
