@@ -3,6 +3,7 @@ import React from "react";
 import Calendar from 'react-calendar'; 
 import "../Css/loggedIn/listingCreation.css";
 import Time from '../Script/Time.js';
+import {Checkbox} from '../Script/GeneralFunctions.js';
 
 import "../Css/loggedIn/listingCreation.css";
 
@@ -16,17 +17,21 @@ function ListingCreationPage() {
   const [experience, setExperience] = useState();
   const [certifications, setCertifications] = useState();
   const [funFact, setFunFact] = useState();
-  const [Prequisetes, setPrequisetes] = useState();
+  const [Prerequisites, setPrerequisites] = useState();
+  const [commonCore, setCommonCore] = useState();
+  const [websiteDesign, setWebsiteDesign] = useState();
+  const [language, setLanguage] = useState();
+  const [onlineBusiness, setOnlineBusiness] = useState();
+  const [designing, setDesigning] = useState();
   const [learnMaterial, setLearnMaterial] = useState();
   const [choose, setChoose] = useState();
   const [projectPic, setProjectPic] = useState();
     // when backend gets the data, this will be set up to where inside the use state parenthesis,
     // will be the data from the data base
 
-  // list for submitting
   var info = [];
 
-  // functions for inputs
+  // whenever a user changes a text box, these function will edit the variables associated with that box
   const handleProfilePic = event => {
     setProfilePic(event.target.value);
   };
@@ -39,9 +44,31 @@ function ListingCreationPage() {
   const handleFunFact = event => {
     setFunFact(event.target.value);
   };
-  const handlePrequisetes = event => {
-    setPrequisetes(event.target.value);
+  const handlePrerequisites = event => {
+    setPrerequisites(event.target.value);
   };
+  //these function will handle the checkboxes
+  const handleCommonCore = (e) => {
+    const checked = e.target.checked;
+    checked ? setCommonCore(true) : setCommonCore(false);
+  };
+  const handleWebsiteDesign = (e) => {
+    const checked = e.target.checked;
+    checked ? setWebsiteDesign(true) : setWebsiteDesign(false);
+  };
+  const handleLanguage = (e) => {
+    const checked = e.target.checked;
+    checked ? setLanguage(true) : setLanguage(false);
+  };
+  const handleOnlineBusiness = (e) => {
+    const checked = e.target.checked;
+    checked ? setOnlineBusiness(true) : setOnlineBusiness(false);
+  };
+  const handleDesigning = (e) => {
+    const checked = e.target.checked;
+    checked ? setDesigning(true) : setDesigning(false);
+  };
+  //the rest of these are for text boxes
   const handleLearnMaterial = event => {
     setLearnMaterial(event.target.value);
   };
@@ -53,9 +80,9 @@ function ListingCreationPage() {
   };
   // this function will submit all the data to the database
   const submitInfo = () => {
-    info = [profilePic, experience, certifications, funFact, Prequisetes, learnMaterial, choose, projectPic]
+    info = [profilePic, experience, certifications, funFact, Prerequisites, learnMaterial, choose, projectPic, commonCore, websiteDesign, language, onlineBusiness, designing ]
     // some line to submit it to the database
-    // maybe a return boolean
+    // maybe a return boolean if it all checks out
     // if true, then redirect to the logged in page
     // if false then display an error message
   };
@@ -74,7 +101,13 @@ function ListingCreationPage() {
             <input type="text" placeholder="What experience do you have relating to this listing" onChange={handleExperience} value={experience}/>
             <input type="text" placeholder="What certifications or diplomas do you have relating to this listing" onChange={handleCertifications} value={certifications}/>
             <input type="text" placeholder="Give a fun fact about yourself or the job listing" onChange={handleFunFact} value={funFact}/>
-            <input type="text" placeholder="Knowledge or material prerequisetes before your session " onChange={handlePrequisetes} value={Prequisetes}/>
+            <input type="text" placeholder="Knowledge or material prerequisetes before your session " onChange={handlePrerequisites} value={Prerequisites}/>
+            {/* if you want more info on the checkbox function check GeneralFunctions in Script */}
+            <Checkbox name="CommonCore" label="Common Core" value={commonCore} onChange={handleCommonCore} />
+            <Checkbox name="WebsiteDesign" label="Website Design" value={websiteDesign} onChange={handleWebsiteDesign}/>
+            <Checkbox name="Language" label="Language" value={language} onChange={handleLanguage} />
+            <Checkbox name="OnlineBusiness" label="Online Business" value={onlineBusiness} onChange={handleOnlineBusiness} />
+            <Checkbox name="Designing" label="Designing" value={designing} onChange={handleDesigning} />
           </div>
           <div class="details">
             <input type="text" placeholder="What do you offer and what they will learn" onChange={handleLearnMaterial} value={learnMaterial}/>
