@@ -4,8 +4,71 @@ import "../Css/main.css";
 import "../Css/loggedIn/topBar.css";
 import "../Css/loggedIn/mainContentLoggedIn.css";
 
-// home page function, this is what we actually see
-function LoggedInHomePage() {
+function CreatorCategories(props) {
+  { if (props.category === "null") {
+    return (
+      <div class="mainContentLoggedIn">
+        <div> Reccomended Categories</div>
+        <div class="reccomendedCategories">
+          <li class="reccomendedCategoriesPanel"></li>
+          <li class="reccomendedCategoriesPanel"></li>
+          <li class="reccomendedCategoriesPanel"></li>
+          <li class="reccomendedCategoriesPanel"></li>
+          <li class="reccomendedCategoriesPanel"></li>
+        </div>
+        <div> Reccomended Coaching Sessions</div>
+        <div class="reccomendedCoachSession">
+          <li class="reccomendedCoachSessionPanel"></li>
+          <li class="reccomendedCoachSessionPanel"></li>
+          <li class="reccomendedCoachSessionPanel"></li>
+          <li class="reccomendedCoachSessionPanel"></li>
+          <li class="reccomendedCoachSessionPanel"></li>
+        </div>
+        <div> Reccomended Creators</div>
+        <div class="reccomendedCreators">
+          <li class="reccomendedCreatorsPanel"></li>
+          <li class="reccomendedCreatorsPanel"></li>
+          <li class="reccomendedCreatorsPanel"></li>
+          <li class="reccomendedCreatorsPanel"></li>
+          <li class="reccomendedCreatorsPanel"></li>
+        </div>
+      </div>
+    );
+  } else {
+    return (
+      <div class="mainContentLoggedIn">
+    
+        <div> Reccomended {props.category}</div>
+        <div class="reccomendedCategories">
+          <li class="reccomendedCategoriesPanel"></li>
+          <li class="reccomendedCategoriesPanel"></li>
+          <li class="reccomendedCategoriesPanel"></li>
+          <li class="reccomendedCategoriesPanel"></li>
+          <li class="reccomendedCategoriesPanel"></li>
+        </div>
+        <div> Reccomended Coaching Sessions</div>
+        <div class="reccomendedCoachSession">
+          <li class="reccomendedCoachSessionPanel"></li>
+          <li class="reccomendedCoachSessionPanel"></li>
+          <li class="reccomendedCoachSessionPanel"></li>
+          <li class="reccomendedCoachSessionPanel"></li>
+          <li class="reccomendedCoachSessionPanel"></li>
+        </div>
+        <div> Reccomended Creators</div>
+        <div class="reccomendedCreators">
+          <li class="reccomendedCreatorsPanel"></li>
+          <li class="reccomendedCreatorsPanel"></li>
+          <li class="reccomendedCreatorsPanel"></li>
+          <li class="reccomendedCreatorsPanel"></li>
+          <li class="reccomendedCreatorsPanel"></li>
+        </div>
+      </div>
+    );
+  }};
+}
+
+
+function LoggedInHomePage(props) {
   return (
     <div class="mainWrapper">
       <div class="topBar-LoggedIn">
@@ -39,32 +102,7 @@ function LoggedInHomePage() {
           </li>
         </div>
       </div>
-      <div class="mainContentLoggedIn">
-        <div> Reccomended Categories</div>
-        <div class="reccomendedCategories">
-          <li class="reccomendedCategoriesPanel"></li>
-          <li class="reccomendedCategoriesPanel"></li>
-          <li class="reccomendedCategoriesPanel"></li>
-          <li class="reccomendedCategoriesPanel"></li>
-          <li class="reccomendedCategoriesPanel"></li>
-        </div>
-        <div> Reccomended Coaching Sessions</div>
-        <div class="reccomendedCoachSession">
-          <li class="reccomendedCoachSessionPanel"></li>
-          <li class="reccomendedCoachSessionPanel"></li>
-          <li class="reccomendedCoachSessionPanel"></li>
-          <li class="reccomendedCoachSessionPanel"></li>
-          <li class="reccomendedCoachSessionPanel"></li>
-        </div>
-        <div> Reccomended Creators</div>
-        <div class="reccomendedCreators">
-          <li class="reccomendedCreatorsPanel"></li>
-          <li class="reccomendedCreatorsPanel"></li>
-          <li class="reccomendedCreatorsPanel"></li>
-          <li class="reccomendedCreatorsPanel"></li>
-          <li class="reccomendedCreatorsPanel"></li>
-        </div>
-      </div>
+        <CreatorCategories category={props.category}/>
       <div class="bottomBar"></div>
       <script></script>
     </div>
