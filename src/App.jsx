@@ -32,16 +32,16 @@ function App() {
       <Route path="/" element={<HomePage/>}/>
       <Route path="/SignInPage" element={<SignInPage/>}/>
       <Route path="/SignUpPage" element={<SignUpPage/>}/>
-      <Route path="/LoggedInHomePage" element={<LoggedInHomePage category="null"/>}/>
-        <Route path="/LoggedInHomePage/commonCore" element={<LoggedInHomePage category="commonCore"/>}/>
-        <Route path="/LoggedInHomePage/websiteDesign" element={<LoggedInHomePage category="websiteDesign"/>}/>
-        <Route path="/LoggedInHomePage/language" element={<LoggedInHomePage category="language"/>}/>
-        <Route path="/LoggedInHomePage/onlineBusiness" element={<LoggedInHomePage category="onlineBusiness"/>}/>
-        <Route path="/LoggedInHomePage/Designing" element={<LoggedInHomePage category="designing"/>}/>
+      <Route path="/LoggedInHomePage" element={<LoggedInHomePage/>}/>
       <Route path="/MentorInfoPage" element={<MentorInfoPage/>}/>
       <Route path="/ListingCreationPage" element={<ListingCreationPage/>}/>
       <Route path="*" element={<ErrorPage/>}/>
-      <Route path="/SearchLoggedOutPage" element={<SearchLoggedOutPage/>}/>
+      <Route path="/SearchLoggedOutPage" element={<SearchLoggedOutPage category="null"/>}/>
+        <Route path="/SearchLoggedOutPage/commonCore" element={<SearchLoggedOutPage category="commonCore"/>}/>
+        <Route path="/SearchLoggedOutPage/websiteDesign" element={<SearchLoggedOutPage category="websiteDesign"/>}/>
+        <Route path="/SearchLoggedOutPage/language" element={<SearchLoggedOutPage category="language"/>}/>
+        <Route path="/SearchLoggedOutPage/onlineBusiness" element={<SearchLoggedOutPage category="onlineBusiness"/>}/>
+        <Route path="/SearchLoggedOutPage/designing" element={<SearchLoggedOutPage category="designing"/>}/>
     </Routes>
   </Router>
   );

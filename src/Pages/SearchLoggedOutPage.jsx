@@ -1,11 +1,13 @@
 import React from "react";
+import CreatorCategories from "../Script/CreatorCategories";
 // CSS imports
 import "../Css/main.css";
 import "../Css/loggedIn/topBar.css";
 import "../Css/loggedIn/mainContentLoggedIn.css";
 
+
 // home page function, this is what we actually see
-function LoggedInHomePage() {
+function LoggedInHomePage(props) {
   return (
     <div class="mainWrapper">
       <div class="topBar">
@@ -55,6 +57,7 @@ function LoggedInHomePage() {
       <div class="searchedContent"></div>
 
       <div class="bottomBar"></div>
+      <CreatorCategories category={props.category}/>
       <script></script>
     </div>
   );

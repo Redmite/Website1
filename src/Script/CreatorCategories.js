@@ -4,7 +4,6 @@ import "../Css/main.css";
 import "../Css/loggedIn/topBar.css";
 import "../Css/loggedIn/mainContentLoggedIn.css";
 
-
 function CreatorCategories(props) {
 
   if (props.category === "null") { 
@@ -25,7 +24,7 @@ function CreatorCategories(props) {
     return (
       <div class="mainContentLoggedIn">
     
-        <div> Reccomended {category} Sessions </div>
+        <div> {category} Sessions </div>
         <div class="reccomendedCategories">
           <li class="reccomendedCategoriesPanel"></li>
           <li class="reccomendedCategoriesPanel"></li>
@@ -33,15 +32,7 @@ function CreatorCategories(props) {
           <li class="reccomendedCategoriesPanel"></li>
           <li class="reccomendedCategoriesPanel"></li>
         </div>
-        <div> Reccomended Coaching Sessions</div>
-        <div class="reccomendedCoachSession">
-          <li class="reccomendedCoachSessionPanel"></li>
-          <li class="reccomendedCoachSessionPanel"></li>
-          <li class="reccomendedCoachSessionPanel"></li>
-          <li class="reccomendedCoachSessionPanel"></li>
-          <li class="reccomendedCoachSessionPanel"></li>
-        </div>
-        <div> Reccomended Creators</div>
+        <div> Reccomended {category} Creators</div>
         <div class="reccomendedCreators">
           <li class="reccomendedCreatorsPanel"></li>
           <li class="reccomendedCreatorsPanel"></li>

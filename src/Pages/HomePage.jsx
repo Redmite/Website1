@@ -65,13 +65,13 @@ function HomePage() {
         <div class="popularServiceText">Popular Services</div>
         <div class="reccomendedCategories">
           <li class="reccomendedCategoriesPanelSD">
-            <a href="/LoggedInHomePage/commonCore">
+            <a href="/SearchLoggedOutPage/commonCore">
               <img src="math.jpeg" class="popularCategoriesImg" />
               <div class="innerTextPopularCategories">Common Core</div>
             </a>
           </li>
           <li class="reccomendedCategoriesPanelSD">
-            <a href="/LoggedInHomePage/websiteDesign">
+            <a href="/SearchLoggedOutPage/websiteDesign">
               <img
                 src="websiteDesign.jpeg"
                 class="popularCategoriesImgWebsiteDesign"
@@ -80,7 +80,7 @@ function HomePage() {
             </a>
           </li>
           <li class="reccomendedCategoriesPanelSD">
-            <a href="/LoggedInHomePage/language">
+            <a href="/SearchLoggedOutPage/language">
               <img
                 src="language.jpeg"
                 class="popularCategoriesImgLanguage"
@@ -89,7 +89,7 @@ function HomePage() {
             </a>
           </li>
           <li class="reccomendedCategoriesPanelSD">
-            <a href="/LoggedInHomePage/onlineBusiness">
+            <a href="/SearchLoggedOutPage/onlineBusiness">
               <img
                 src="onlineBusiness.jpeg"
                 class="popularCategoriesImgOnlineBusiness"
@@ -98,7 +98,7 @@ function HomePage() {
             </a>
           </li>
           <li class="reccomendedCategoriesPanelLD">
-            <a href="/LoggedInHomePage/designing">
+            <a href="/SearchLoggedOutPage/designing">
               <img
                 src="Illustrations.jpeg"
                 class="popularCategoriesImgIllustrations"
