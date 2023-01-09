@@ -23,6 +23,11 @@ function SignInPage() {
     info = [email, password, remember]
     // some line to submit it to the database
     // maybe a return boolean
+    // if (passed === true) {
+    //   window.location.href = "/LoggedInHomePage";
+    // } else {
+    //   document.getElementById("error").innerHTML = "Incorrect email or password";
+    // }
     // if true, then redirect to the logged in page
     // if false then display an error message
   };
@@ -50,7 +55,9 @@ function SignInPage() {
             <div class="form-element">
               <a href="/placeholder">Forgot password?</a>
               <a href="/SignUpPage">Need an account?</a>
+              <p id="error"></p>
             </div>
+
           </div>
         </div>
       </div>
