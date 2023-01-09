@@ -19,12 +19,12 @@ function Times(props) {
 const handleStart = event => {
   setStartTime(event.target.value);
   setInfo(false)
-  console.log('value is:', event.target.value);
+  // console.log('value is:', event.target.value);
 };
 const handleEnd = event => {
   setEndTime(event.target.value);
   setInfo(false)
-  console.log('value is:', event.target.value);
+  // console.log('value is:', event.target.value);
 };
 
 return (
