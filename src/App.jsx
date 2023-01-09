@@ -32,7 +32,12 @@ function App() {
       <Route path="/" element={<HomePage/>}/>
       <Route path="/SignInPage" element={<SignInPage/>}/>
       <Route path="/SignUpPage" element={<SignUpPage/>}/>
-      <Route path="/LoggedInHomePage" element={<LoggedInHomePage/>}/>
+      <Route path="/LoggedInHomePage" element={<LoggedInHomePage category="null"/>}/>
+        <Route path="/LoggedInHomePage/commonCore" element={<LoggedInHomePage category="commonCore"/>}/>
+        <Route path="/LoggedInHomePage/websiteDesign" element={<LoggedInHomePage category="websiteDesign"/>}/>
+        <Route path="/LoggedInHomePage/language" element={<LoggedInHomePage category="language"/>}/>
+        <Route path="/LoggedInHomePage/onlineBusiness" element={<LoggedInHomePage category="onlineBusiness"/>}/>
+        <Route path="/LoggedInHomePage/Designing" element={<LoggedInHomePage category="designing"/>}/>
       <Route path="/MentorInfoPage" element={<MentorInfoPage/>}/>
       <Route path="/ListingCreationPage" element={<ListingCreationPage/>}/>
       <Route path="*" element={<ErrorPage/>}/>
