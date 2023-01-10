@@ -20,7 +20,10 @@ function HomePage() {
               <img src="logo.svg" class="logoImg" alt="missing logo" />
             </div>
             <form class="topSearch" action="#news">
-              <SearchBar placeholder="What skill do you want to learn?" class="searchBar" />
+              <SearchBar
+                placeholder="What skill do you want to learn?"
+                class="searchBar"
+              />
             </form>
             <div class="topOptionsRightSide">
               <li class="displayMd">
@@ -28,7 +31,7 @@ function HomePage() {
                   Become a Mentor
                 </a>
               </li>
-              <li class="displaySd">
+              <li class="displayMd">
                 <a href="/LoggedInHomePage" class="topBarOptionsLoggedOut">
                   Language
                 </a>
@@ -50,10 +53,18 @@ function HomePage() {
       <div class="greetingPanel">
         <div class="greetingPanelSideTextBox">
           <h1 class="h1-greetingPanel">Seeking a mentor?</h1>
+
           <h2 class="h2-greetingPanel">
             Do you find it difficult to learn from a video or a website and
             would like to be taught by an expert?
           </h2>
+          <h2 class="h2-greetingPanelMobile">Find qualified Mentors now!</h2>
+          <form class="topSearchMobile" action="#news">
+            <SearchBar
+              placeholder="What skill do you want to learn?"
+              class="searchBarMobile"
+            />
+          </form>
           <button class="getStartedButton" href="/SignUpPage" id="join-button">
             Get Started
           </button>
@@ -64,7 +75,7 @@ function HomePage() {
       <div class="popularServices">
         <div class="popularServiceText">Popular Services</div>
         <div class="reccomendedCategories">
-          <li class="reccomendedCategoriesPanelSD">
+          <li class="reccomendedCategoriesPanelMobile">
             <a href="/SearchLoggedOutPage/commonCore">
               <img src="math.jpeg" class="popularCategoriesImg" />
               <div class="innerTextPopularCategories">Common Core</div>
@@ -79,7 +90,7 @@ function HomePage() {
               <div class="innerTextPopularCategories">Website Design</div>
             </a>
           </li>
-          <li class="reccomendedCategoriesPanelSD">
+          <li class="reccomendedCategoriesPanelMobile">
             <a href="/SearchLoggedOutPage/language">
               <img
                 src="language.jpeg"
@@ -102,6 +113,26 @@ function HomePage() {
               <img
                 src="Illustrations.jpeg"
                 class="popularCategoriesImgIllustrations"
+              ></img>
+              <div class="innerTextPopularCategories">Designing</div>
+            </a>
+          </li>
+        </div>
+        <div class="mobileRow">
+          <li class="reccomendedCategoriesPanelMobile">
+            <a href="/SearchLoggedOutPage/onlineBusiness">
+              <img
+                src="onlineBusiness.jpeg"
+                class="popularCategoriesImgOnlineBusiness"
+              ></img>
+              <div class="innerTextPopularCategories">Online Business</div>
+            </a>
+          </li>
+          <li class="reccomendedCategoriesPanelMobile">
+            <a href="/SearchLoggedOutPage/designing">
+              <img
+                src="Illustrations.jpeg"
+                class="popularCategoriesImgIllustrationsMobile"
               ></img>
               <div class="innerTextPopularCategories">Designing</div>
             </a>

@@ -79,3 +79,21 @@
   color: var(--text);
   
 }
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 480px) {
+  .logo{
+    height: 50px;
+    margin: auto 0;
+  }
+  .displayMd {
+    display: none;
+  }
+  .topBar{
+    max-width: none;
+    width: 100%;
+  }
+  .displaySd{}
+  .topSearch{
+    display: none;}
+}
