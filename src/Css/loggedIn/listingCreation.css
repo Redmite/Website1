@@ -6,17 +6,19 @@
 .mainWrapper {
   Margin: 0px;
   padding:0px;
+  max-width: 1700px;
   box-sizing:border-box;
+  margin: auto;
+  font-family: Rubik-Regular;
 }
 .container {
   background:linear-gradient(var(--grey));
-  font-family:"Raleway", sans-serif;
 }
 .form {
   width: 100%;
   min-width: 0px;
   padding: 20px;
-  margin: auto auto;
+  margin-top: 30px;
   height:100%;
   min-height:100vh;
   box-sizing: border-box;
@@ -28,7 +30,8 @@
   width: 25%;
   height: 25%;
   object-fit: cover;
-  border-radius: 50%;
+  border-radius: 0;
+  width: 45%;
   background-color: var(--gray);
   border: 3px solid var(--blue);
 }
@@ -38,8 +41,33 @@
   max-width: 25%;
 }
 
+.titleTextBox{
+  width: 30%;
+  height: 150px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+  resize: none;
+  color: var(--text);
+  font-family: Rubik-Regular;
+}
+.titleArea{
+  height: 150px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--gray);
+}
+h1{
+  font-family: Rubik-Regular;
+  color: var(--text);
+  font-size: 20px;
+  font-weight: bold;
 
-
+  width: 30%;
+}
 /* all of this below is for the calendar */
 .react-calendar {
   width: 350px;
