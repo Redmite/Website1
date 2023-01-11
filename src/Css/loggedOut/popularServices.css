@@ -118,7 +118,7 @@ and (max-device-width : 480px) {
   }
   .mobileRow{
     display: flex;
-    margin: 
+    margin: 0;
   }
   .popularCategoriesImgIllustrationsMobile{  
     object-position: 33.5% 50%;
