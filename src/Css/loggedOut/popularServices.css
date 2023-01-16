@@ -3,6 +3,7 @@
   margin: 0 auto;
   width: inherit;
   height: auto;
+  margin-bottom: 100px;
 }
 .serviceMathImg:hover {
   filter: brightness(120%);

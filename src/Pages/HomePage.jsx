@@ -5,6 +5,7 @@ import "../Css/loggedOut/loginBox.css";
 import "../Css/main.css";
 import "../Css/loggedOut/popularServices.css";
 import "../Css/loggedOut/topBar.css";
+import "../Css/bottomBar.css";
 
 import SearchBar from "../Script/SearchBar";
 
@@ -139,7 +140,50 @@ function HomePage() {
           </li>
         </div>
       </div>
-      <div class="bottomBar"></div>
+      <div class="bottomBar">
+        <div class="bottomBarFlexContainer">
+          <div class="bottomBarContentContainer">
+            <li>
+              <a>Privacy Policy</a>
+            </li>
+          </div>
+          <div class="bottomBarContentContainer">
+            <li>
+              <a>Terms of Service</a>
+            </li>
+          </div>
+          <div class="bottomBarContentContainer">
+            <li>
+              <a>Help & Support</a>
+            </li>
+          </div>
+          <div class="bottomBarContentContainer">
+            <li>
+              <a>Contact Us</a>
+            </li>
+          </div>
+        </div>
+        <div class="followUsText">
+          <center>Follow Us</center>
+        </div>
+        <div class="socialMediaContainer">
+          <li class="socialMediaButtons">
+            <a>
+              <img src="tiktok.svg" class="socialMediaButtonImg"></img>
+            </a>
+          </li>
+          <li class="socialMediaButtons">
+            <a>
+              <img src="twitter.svg" class="socialMediaButtonImgTwitter"></img>
+            </a>
+          </li>
+          <li class="socialMediaButtonInstagram">
+            <a>
+              <img src="Instagram.svg" class="socialMediaButtonImgInsta"></img>
+            </a>
+          </li>
+        </div>
+      </div>
     </div>
   );
 }
