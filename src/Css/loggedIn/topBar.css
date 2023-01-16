@@ -82,7 +82,7 @@ border-radius: 50%;
   text-decoration: none!important;
 
 }
-a:visited{}
+
 .topBarOrders, .topBarSchedule, .topBarCoach:hover{
   cursor: pointer;
   color: var(--text)
