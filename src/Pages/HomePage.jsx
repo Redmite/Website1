@@ -70,7 +70,7 @@ function HomePage() {
             Get Started
           </button>
         </div>
-        <img src="1.svg" class="greetingPanelImg" />
+        <img src="GreetingPanelImg.svg" class="greetingPanelImg" />
       </div>
 
       <div class="popularServices">

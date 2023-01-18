@@ -3,7 +3,6 @@ import React from "react";
 import "../Css/main.css";
 import "../Css/loggedIn/topBar.css";
 import "../Css/loggedIn/mainContentLoggedIn.css";
-
 function LoggedInHomePage() {
   return (
     <div class="mainWrapper">
@@ -29,7 +28,9 @@ function LoggedInHomePage() {
             <a>Schedule</a>
           </li>
           <li class="topBarInbox">
-            <img src="inbox.svg" class="topBarInboximg"></img>
+            <a href="#news">
+              <img src="inbox.svg" class="topBarInboximg"></img>
+            </a>
           </li>
           <li class="topBarAccountProfile">
             <a href="#news">
@@ -39,32 +40,31 @@ function LoggedInHomePage() {
         </div>
       </div>
       <div class="mainContentLoggedIn">
-    
-    <div> Reccomended Coaches </div>
-    <div class="reccomendedCategories">
-      <li class="reccomendedCategoriesPanel"></li>
-      <li class="reccomendedCategoriesPanel"></li>
-      <li class="reccomendedCategoriesPanel"></li>
-      <li class="reccomendedCategoriesPanel"></li>
-      <li class="reccomendedCategoriesPanel"></li>
-    </div>
-    <div> Reccomended Coaching Sessions</div>
-    <div class="reccomendedCoachSession">
-      <li class="reccomendedCoachSessionPanel"></li>
-      <li class="reccomendedCoachSessionPanel"></li>
-      <li class="reccomendedCoachSessionPanel"></li>
-      <li class="reccomendedCoachSessionPanel"></li>
-      <li class="reccomendedCoachSessionPanel"></li>
-    </div>
-    <div> Reccomended Creators</div>
-    <div class="reccomendedCreators">
-      <li class="reccomendedCreatorsPanel"></li>
-      <li class="reccomendedCreatorsPanel"></li>
-      <li class="reccomendedCreatorsPanel"></li>
-      <li class="reccomendedCreatorsPanel"></li>
-      <li class="reccomendedCreatorsPanel"></li>
-    </div>
-  </div>
+        <div> Reccomended Coaches </div>
+        <div class="reccomendedCategories">
+          <li class="reccomendedCategoriesPanel"></li>
+          <li class="reccomendedCategoriesPanel"></li>
+          <li class="reccomendedCategoriesPanel"></li>
+          <li class="reccomendedCategoriesPanel"></li>
+          <li class="reccomendedCategoriesPanel"></li>
+        </div>
+        <div> Reccomended Coaching Sessions</div>
+        <div class="reccomendedCoachSession">
+          <li class="reccomendedCoachSessionPanel"></li>
+          <li class="reccomendedCoachSessionPanel"></li>
+          <li class="reccomendedCoachSessionPanel"></li>
+          <li class="reccomendedCoachSessionPanel"></li>
+          <li class="reccomendedCoachSessionPanel"></li>
+        </div>
+        <div> Reccomended Creators</div>
+        <div class="reccomendedCreators">
+          <li class="reccomendedCreatorsPanel"></li>
+          <li class="reccomendedCreatorsPanel"></li>
+          <li class="reccomendedCreatorsPanel"></li>
+          <li class="reccomendedCreatorsPanel"></li>
+          <li class="reccomendedCreatorsPanel"></li>
+        </div>
+      </div>
       <div class="bottomBar"></div>
       <script></script>
     </div>
