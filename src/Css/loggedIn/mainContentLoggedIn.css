@@ -4,43 +4,59 @@
     width: inherit;
     height: 1200px;
 }
-.reccomendedCategories{
-    width: inherit;
-    height: 380px;
-    display: flex;
-    justify-content: center;
-    list-style-type: none;
+.reccomendedMentorSession{
+  width: 1350px;
+  height: 380px;
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+  margin: auto;
 }
+.reccomendedMentorSessionPanel{
+  height: 90%;
+  border: 3px solid red;
+  width: 20%;
+  margin: 0.1%;
+}
+.reccomendedMentorText{
+  margin-bottom: 45px;
+}
+.reccomendedMentorSessionPanel-topSection{
+border: 1px rgb(209, 146, 146) solid;
+height: 45%;
+margin: 3%;
+margin-bottom: 0;
+}
+.reccomendedMentorSessionPanel-bottomSection{
+height: 45%;
+border: 1px rgb(146, 209, 157) solid;
+margin: 0 3%;
+}
+.reccomendedMentorSessionPanel-img{
+  height: 100%;
+  width: 100%;
+}
+.reccomendedMentorSessionPanel-creatorImg{
+  border: 1px pink solid;
+  height: 38px;
+  border-radius: 50%;
+}
+.reccomendedMentorSessionPanel-creatorImgContainer{  
+  height: 45px;
+  text-decoration: none;
+  border-radius: 50%;
+}
+.reccomendedMentorSessionPanel-titleCreatorContainer{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.reccomendedMentorSessionPanel-Description{
+  height: initial;
+  border: 1px solid black;
+  max-height: 74%;
+  position: relative;
+  overflow: hidden;
+  word-wrap: break-word;
 
-.reccomendedCategoriesPanel{
-  height: 90%;
-  border: 3px solid red;
-  width: inherit;
-  margin: 1%;
-}
-.reccomendedCoachSession{
-  width: inherit;
-  height: 380px;
-  display: flex;
-  justify-content: center;
-  list-style-type: none;
-}
-.reccomendedCoachSessionPanel{
-  height: 90%;
-  border: 3px solid red;
-  width: inherit;
-  margin: 1%;
-}
-.reccomendedCreators{
-  width: inherit;
-  height: 380px;
-  display: flex;
-  justify-content: center;
-  list-style-type: none;
-}
-.reccomendedCreatorsPanel{
-  height: 90%;
-  border: 3px solid red;
-  width: inherit;
-  margin: 1%;
 }

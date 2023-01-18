@@ -40,32 +40,96 @@ function LoggedInHomePage() {
         </div>
       </div>
       <div class="mainContentLoggedIn">
-        <div> Reccomended Coaches </div>
-        <div class="reccomendedCategories">
-          <li class="reccomendedCategoriesPanel"></li>
-          <li class="reccomendedCategoriesPanel"></li>
-          <li class="reccomendedCategoriesPanel"></li>
-          <li class="reccomendedCategoriesPanel"></li>
-          <li class="reccomendedCategoriesPanel"></li>
+        <div class="reccomendedMentorText">Reccomended Mentors</div>
+        <div class="reccomendedMentorSession">
+          <li class="reccomendedMentorSessionPanel">
+            <div class="reccomendedMentorSessionPanel-topSection">
+              <a>
+                <img class="reccomendedMentorSessionPanel-img" src=""></img>
+              </a>
+            </div>
+            <div class="reccomendedMentorSessionPanel-bottomSection">
+              <div class="reccomendedMentorSessionPanel-titleCreatorContainer">
+                <a class="reccomendedMentorSessionPanel-title">Title</a>
+                <a class="reccomendedMentorSessionPanel-creatorImgContainer">
+                  <img
+                    class="reccomendedMentorSessionPanel-creatorImg"
+                    src="placeHolder.jpg"
+                  ></img>
+                </a>
+              </div>
+              <div class="reccomendedMentorSessionPanel-Description">
+                This IS A DESCIRPTION This IS A DESCIRPTION This IS A
+                DESCIRPTION This IS A DESCIRPTION This IS A DESCIRPTION This IS
+                A DESCIRPTION This IS A DESCIRPTION This IS A DESCIRPTION This
+                IS A DESCIRPTION This IS A DESCIRPTION This IS A DESCIRPTION
+                This IS A DESCIRPTION This IS A DESCIRPTION This IS A
+                DESCIRPTION This IS A DESCIRPTION This IS A DESCIRPTION This IS
+                A DESCIRPTION This IS A DESCIRPTION This IS A DESCIRPTION
+              </div>
+            </div>
+          </li>
+          <li class="reccomendedMentorSessionPanel"></li>
+          <li class="reccomendedMentorSessionPanel"></li>
+          <li class="reccomendedMentorSessionPanel"></li>
         </div>
-        <div> Reccomended Coaching Sessions</div>
-        <div class="reccomendedCoachSession">
-          <li class="reccomendedCoachSessionPanel"></li>
-          <li class="reccomendedCoachSessionPanel"></li>
-          <li class="reccomendedCoachSessionPanel"></li>
-          <li class="reccomendedCoachSessionPanel"></li>
-          <li class="reccomendedCoachSessionPanel"></li>
+        <div class="reccomendedMentorSession">
+          <li class="reccomendedMentorSessionPanel"></li>
+          <li class="reccomendedMentorSessionPanel"></li>
+          <li class="reccomendedMentorSessionPanel"></li>
+          <li class="reccomendedMentorSessionPanel"></li>
         </div>
-        <div> Reccomended Creators</div>
-        <div class="reccomendedCreators">
-          <li class="reccomendedCreatorsPanel"></li>
-          <li class="reccomendedCreatorsPanel"></li>
-          <li class="reccomendedCreatorsPanel"></li>
-          <li class="reccomendedCreatorsPanel"></li>
-          <li class="reccomendedCreatorsPanel"></li>
+        <div class="reccomendedMentorSession">
+          <li class="reccomendedMentorSessionPanel"></li>
+          <li class="reccomendedMentorSessionPanel"></li>
+          <li class="reccomendedMentorSessionPanel"></li>
+          <li class="reccomendedMentorSessionPanel"></li>
         </div>
       </div>
-      <div class="bottomBar"></div>
+      <div class="bottomBar">
+        <div class="bottomBarFlexContainer">
+          <div class="bottomBarContentContainer">
+            <li>
+              <a>Privacy Policy</a>
+            </li>
+          </div>
+          <div class="bottomBarContentContainer">
+            <li>
+              <a>Terms of Service</a>
+            </li>
+          </div>
+          <div class="bottomBarContentContainer">
+            <li>
+              <a>Help & Support</a>
+            </li>
+          </div>
+          <div class="bottomBarContentContainer">
+            <li>
+              <a>Contact Us</a>
+            </li>
+          </div>
+        </div>
+        <div class="followUsText">
+          <center>Follow Us</center>
+        </div>
+        <div class="socialMediaContainer">
+          <li class="socialMediaButtons">
+            <a>
+              <img src="tiktok.svg" class="socialMediaButtonImg"></img>
+            </a>
+          </li>
+          <li class="socialMediaButtons">
+            <a>
+              <img src="twitter.svg" class="socialMediaButtonImgTwitter"></img>
+            </a>
+          </li>
+          <li class="socialMediaButtonInstagram">
+            <a>
+              <img src="Instagram.svg" class="socialMediaButtonImgInsta"></img>
+            </a>
+          </li>
+        </div>
+      </div>
       <script></script>
     </div>
   );
