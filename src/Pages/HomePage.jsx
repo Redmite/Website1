@@ -6,7 +6,6 @@ import "../Css/main.css";
 import "../Css/loggedOut/popularServices.css";
 import "../Css/loggedOut/topBar.css";
 import "../Css/bottomBar.css";
-import LogoImg from "./Website1/src/images/logo.svg";
 
 import SearchBar from "../Script/SearchBar";
 
@@ -19,7 +18,7 @@ function HomePage() {
         <div class="topBar">
           <div class="topPanel">
             <div class="logo">
-              <img src="{LogoImg}" class="logoImg" alt="missing logo" />
+              <img src="logo.svg" class="logoImg" alt="missing logo" />
             </div>
             <form class="topSearch" action="#news">
               <SearchBar
