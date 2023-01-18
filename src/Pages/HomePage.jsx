@@ -18,7 +18,11 @@ function HomePage() {
         <div class="topBar">
           <div class="topPanel">
             <div class="logo">
-              <img src="logo.svg" class="logoImg" alt="missing logo" />
+              <img
+                src="{require('/images/image-name.png')}"
+                class="logoImg"
+                alt="missing logo"
+              />
             </div>
             <form class="topSearch" action="#news">
               <SearchBar

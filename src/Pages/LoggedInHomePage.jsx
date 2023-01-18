@@ -8,7 +8,7 @@ function LoggedInHomePage() {
     <div class="mainWrapper">
       <div class="topBar-LoggedIn">
         <div class="logo">
-          <img src="logo.svg" class="logoImg" alt="missing logo" />
+          <img src="Homepage/logo.svg" class="logoImg" alt="missing logo" />
         </div>
         <form class="topSearch" action="#news">
           <input
