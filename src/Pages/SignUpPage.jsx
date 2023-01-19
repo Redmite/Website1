@@ -1,5 +1,6 @@
 import React from "react";
 import { useState } from "react";
+import GoogleButton from "../Script/GoogleButton";
 
 import "../Css/loggedOut/loginBox.css";
 
@@ -90,6 +91,9 @@ function SignUpPage () {
             </div>
             <div class="form-element">
               <a href="/SignInPage">Already have an account?</a>
+            </div>
+            <div class="form-element">
+              <GoogleButton />
             </div>
           </div>
         </div>

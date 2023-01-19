@@ -1,5 +1,6 @@
 import React from "react";
 import { useState } from "react";
+import GoogleButton from "../Script/GoogleButton";
 
 var info = [];
 
@@ -57,7 +58,9 @@ function SignInPage() {
               <a href="/SignUpPage">Need an account?</a>
               <p id="error"></p>
             </div>
-
+            <div class="form-element">
+              <GoogleButton />
+            </div>
           </div>
         </div>
       </div>
