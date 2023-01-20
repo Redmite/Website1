@@ -1,0 +1,47 @@
+.bottomBar{
+  height: 300px;
+  width: inherit;
+  
+  border-top: 1px solid var(--gray);
+}
+.bottomBarFlexContainer{
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 8%;
+}
+.bottomBarContentContainer{
+  margin-top: 50px;
+  list-style: none;
+}
+.socialMediaContainer{
+  display: flex;
+  list-style: none;
+  justify-content: center;
+}
+.socialMediaButtons{
+  height: 45px;
+
+}
+.socialMediaButtonImg{
+  height: 100%;
+  
+}
+.socialMediaButtonImgTwitter{
+  height: 95%;
+  margin: 2%;
+  
+
+}
+.socialMediaButtonImgInsta{
+  height: 100%;
+  border-radius: 6px;
+}
+.socialMediaButtonInstagram{
+  height: 45px;
+  margin: 0 0.3%;
+}
+.followUsText{
+  font-family: Rubik-Regular;
+  font-size: 22px;
+  margin-bottom: 15px;
+}

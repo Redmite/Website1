@@ -1,0 +1,98 @@
+.backgroundTopBar{
+  height: 105px;
+  width: 100%;
+  
+}
+.topBar {
+  height: 105px;
+  padding: 0px;
+  max-width: 1700px;
+  margin: 0 auto;
+  font-family: Rubik-Regular;
+  color: var(--text);
+  font-size: 20px;
+  font-weight: bold;
+  border-bottom: 1px solid var(--gray);
+
+
+}
+.topPanel {
+  height: 100px;
+  padding: 0px;
+  display: flex;
+  justify-content: space-between;
+
+}
+.logo {
+  height: 70px;
+  padding: 0.8%;
+  width: auto;
+}
+.logoImg{
+  height: inherit;
+  width: auto;
+ 
+}
+.topOptionsRightSide{
+  height: 90px;
+  padding: 9px 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.displayLd , .displayMd, .displaySd {
+  text-align: center;
+  list-style-type: none;  
+  font-size: 16px;
+  margin: 0 15px; 
+
+  
+
+}
+.displayLd , .displayMd, .displaySd:hover{
+  filter: brightness(120%);
+}
+
+.topBarOptionsLoggedOut{
+  color: var(--text);
+  font-size: 16px;
+}
+
+.joinButton{
+  font-family: Rubik-Regular;
+  margin: 13% 0px;
+  padding: 7px 17px;
+  cursor: pointer;
+  border-radius: 10px;
+  color: rgb(255, 255, 255);
+  background-color: rgb(0, 87, 128);
+  font-size: 16px;
+  border: 0px;
+  font-weight: 100;
+  color: white!important;
+}
+.signIn{
+  font-family: Rubik-Regular;
+  font-weight: 700;
+  font-size: 16px;
+  color: var(--text);
+  
+}
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 480px) {
+  .logo{
+    height: 50px;
+    margin: auto 0;
+  }
+  .displayMd {
+    display: none;
+  }
+  .topBar{
+    max-width: none;
+    width: 100%;
+  }
+  .topSearch{
+    display: none;}
+}

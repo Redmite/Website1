@@ -1,0 +1,90 @@
+.LoginWrapper, 
+.SignupWrapper {
+    Margin: 0px;
+    padding:0px;
+    box-sizing:border-box;
+}
+.LoginContainer, 
+.SignupContainer {
+    background:linear-gradient(blue);
+    font-family:"Raleway",sans-serif;
+    height:100vh
+}
+.LogPopup, 
+.UpPopup {
+    position:absolute;
+    top:50%;
+    left:50%;
+    opacity:1;
+    transform:translate(-50%,-50%) scale(1.25);
+    width:380px;
+    padding:20px 30px;
+    background:white;
+    box-shadow:2px 2px 5px 5px black;
+    border-radius: 10px;
+    transition: top 0ms ease-in-out 200 ms,
+                opacity 200ms ease-in-out 200 ms,
+                transform 200ms ease-in-out 200 ms;
+}
+.LogPopup.active, 
+.UpPopup.active {
+    top:50%;
+    opacity:1;
+    transform:translate(-50%,-50%) scale(1);
+    transition: top 0ms ease-in-out 0 ms,
+            opacity 200ms ease-in-out 200 ms,
+            transform 200ms ease-in-out 200 ms;
+}
+.LogPopup .form h2, 
+.UpPopup .form h2 {
+    text-align:center;
+    color:black;
+    margin:10px 0px 20px;
+    font: siize 25px;
+}
+.LogPopup .form .form-element, 
+.UpPopup .form .form-element {
+    margin:15px 0px;
+}
+.LogPopup .form .form-element label,
+.UpPopup .form .form-element label {
+    font-size:14px;
+    color:black
+}
+.LogPopup .form .form-element input[type="text"],
+.LogPopup .form .form-element input[type="password"],
+.UpPopup .form .form-element input[type="text"],
+.UpPopup .form .form-element input[type="password"] {
+    margin-top:5px;
+    display:block;
+    width:100%;
+    padding:10px;
+    outline:none;
+    border:1px solid grey;
+    border-radius:5px;
+}
+.LogPopup .form .form-element input[type="checkbox"],
+.UpPopup .form .form-element input[type="checkbox"] {
+    margin-right:5px;
+}
+.LogPopup .form .form-element input[type="submit"],
+.UpPopup .form .form-element input[type="submit"] {
+    width:100%;
+    height:40px;
+    border:none;
+    outline:none;
+    font: size 16px;
+    background:#222;
+    color: white;
+    border-radius:10px;
+    cursor:pointer;
+}
+.LogPopup .form .form-element a,
+.SignPopup .form .form-element a {
+    display: block;
+    text-align:right;
+    font-size:15px;
+    color:rgb(57, 54, 255);
+    text-decoration:none;
+    font-weight:600;
+}
