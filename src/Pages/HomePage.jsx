@@ -132,10 +132,10 @@ function HomePage() {
           <li class="reccomendedCategoriesPanelMobile">
             <a href="/SearchLoggedOutPage/designing">
               <img
-                src="Illustrations.jpeg"
-                class="popularCategoriesImgIllustrationsMobile"
+                src="websiteDesign.jpeg"
+                class="popularCategoriesImgWebsiteDesignMobile"
               ></img>
-              <div class="innerTextPopularCategories">Designing</div>
+              <div class="innerTextPopularCategories">Website Design</div>
             </a>
           </li>
         </div>

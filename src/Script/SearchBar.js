@@ -20,7 +20,7 @@ function SearchBar(props) {
       <input 
       type="text" 
       placeholder={props.placeholder} 
-      style={{width: "60%", height: "8%"}}
+      class="searchBar"
       onChange={event => 
         {setSearchTerm(event.target.value)
         }} 

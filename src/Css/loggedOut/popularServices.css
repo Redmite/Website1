@@ -107,10 +107,12 @@
     height: 75%;
     width: 20%;
   }
+  .popularCategoriesImgWebsiteDesign{
+   height: 244.797px;   
+  }
 }
 @media only screen 
-and (min-device-width : 320px) 
-and (max-device-width : 480px) {
+and (max-width : 1024px)  {
   .reccomendedCategoriesPanelSD{
     display: none;
   }
@@ -122,11 +124,44 @@ and (max-device-width : 480px) {
     display: flex;
     margin: 0;
   }
-  .popularCategoriesImgIllustrationsMobile{  
+  .popularCategoriesImgWebsiteDesignMobile{  
     object-position: 33.5% 50%;
     max-width: 100%;
     min-height: 100%;
     border-radius: 5px;
     object-fit: cover;
     border: 0.1px solid var(--gray);}
+  .popularServiceText{
+    text-align: center;
+  }
+
+}
+@media only screen 
+and (max-width : 512px)  {
+  .reccomendedCategoriesPanelSD {
+    display: none;
+  }
+  .reccomendedCategoriesPanelMobile {
+    height: 50%;
+    width: 45%;
+  }
+  .mobileRow{
+    display: flex;
+    margin: 0;
+  }
+  .popularCategoriesImgWebsiteDesignMobile {  
+    object-position: 33.5% 50%;
+    max-width: 100%;
+    min-height: 100%;
+    border-radius: 5px;
+    object-fit: cover;
+    border: 0.1px solid var(--gray);}
+  .reccomendedCategories,.mobileRow {
+    height: 100%;
+  }
+  .popularServiceText{
+    text-align: center;
+  }
+
+
 }

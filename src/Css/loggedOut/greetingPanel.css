@@ -74,8 +74,68 @@ form.searchForm input[type=text] {
   height: 0;
 }
 @media only screen 
-and (min-device-width : 320px) 
-and (max-device-width : 480px) {
+and (max-width : 1024px) {
+  .greetingPanel{
+    max-width: none;
+    margin: auto;
+    content: "";
+    clear: both;
+    display: table;
+  }
+  .greetingPanelImg{
+    width: 65%;
+  }
+  .h1-greetingPanel{
+    font-size: 35px;
+  }
+  .h2-greetingPanel{
+    display: none;
+  }
+  .h2-greetingPanelMobile{color: var(--blue);
+    font-weight: 400;
+    font-size: 22px;}
+  
+  .topSearchMobile{
+      margin: auto;
+      display: block;
+      width: 100%;
+      
+    }
+  .searchBar{
+      font-size: 16px;
+      width: 100%;
+    }
+  .greetingPanel {
+    padding: 0px;
+    height: inherit;
+    max-width: 1700px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+  }
+  .getStartedButton{
+    font-family: Trueno;
+    margin: 50px auto auto auto;
+    padding: 12px 30px;
+    cursor: pointer;
+    border-radius: 100px;
+    color: rgb(255, 255, 255);
+    background-color: #f7941d;
+    font-size: 22px;
+    border: 0px;
+    font-weight: 100;
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  .h1-greetingPanel, .h2-greetingPanelMobile{
+      text-align: center;
+  }
+
+  }
+  @media only screen 
+and (max-width : 512px) {
   .greetingPanel{
     max-width: none;
     margin: 0;
@@ -89,8 +149,7 @@ and (max-device-width : 480px) {
   .greetingPanelSideTextBox
   {
     width: 100%;
-    margin-left: 0;
-    margin: 0 10%;
+    margin: 0;
   }
   .h2-greetingPanel{
     display: none;
@@ -98,13 +157,16 @@ and (max-device-width : 480px) {
   .h2-greetingPanelMobile{color: var(--blue);
     font-weight: 400;
     font-size: 22px;}
+  
   .topSearchMobile{
-    margin: 0 15%;
+    margin: auto;
     display: block;
+    width: 80%;
     
   }
-  .searchBarMobile{
-    font-size: 30px;
+  .searchBar{
+    font-size: 16px;
+    width: 100%;
   }
   .greetingPanel {
     padding: 0px;
@@ -116,7 +178,8 @@ and (max-device-width : 480px) {
   }
   .getStartedButton{
     font-family: Trueno;
-    margin: 15%;
+    margin: 50px auto auto auto;
+    float:none;
     padding: 12px 30px;
     cursor: pointer;
     border-radius: 100px;
@@ -125,5 +188,10 @@ and (max-device-width : 480px) {
     font-size: 22px;
     border: 0px;
     font-weight: 100;
+    content: "";
+    clear: both;
+    display: table;
+  }
 
-  }}
+
+  }
