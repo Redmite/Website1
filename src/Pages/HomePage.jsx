@@ -6,6 +6,7 @@ import "../Css/main.css";
 import "../Css/loggedOut/popularServices.css";
 import "../Css/loggedOut/topBar.css";
 import "../Css/bottomBar.css";
+import "../Css/searchedContent.css";
 
 import SearchBar from "../Script/SearchBar";
 

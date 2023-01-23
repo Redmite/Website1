@@ -37,8 +37,8 @@ function SearchBar(props) {
           if ((index <= 4) && (searchTerm !== "")) { // edit the code here to make it so that it shows a different amount of options
             index++;
             return ( // this is the code that will display the options
-            <div className="user" key={key}> 
-              <p> {val.first_name} </p>
+            <div className="user" key={key} class="searchedOptionsContainer"> 
+              <p class="searchedOptions" href> {val.first_name} </p>
             </div>
             );
             // this goes through the rest of the options and returns them as null, as you can't "break" out of a map function

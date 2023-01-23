@@ -1,0 +1,11 @@
+.searchedOptions{
+  color: black;
+  border: 1px solid red;
+  margin: 0;
+  padding: 10px;
+}
+.searchedOptionsContainer{
+  margin: 0;
+  clear: both;
+  background: white;
+}
