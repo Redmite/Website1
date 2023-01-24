@@ -183,6 +183,11 @@ function HomePage() {
               <img src="Instagram.svg" class="socialMediaButtonImg"></img>
             </a>
           </li>
+          <li class="socialMediaButtons">
+            <a>
+              <img src="facebook.svg" class="socialMediaButtonImg"></img>
+            </a>
+          </li>
         </div>
       </div>
     </div>
