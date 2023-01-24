@@ -20,26 +20,14 @@
 }
 .socialMediaButtons{
   height: 45px;
+  margin: 1%;
 
 }
 .socialMediaButtonImg{
   height: 100%;
   
 }
-.socialMediaButtonImgTwitter{
-  height: 95%;
-  margin: 2%;
-  
 
-}
-.socialMediaButtonImgInsta{
-  height: 100%;
-  border-radius: 6px;
-}
-.socialMediaButtonInstagram{
-  height: 45px;
-  margin: 0 0.3%;
-}
 .followUsText{
   font-family: Rubik-Regular;
   font-size: 22px;

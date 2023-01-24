@@ -175,12 +175,12 @@ function HomePage() {
           </li>
           <li class="socialMediaButtons">
             <a>
-              <img src="twitter.svg" class="socialMediaButtonImgTwitter"></img>
+              <img src="twitter.svg" class="socialMediaButtonImg"></img>
             </a>
           </li>
-          <li class="socialMediaButtonInstagram">
+          <li class="socialMediaButtons">
             <a>
-              <img src="Instagram.svg" class="socialMediaButtonImgInsta"></img>
+              <img src="Instagram.svg" class="socialMediaButtonImg"></img>
             </a>
           </li>
         </div>
