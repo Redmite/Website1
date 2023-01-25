@@ -1,7 +1,6 @@
 import React from "react";
 // CSS imports
 import "../Css/loggedOut/greetingPanel.css";
-import "../Css/loggedOut/loginBox.css";
 import "../Css/main.css";
 import "../Css/loggedOut/popularServices.css";
 import "../Css/loggedOut/topBar.css";

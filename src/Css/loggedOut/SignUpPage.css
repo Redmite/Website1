@@ -1,0 +1,84 @@
+.signUpContainer{
+  content: "";
+  clear: both;
+  display: table;
+  padding-top: 150px ;
+  margin:  auto;
+}
+.signUpText{
+text-align: center;
+font-family: Rubik-Regular;
+color: var(--text);
+}
+.userInputSignUpContainer{
+  display: table;
+  width:20em;
+  margin-top:15px;
+
+}
+.userInputSignUp{
+  height: 45px;
+  width: 30em;
+  margin: auto;
+  font-size: 16.5px;
+  border-radius: 6px;
+  border: 1px solid var(--gray);
+  padding: 2px;
+}
+.userInputSignUp:hover{
+  border: 1px solid var(--text);
+}
+.userInputSignUp-checkBox{
+  margin: 2%;
+}
+.signUpContinueContainer{
+  width: 18em;
+}
+.signUpContinue{
+  font-family: Rubik-Regular;
+  margin: 5px 6.2em;
+  padding: 7px 17px;
+  cursor: pointer;
+  border-radius: 4px!important;
+  color: rgb(255, 255, 255);
+  background-color: var(--orange)!important;
+  font-size: 16px;
+  border: 1px;
+  font-weight: 100;
+  color: white!important;
+}
+@media only screen 
+and (max-width : 1024px) {
+  .signUpContinueContainer{
+    margin: 0 7%;
+    width: 40%;
+  }
+  .signUpContinue{
+    content: "";
+    clear: both;
+    display: table;
+    border: 5px solid;
+
+  }
+  .userInputSignUp{
+    height: 45px;
+    width: 80%;
+    margin: auto;
+    font-size: 16.5px;
+    border-radius: 6px;
+    border: 1px solid var(--gray);
+    padding: 2px;
+  }
+  .signUpContainer{
+    content: "";
+    clear: both;
+    display: table;
+    margin:  auto;
+    padding-top: 0;
+  }
+  .userInputSignUpContainer{
+    width:100%;
+    margin: 7px 7%;
+  
+  }
+}

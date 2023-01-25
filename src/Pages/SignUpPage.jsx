@@ -2,33 +2,32 @@ import React from "react";
 import { useState } from "react";
 import GoogleButton from "../Script/GoogleButton";
 
-import "../Css/loggedOut/loginBox.css";
+import "../Css/loggedOut/SignUpPage.css";
 
 var info = [];
 
-function SignUpPage () {
-
+function SignUpPage() {
   const [first, setFirst] = useState();
-  const [last, setLast] = useState();
+  const [user, setUser] = useState();
   const [email, setEmail] = useState();
   const [password, setPassword] = useState();
   const [passwordCheck, setPasswordCheck] = useState();
   const [remember, setRemember] = useState(false);
   const [newsletter, setNewsletter] = useState(false);
 
-  const handleFirst = event => {
+  const handleFirst = (event) => {
     setFirst(event.target.value);
   };
-  const handleLast = event => {
-    setLast(event.target.value);
+  const handleUser = (event) => {
+    setUser(event.target.value);
   };
-  const handleEmail = event => {
+  const handleEmail = (event) => {
     setEmail(event.target.value);
   };
-  const handlePassword = event => {
+  const handlePassword = (event) => {
     setPassword(event.target.value);
   };
-  const handlePasswordCheck = event => {
+  const handlePasswordCheck = (event) => {
     setPasswordCheck(event.target.value);
   };
   const handleRemember = (e) => {
@@ -40,10 +39,10 @@ function SignUpPage () {
     checked ? setNewsletter(true) : setNewsletter(false);
   };
   const submitInfo = () => {
-    var passCheck = (password === passwordCheck);
+    var passCheck = password === passwordCheck;
 
-    info = [first, last, email, password, remember, newsletter];
-    
+    info = [first, user, email, password, remember, newsletter];
+
     // passCheck ? submit info : display error message
 
     // some line to submit it to the database
@@ -52,54 +51,97 @@ function SignUpPage () {
     // if false then display an error message
   };
   return (
-    <>
-    <div class="SignupWrapper"> 
-      <div class="SignupContainer">
-        <div class="UpPopup">
-          <div class="form">
-            <h2>Sign Up</h2>
-            <div class="form-element">
-              <label for="First-Name">First Name</label>
-              <input type="text" id="First-Name" placeholder="Enter First Name" onChange={handleFirst} value={first}/>
-            </div>
-            <div class="form-element">
-              <label for="Last-Name">Last Name</label>
-              <input type="text" id="Last-Name" placeholder="Enter Last Name" onChange={handleLast} value={last}/>
-            </div>
-            <div class="form-element">
-              <label for="email">Email</label>
-              <input type="text" id="email" placeholder="Enter Email" onChange={handleEmail} value={email}/>
-            </div>
-            <div class="form-element">
-              <label for="password">Password</label>
-              <input type="password" id="password" placeholder="Enter Password" onChange={handlePassword} value={password}/>
-             </div>
-             <div class="form-element">
-              <label for="passwordCheck">Re-enter your password</label>
-              <input type="password" id="passwordCheck" placeholder="Re-enter Password" onChange={handlePasswordCheck} value={passwordCheck}/>
-             </div>
-            <div class="form-element">
-              <input type="checkbox" id="remember-me" onChange={handleRemember} value={remember}/>
-              <label for="remember-me">Remember me</label>
-            </div>
-            <div class="form-element">
-              <input type="checkbox" id="Newsletter" onChange={handleNewsletter} value={newsletter}/>
-              <label for="Newsletter">Would you like to sign up for our Newsletter?</label>
-            </div>
-            <div class="form-element">
-              <input type="submit" value="Continue" onClick={submitInfo}/>
-            </div>
-            <div class="form-element">
-              <a href="/SignInPage">Already have an account?</a>
-            </div>
-            <div class="form-element">
-              <GoogleButton />
-            </div>
-          </div>
+    <div class="mainWrapper">
+      <div class="signUpContainer">
+        <h2 class="signUpText">Sign Up</h2>
+        <div class="userInputSignUpContainer">
+          <input
+            type="text"
+            id="First-Name"
+            placeholder="First Name"
+            onChange={handleFirst}
+            value={first}
+            class="userInputSignUp"
+          />
+        </div>
+        <div class="userInputSignUpContainer">
+          <input
+            type="text"
+            id="Username"
+            placeholder="Username"
+            onChange={handleUser}
+            value={user}
+            class="userInputSignUp"
+          />
+        </div>
+        <div class="userInputSignUpContainer">
+          <input
+            type="text"
+            id="email"
+            placeholder="Email"
+            onChange={handleEmail}
+            value={email}
+            class="userInputSignUp"
+          />
+        </div>
+        <div class="userInputSignUpContainer">
+          <input
+            type="password"
+            id="password"
+            placeholder="Password"
+            onChange={handlePassword}
+            value={password}
+            class="userInputSignUp"
+          />
+        </div>
+        <div class="userInputSignUpContainer">
+          <input
+            type="password"
+            id="passwordCheck"
+            placeholder="Re-Enter Password"
+            onChange={handlePasswordCheck}
+            value={passwordCheck}
+            class="userInputSignUp"
+          />
+        </div>
+        <div class="userInputSignUpContainer-checkBox">
+          <input
+            type="checkbox"
+            id="remember-me"
+            onChange={handleRemember}
+            value={remember}
+            class="userInputSignUp-checkBox"
+          />
+          <label for="remember-me">Remember me</label>
+        </div>
+        <div class="userInputSignUpContainer-checkBox">
+          <input
+            type="checkbox"
+            id="Newsletter"
+            onChange={handleNewsletter}
+            value={newsletter}
+            class="userInputSignUp-checkBox"
+          />
+          <label for="Newsletter">
+            Would you like to sign up for our Newsletter?
+          </label>
+        </div>
+        <div class="signUpContinueContainer">
+          <input
+            type="submit"
+            value="Continue"
+            onClick={submitInfo}
+            class="signUpContinue"
+          />
+        </div>
+        <div class="form-element">
+          <a href="/SignInPage">Already have an account? Click Here</a>
+        </div>
+        <div class="form-element">
+          <GoogleButton />
         </div>
       </div>
     </div>
-    </>
   );
 }
 
