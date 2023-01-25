@@ -3,6 +3,24 @@ import React from "react";
 import "../Css/main.css";
 import "../Css/loggedIn/topBar.css";
 import "../Css/loggedIn/mainContentLoggedIn.css";
+// import whatever line to get the data from the database
+
+// this will be where we initialize the data from the database, if we need to
+var Description = (
+  <div>
+    This IS A DESCIRPTION This IS A DESCIRPTION This IS A
+    DESCIRPTION This IS A DESCIRPTION This IS A DESCIRPTION This IS
+    A DESCIRPTION This IS A DESCIRPTION This IS A DESCIRPTION This
+    IS A DESCIRPTION This IS A DESCIRPTION This IS A DESCIRPTION
+    This IS A DESCIRPTION This IS A DESCIRPTION This IS A
+    DESCIRPTION This IS A DESCIRPTION This IS A DESCIRPTION This IS
+    A DESCIRPTION This IS A DESCIRPTION This IS A DESCIRPTION
+  </div>
+);
+var Title = (<p>title</p>);
+var Picture = (<img src="placeHolder.jpg"></img>);
+
+
 function LoggedInHomePage() {
   return (
     <div class="mainWrapper">
@@ -50,22 +68,16 @@ function LoggedInHomePage() {
             </div>
             <div class="reccomendedMentorSessionPanel-bottomSection">
               <div class="reccomendedMentorSessionPanel-titleCreatorContainer">
-                <a class="reccomendedMentorSessionPanel-title">Title</a>
+                <a class="reccomendedMentorSessionPanel-title">{Title}</a>
                 <a class="reccomendedMentorSessionPanel-creatorImgContainer">
                   <img
                     class="reccomendedMentorSessionPanel-creatorImg"
-                    src="placeHolder.jpg"
+                    src={Picture}
                   ></img>
                 </a>
               </div>
               <div class="reccomendedMentorSessionPanel-Description">
-                This IS A DESCIRPTION This IS A DESCIRPTION This IS A
-                DESCIRPTION This IS A DESCIRPTION This IS A DESCIRPTION This IS
-                A DESCIRPTION This IS A DESCIRPTION This IS A DESCIRPTION This
-                IS A DESCIRPTION This IS A DESCIRPTION This IS A DESCIRPTION
-                This IS A DESCIRPTION This IS A DESCIRPTION This IS A
-                DESCIRPTION This IS A DESCIRPTION This IS A DESCIRPTION This IS
-                A DESCIRPTION This IS A DESCIRPTION This IS A DESCIRPTION
+                {Description} {/* this is where we will put the description */}
               </div>
             </div>
           </li>
