@@ -3,6 +3,9 @@ import React from "react";
 import "../Css/main.css";
 import "../Css/loggedIn/topBar.css";
 import "../Css/loggedIn/mainContentLoggedIn.css";
+
+// images
+import logo from "../Images/logo.svg";
 // import whatever line to get the data from the database
 
 // this will be where we initialize the data from the database, if we need to
@@ -26,7 +29,7 @@ function LoggedInHomePage() {
     <div class="mainWrapper">
       <div class="topBar-LoggedIn">
         <div class="logo">
-          <img src="logo.svg" class="logoImg" alt="missing logo" />
+          <img src={logo} class="logoImg" alt="missing logo" />
         </div>
         <form class="topSearch" action="#news">
           <input
