@@ -6,6 +6,8 @@ import "../Css/loggedIn/mainContentLoggedIn.css";
 
 // images
 import logo from "../Images/logo.svg";
+import inbox from "../Images/inbox.svg";
+import placeHolder from "../Images/placeHolder.jpg";
 // import whatever line to get the data from the database
 
 // this will be where we initialize the data from the database, if we need to
@@ -50,12 +52,12 @@ function LoggedInHomePage() {
           </li>
           <li class="topBarInbox">
             <a href="#news">
-              <img src="inbox.svg" class="topBarInboximg"></img>
+              <img src={inbox} class="topBarInboximg"></img>
             </a>
           </li>
           <li class="topBarAccountProfile">
             <a href="#news">
-              <img src="placeHolder.jpg" class="topBarAccountProfileImg"></img>
+              <img src={placeHolder} class="topBarAccountProfileImg"></img>
             </a>
           </li>
         </div>

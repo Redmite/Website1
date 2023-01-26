@@ -7,6 +7,17 @@ import "../Css/loggedOut/topBar.css";
 import "../Css/bottomBar.css";
 import "../Css/searchedContent.css";
 
+// images
+import logo from "../Images/logo.svg";
+import GreetingPanelImg from "../Images/GreetingPanelImg.svg";
+import math from "../Images/math.jpeg";
+import onlineBusiness from "../Images/onlineBusiness.jpeg";
+// import peopleCleaningHouse from "../Images/PeopleCleaningHouse.jpeg";
+import language from "../Images/language.jpeg";
+import websiteDesign from "../Images/websiteDesign.jpeg";
+import illustrations from "../Images/Illustrations.jpeg";
+
+
 import SearchBar from "../Script/SearchBar";
 
 // home page function, this is what we actually see
@@ -18,7 +29,7 @@ function HomePage() {
         <div class="topBar">
           <div class="topPanel">
             <div class="logo">
-              <img src="logo.svg" class="logoImg" alt="missing logo" />
+              <img src={logo} class="logoImg" alt="missing logo" />
             </div>
             <form class="topSearch" action="#news">
               <SearchBar
@@ -70,7 +81,7 @@ function HomePage() {
             Get Started
           </button>
         </div>
-        <img src="GreetingPanelImg.svg" class="greetingPanelImg" />
+        <img src={GreetingPanelImg} class="greetingPanelImg" />
       </div>
 
       <div class="popularServices">
@@ -78,14 +89,14 @@ function HomePage() {
         <div class="reccomendedCategories">
           <li class="reccomendedCategoriesPanelMobile">
             <a href="/SearchLoggedOutPage/commonCore">
-              <img src="math.jpeg" class="popularCategoriesImg" />
+              <img src={math} class="popularCategoriesImg" />
               <div class="innerTextPopularCategories">Common Core</div>
             </a>
           </li>
           <li class="reccomendedCategoriesPanelSD">
             <a href="/SearchLoggedOutPage/websiteDesign">
               <img
-                src="websiteDesign.jpeg"
+                src={websiteDesign}
                 class="popularCategoriesImgWebsiteDesign"
               ></img>
               <div class="innerTextPopularCategories">Website Design</div>
@@ -94,7 +105,7 @@ function HomePage() {
           <li class="reccomendedCategoriesPanelMobile">
             <a href="/SearchLoggedOutPage/language">
               <img
-                src="language.jpeg"
+                src={language}
                 class="popularCategoriesImgLanguage"
               ></img>
               <div class="innerTextPopularCategories">Language</div>
@@ -103,7 +114,7 @@ function HomePage() {
           <li class="reccomendedCategoriesPanelSD">
             <a href="/SearchLoggedOutPage/onlineBusiness">
               <img
-                src="onlineBusiness.jpeg"
+                src={onlineBusiness}
                 class="popularCategoriesImgOnlineBusiness"
               ></img>
               <div class="innerTextPopularCategories">Online Business</div>
@@ -112,7 +123,7 @@ function HomePage() {
           <li class="reccomendedCategoriesPanelLD">
             <a href="/SearchLoggedOutPage/designing">
               <img
-                src="Illustrations.jpeg"
+                src={illustrations}
                 class="popularCategoriesImgIllustrations"
               ></img>
               <div class="innerTextPopularCategories">Designing</div>
@@ -123,7 +134,7 @@ function HomePage() {
           <li class="reccomendedCategoriesPanelMobile">
             <a href="/SearchLoggedOutPage/onlineBusiness">
               <img
-                src="onlineBusiness.jpeg"
+                src={onlineBusiness}
                 class="popularCategoriesImgOnlineBusiness"
               ></img>
               <div class="innerTextPopularCategories">Online Business</div>
@@ -132,7 +143,7 @@ function HomePage() {
           <li class="reccomendedCategoriesPanelMobile">
             <a href="/SearchLoggedOutPage/designing">
               <img
-                src="websiteDesign.jpeg"
+                src={websiteDesign}
                 class="popularCategoriesImgWebsiteDesignMobile"
               ></img>
               <div class="innerTextPopularCategories">Website Design</div>
