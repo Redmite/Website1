@@ -34,52 +34,61 @@ function SignInPage() {
   };
   return (
     <div class="mainWrapper">
-      <div class="LoginContainer">
-        <div class="LogPopup">
-          <div class="form">
-            <h2 class="signUpText">Log in</h2>
-            <div class="form-element">
-              <label for="email">Email</label>
-              <input
-                type="text"
-                id="email"
-                placeholder="Enter Email"
-                onChange={handleEmail}
-                value={email}
-              />
-            </div>
-            <div class="form-element">
-              <label for="password">Password</label>
-              <input
-                type="password"
-                id="password"
-                placeholder="Enter Password"
-                onChange={handlePassword}
-                value={password}
-              />
-            </div>
-            <div class="form-element">
-              <input
-                type="checkbox"
-                id="remember-me"
-                onChange={handleRemember}
-                value={remember}
-              />
-              <label for="remember-me">Remember me</label>
-            </div>
-            <div class="form-element">
-              <input type="submit" value="Continue" onClick={submitInfo} />
-            </div>
-            <div class="form-element">
-              <a href="/placeholder">Forgot password?</a>
-              <a href="/SignUpPage">Need an account?</a>
-              <p id="error"></p>
-            </div>
-            <div class="form-element">
-              <GoogleButton />
-            </div>
-          </div>
+      <div class="signUpContainer">
+        <h2 class="signUpText">Log in</h2>
+        <div class="userInputSignUpContainer">
+          <input
+            type="text"
+            id="email"
+            placeholder="Enter Email"
+            onChange={handleEmail}
+            value={email}
+            class="userInputSignUp"
+          />
         </div>
+        <div class="userInputSignUpContainer">
+          <input
+            type="password"
+            id="password"
+            placeholder="Enter Password"
+            onChange={handlePassword}
+            value={password}
+            class="userInputSignUp"
+          />
+        </div>
+        <div class="userInputSignUpContainer">
+          <input
+            type="checkbox"
+            id="remember-me"
+            onChange={handleRemember}
+            value={remember}
+            class="userInputSignUp-checkBox"
+          />
+          <label for="remember-me">Remember me</label>
+        </div>
+        <div class="signUpContinueContainer">
+          <input
+            type="submit"
+            value="Continue"
+            onClick={submitInfo}
+            class="signUpContinue"
+          />
+        </div>
+        <div class="bottomTexth1Container">
+          <li class="bottomTexth1">
+            <a href="/placeholder">
+              Forgot password?<br></br>
+            </a>
+          </li>
+
+          <li class="bottomTexth1">
+            <a href="/SignUpPage">Need an account?</a>
+          </li>
+        </div>
+        <p id="error"></p>
+      </div>
+      <div class="form-element">
+        <GoogleButton />
       </div>
     </div>
   );

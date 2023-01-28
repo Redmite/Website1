@@ -47,6 +47,13 @@ color: var(--text);
   font-weight: 100;
   color: white!important;
 }
+.bottomTexth1Container{
+  height: 50px;
+}
+.bottomTexth1{
+  margin: 1% 0px!important;
+  list-style: none;
+}
 @media only screen 
 and (max-width : 1024px) {
   .signUpContinueContainer{
