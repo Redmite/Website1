@@ -38,22 +38,22 @@ function BottomBar() {
         <div class="socialMediaContainer">
           <li class="socialMediaButtons">
             <a>
-              <img src="{twitter}" class="socialMediaButtonImg"></img>
+              <img src={twitter} class="socialMediaButtonImg"></img>
             </a>
           </li>
           <li class="socialMediaButtons">
             <a>
-              <img src="{instagram}" class="socialMediaButtonImg"></img>
+              <img src={instagram} class="socialMediaButtonImg"></img>
             </a>
           </li>
           <li class="socialMediaButtons">
             <a>
-              <img src="{tiktok}" class="socialMediaButtonImg"></img>
+              <img src={tiktok} class="socialMediaButtonImg"></img>
             </a>
           </li>
           <li class="socialMediaButtons">
             <a>
-              <img src="{facebook}" class="socialMediaButtonImg"></img>
+              <img src={facebook} class="socialMediaButtonImg"></img>
             </a>
           </li>
         </div>
