@@ -3,6 +3,7 @@ import { useState } from "react";
 import GoogleButton from "../Script/GoogleButton";
 
 import "../Css/loggedOut/SignUpPage.css";
+import logo from "../images/logo.svg";
 
 var info = [];
 
@@ -52,6 +53,13 @@ function SignUpPage() {
   };
   return (
     <div class="mainWrapper">
+      <div class="topBar-SignIn-UpPage">
+        <div class="topPanel">
+          <div class="logoSignIn-UpPage">
+            <img src={logo} class="logoImg" alt="missing logo" />
+          </div>
+        </div>
+      </div>
       <div class="signUpContainer">
         <h2 class="signUpText">Sign Up</h2>
         <div class="userInputSignUpContainer">

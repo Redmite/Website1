@@ -24,7 +24,7 @@ body {
   src: url(Fonts/Trueno-wml2.otf);
 }
 .mainWrapper {
-  width: 100%;
+  width: 100%!important;
   min-width: 0px;
   padding: 20px;
   margin: auto auto;
@@ -33,6 +33,7 @@ body {
   box-sizing: border-box;
   padding: 0px;
   justify-content: center;
+  max-width: none;
 }
 
 a:link{

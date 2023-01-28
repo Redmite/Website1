@@ -2,8 +2,24 @@
   content: "";
   clear: both;
   display: table;
-  padding-top: 150px ;
+  padding-top: 45px ;
   margin:  auto;
+}
+.topBar-SignIn-UpPage{
+  height: 105px;
+  padding: 0px;
+  max-width: 1700px;
+  margin: 0 auto;
+  font-family: Rubik-Regular;
+  color: var(--text);
+  font-size: 20px;
+  font-weight: bold;
+  border-bottom: 1px solid var(--gray);
+}
+.logoSignIn-UpPage{
+  height: 70px;
+  padding: 0.8%;
+  margin: auto!important;
 }
 .signUpText{
 text-align: center;
@@ -78,6 +94,11 @@ and (max-width : 1024px) {
  
 
   }
+  .logoSignIn-UpPage{
+    height: 55px;
+    margin: auto 0;
+
+  }
   .userInputSignUp{
     height: 45px;
     width: 80%;
@@ -104,4 +125,8 @@ and (max-width : 1024px) {
     list-style: none;
     text-align: center;
   }
+  .topBar-SignIn-UpPage{
+  max-width: none;
+  width: 100%;
+}
 }
