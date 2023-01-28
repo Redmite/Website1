@@ -57,14 +57,17 @@ color: var(--text);
 @media only screen 
 and (max-width : 1024px) {
   .signUpContinueContainer{
-    margin: 0 7%;
+    margin: 5px 6.2em;
     width: 40%;
+    padding-right: 20px;
   }
   .signUpContinue{
     content: "";
     clear: both;
     display: table;
     border: 5px solid;
+    margin: 0;
+ 
 
   }
   .userInputSignUp{
@@ -87,5 +90,10 @@ and (max-width : 1024px) {
     width:100%;
     margin: 7px 7%;
   
+  }
+  .bottomTexth1{
+    margin: 4% 0px!important;
+    list-style: none;
+    text-align: center;
   }
 }
