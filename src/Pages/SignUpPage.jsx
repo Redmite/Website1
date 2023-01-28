@@ -134,8 +134,13 @@ function SignUpPage() {
             class="signUpContinue"
           />
         </div>
-        <div class="form-element">
-          <a href="/SignInPage">Already have an account? Click Here</a>
+        <div class="bottomTexth1Container">
+          <a href="/SignInPage">
+            Already have an account?
+            <a href="/SignInPage" class="bottomTexth1-clickHere">
+              Click Here
+            </a>
+          </a>
         </div>
         <div class="form-element">
           <GoogleButton />
