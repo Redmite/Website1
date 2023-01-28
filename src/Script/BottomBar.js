@@ -2,6 +2,11 @@ import React from 'react';
 
 import "../Css/bottomBar.css";
 
+import facebook from "../images/facebook.svg";
+import tiktok from "../images/tiktok.svg";
+import instagram from "../images/instagram.svg";
+import twitter from "../images/twitter.svg";
+
 function BottomBar() {
   return (
     <div class="bottomBar">
@@ -33,22 +38,22 @@ function BottomBar() {
         <div class="socialMediaContainer">
           <li class="socialMediaButtons">
             <a>
-              <img src="tiktok.svg" class="socialMediaButtonImg"></img>
+              <img src="{twitter}" class="socialMediaButtonImg"></img>
             </a>
           </li>
           <li class="socialMediaButtons">
             <a>
-              <img src="twitter.svg" class="socialMediaButtonImg"></img>
+              <img src="{instagram}" class="socialMediaButtonImg"></img>
             </a>
           </li>
           <li class="socialMediaButtons">
             <a>
-              <img src="Instagram.svg" class="socialMediaButtonImg"></img>
+              <img src="{tiktok}" class="socialMediaButtonImg"></img>
             </a>
           </li>
           <li class="socialMediaButtons">
             <a>
-              <img src="facebook.svg" class="socialMediaButtonImg"></img>
+              <img src="{facebook}" class="socialMediaButtonImg"></img>
             </a>
           </li>
         </div>
