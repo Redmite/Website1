@@ -16,6 +16,7 @@ import onlineBusiness from "../images/onlineBusiness.jpeg";
 import language from "../images/language.jpeg";
 import websiteDesign from "../images/websiteDesign.jpeg";
 import illustrations from "../images/Illustrations.jpeg";
+import searchBarImg from "../images/SearchBar.svg";
 
 // component imports
 import SearchBar from "../Script/SearchBar";
@@ -37,6 +38,7 @@ function HomePage() {
                 placeholder="What skill do you want to learn?"
                 class="searchBar"
               />
+              <button src={searchBarImg}></button>
             </form>
             <div class="topOptionsRightSide">
               <li class="displayMd">
