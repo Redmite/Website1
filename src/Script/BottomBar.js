@@ -13,22 +13,22 @@ function BottomBar() {
         <div class="bottomBarFlexContainer">
           <div class="bottomBarContentContainer">
             <li>
-              <a>Privacy Policy</a>
+              <a class="bottomBarContentLinks" href="#">Privacy Policy</a>
             </li>
           </div>
           <div class="bottomBarContentContainer">
             <li>
-              <a>Terms of Service</a>
+              <a class="bottomBarContentLinks" href="#">Terms of Service</a>
             </li>
           </div>
           <div class="bottomBarContentContainer">
             <li>
-              <a>Help & Support</a>
+              <a class="bottomBarContentLinks" href="#">Help & Support</a>
             </li>
           </div>
           <div class="bottomBarContentContainer">
             <li>
-              <a>Contact Us</a>
+              <a class="bottomBarContentLinks" href="#">Contact Us</a>
             </li>
           </div>
         </div>
