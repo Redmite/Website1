@@ -33,6 +33,6 @@
   font-size: 22px;
   margin-bottom: 15px;
 }
-.bottomBarContentLinks:hover{
+.bottomBarContentLinks{
   cursor: pointer;
 }
