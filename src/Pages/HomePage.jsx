@@ -38,6 +38,7 @@ function HomePage() {
                 placeholder="What skill do you want to learn?"
                 class="searchBar"
               />
+              <button src={searchBarImg}></button>
             </form>
             <div class="topOptionsRightSide">
               <li class="displayMd">
