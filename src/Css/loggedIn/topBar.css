@@ -19,6 +19,7 @@
 .topSearch{
   padding: 2%;
   flex: 3;
+  position: relative;
   
 }
 
@@ -31,6 +32,9 @@ form.topSearch input[type=text] {
   border-radius:3px;
   min-width: 240px;
   border: 1px solid var(--gray);
+  position: absolute;
+  top: 50%; left: 50%;
+  transform: translate(-50%,-50%);
   
 }
 .topBar-LoggedInRightSide{

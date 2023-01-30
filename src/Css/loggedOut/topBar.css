@@ -92,6 +92,17 @@ and (max-width : 1024px) {
     max-width: none;
     width: 100%;
   }
+  .topSearch  {
+    margin-top: 0.5%;
+  }
+  form.topSearch input[type=text] {
+    width: 20%;
+    margin-left: 5px;
+  }
+}
+@media only screen 
+and (max-width : 550px) {
   .topSearch{
-    display: none;}
+    display: none;
+  }
 }
