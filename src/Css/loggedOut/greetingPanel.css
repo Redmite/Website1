@@ -93,14 +93,28 @@ and (max-width : 1024px) {
   }
   .h2-greetingPanelMobile{color: var(--blue);
     font-weight: 400;
-    font-size: 22px;}
-  
+    font-size: 22px;
+  }
+  .topSearch{
+    display: none;
+  }
   .topSearchMobile{
-      margin: auto;
-      display: block;
-      width: 100%;
+    margin: 0 auto;
+    display: block;
+    width: 80%;
       
     }
+  form.topSearchMobile input[type=text] {
+    padding: 10px;
+    font-size: 17px;
+    float: left;
+    width: 90%;
+    background: rgb(255, 255, 255);
+    border-radius:3px;
+    margin-left: 5%;
+    min-width: 240px;
+    border: 1px solid var(--gray);
+  }
   .searchBar{
       font-size: 16px;
       width: 100%;
@@ -115,7 +129,10 @@ and (max-width : 1024px) {
   }
   .getStartedButton{
     font-family: Trueno;
-    margin: 50px auto auto auto;
+    margin-top: 70px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0;
     padding: 12px 30px;
     cursor: pointer;
     border-radius: 100px;
@@ -128,9 +145,20 @@ and (max-width : 1024px) {
     clear: both;
     display: table;
   }
+  .greetingPanelImg{
+    display: none;
+  }
+  .greetingPanelSideTextBox
+  {
+    width: 100%;
+    margin: 0;
+  }
   
   .h1-greetingPanel, .h2-greetingPanelMobile{
       text-align: center;
+  }
+  .h1-greetingPanel{
+    margin-top: 40px;
   }
 
   }
