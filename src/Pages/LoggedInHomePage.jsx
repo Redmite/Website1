@@ -8,8 +8,6 @@ import "../Css/loggedIn/mainContentLoggedIn.css";
 import logo from "../images/logo.svg";
 import inbox from "../images/inbox.svg";
 import placeHolder from "../images/placeHolder.jpg";
-import hispanicManSmiling from "../images/hispanicManSmiling.jpg";
-
 // import whatever line to get the data from the database
 
 // this will be where we initialize the data from the database, if we need to
