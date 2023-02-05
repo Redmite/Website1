@@ -8,22 +8,19 @@ import "../Css/loggedIn/mainContentLoggedIn.css";
 import logo from "../images/logo.svg";
 import inbox from "../images/inbox.svg";
 import placeHolder from "../images/placeHolder.jpg";
+import hispanicManSmiling from "../images/hispanicManSmiling.jpg";
+
 // import whatever line to get the data from the database
 
 // this will be where we initialize the data from the database, if we need to
 var Description = (
   <div>
-    This IS A DESCIRPTION This IS A DESCIRPTION This IS A DESCIRPTION This IS A
-    DESCIRPTION This IS A DESCIRPTION This IS A DESCIRPTION This IS A
-    DESCIRPTION This IS A DESCIRPTION This IS A DESCIRPTION This IS A
-    DESCIRPTION This IS A DESCIRPTION This IS A DESCIRPTION This IS A
-    DESCIRPTION This IS A DESCIRPTION This IS A DESCIRPTION This IS A
-    DESCIRPTION This IS A DESCIRPTION This IS A DESCIRPTION This IS A
-    DESCIRPTION
+    Native Spanish speaker, have taught muitiple students before at a native
+    level
   </div>
 );
-var Title = <p>title</p>;
-var Picture = <img src="placeHolder.jpg"></img>;
+var Title = <p>I will teach you spanish</p>;
+var Picture = <img src={hispanicManSmiling}></img>;
 
 function LoggedInHomePage() {
   return (
