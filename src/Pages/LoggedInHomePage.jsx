@@ -61,7 +61,7 @@ function LoggedInHomePage() {
       <div class="mainContentLoggedIn">
         <div class="reccomendedMentorText">Reccomended Mentors</div>
         <div class="reccomendedMentorSession">
-          <a class="reccomendedMentorSessionPanel" href="/placeholdersession">
+          <a class="reccomendedMentorSessionPanel" href="/PlaceholderSession">
             <div class="reccomendedMentorSessionPanel-topSection">
               <a>
                 <img
