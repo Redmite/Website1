@@ -3,7 +3,7 @@ import { useState } from "react";
 import GoogleButton from "../Script/GoogleButton";
 
 import "../Css/loggedOut/SignUpPage.css";
-import logo from "../Images/logo.svg";
+import logo from "../images/logo.svg";
 var info = [];
 
 function SignInPage() {

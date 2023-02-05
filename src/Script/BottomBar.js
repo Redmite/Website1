@@ -2,10 +2,10 @@ import React from 'react';
 
 import "../Css/bottomBar.css";
 
-import facebook from "../Images/facebook.svg";
-import tiktok from "../Images/tiktok.svg";
-import instagram from "../Images/instagram.svg";
-import twitter from "../Images/twitter.svg";
+import facebook from "../images/facebook.svg";
+import tiktok from "../images/tiktok.svg";
+import instagram from "../images/instagram.svg";
+import twitter from "../images/twitter.svg";
 
 function BottomBar() {
   return (

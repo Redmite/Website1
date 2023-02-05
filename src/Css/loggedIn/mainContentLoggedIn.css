@@ -14,30 +14,30 @@
 }
 .reccomendedMentorSessionPanel{
   height: 90%;
-  border: 3px solid red;
   width: 20%;
   margin: 0.1%;
+  border: 1px solid var(--gray);
+  padding: 0;
+}
+.reccomendedMentorSessionPanel:hover{
+  cursor: pointer;
 }
 .reccomendedMentorText{
   margin-bottom: 45px;
 }
 .reccomendedMentorSessionPanel-topSection{
-border: 1px rgb(209, 146, 146) solid;
-height: 45%;
-margin: 3%;
-margin-bottom: 0;
+height: 50%;
+border-bottom: 1px solid var(--gray);
 }
 .reccomendedMentorSessionPanel-bottomSection{
-height: 45%;
-border: 1px rgb(146, 209, 157) solid;
-margin: 0 3%;
+  height: 45%;
+  margin: 0 3%;
 }
 .reccomendedMentorSessionPanel-img{
   height: 100%;
   width: 100%;
 }
 .reccomendedMentorSessionPanel-creatorImg{
-  border: 1px pink solid;
   height: 38px;
   border-radius: 50%;
 }
@@ -50,13 +50,15 @@ margin: 0 3%;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  font-weight: bold;
+  font-family: Rubik-Regular;
 }
 .reccomendedMentorSessionPanel-Description{
   height: initial;
-  border: 1px solid black;
   max-height: 74%;
   position: relative;
   overflow: hidden;
   word-wrap: break-word;
+  border-top: 1px solid var(--gray);
 
 }

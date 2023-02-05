@@ -8,14 +8,14 @@ import "../Css/bottomBar.css";
 import "../Css/searchedContent.css";
 
 // images
-import logo from "../Images/logo.svg";
-import GreetingPanelImg from "../Images/GreetingPanelImg.svg";
-import math from "../Images/math.jpeg";
-import onlineBusiness from "../Images/onlineBusiness.jpeg";
+import logo from "../images/logo.svg";
+import GreetingPanelImg from "../images/GreetingPanelImg.svg";
+import math from "../images/math.jpeg";
+import onlineBusiness from "../images/onlineBusiness.jpeg";
 // import peopleCleaningHouse from "../images/PeopleCleaningHouse.jpeg";
-import language from "../Images/language.jpeg";
-import websiteDesign from "../Images/websiteDesign.jpeg";
-import illustrations from "../Images/Illustrations.jpeg";
+import language from "../images/language.jpeg";
+import websiteDesign from "../images/websiteDesign.jpeg";
+import illustrations from "../images/Illustrations.jpeg";
 
 // component imports
 import SearchBar from "../Script/SearchBar";

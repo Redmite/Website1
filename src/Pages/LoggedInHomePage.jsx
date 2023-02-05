@@ -8,17 +8,19 @@ import "../Css/loggedIn/mainContentLoggedIn.css";
 import logo from "../images/logo.svg";
 import inbox from "../images/inbox.svg";
 import placeHolder from "../images/placeHolder.jpg";
+import hispanicManSmiling from "../images/hispanicManSmiling.JPG";
+import espanol from "../images/espanol.webp";
 // import whatever line to get the data from the database
-
+import BottomBar from "../Script/BottomBar";
 // this will be where we initialize the data from the database, if we need to
 var Description = (
   <div>
-    Native Spanish speaker, have taught muitiple students before at a native
-    level
+    I can teach conversational Spanish, I have experience teaching muitiple
+    students
   </div>
 );
-var Title = <p>I will teach you spanish</p>;
-var Picture = <img src={hispanicManSmiling}></img>;
+var Title = <p>Juantarancon</p>;
+var Picture = <img src={placeHolder}></img>;
 
 function LoggedInHomePage() {
   return (
@@ -59,10 +61,13 @@ function LoggedInHomePage() {
       <div class="mainContentLoggedIn">
         <div class="reccomendedMentorText">Reccomended Mentors</div>
         <div class="reccomendedMentorSession">
-          <li class="reccomendedMentorSessionPanel">
+          <a class="reccomendedMentorSessionPanel" href="/placeholdersession">
             <div class="reccomendedMentorSessionPanel-topSection">
               <a>
-                <img class="reccomendedMentorSessionPanel-img" src=""></img>
+                <img
+                  class="reccomendedMentorSessionPanel-img"
+                  src={espanol}
+                ></img>
               </a>
             </div>
             <div class="reccomendedMentorSessionPanel-bottomSection">
@@ -71,7 +76,7 @@ function LoggedInHomePage() {
                 <a class="reccomendedMentorSessionPanel-creatorImgContainer">
                   <img
                     class="reccomendedMentorSessionPanel-creatorImg"
-                    src={Picture}
+                    src={hispanicManSmiling}
                   ></img>
                 </a>
               </div>
@@ -79,7 +84,7 @@ function LoggedInHomePage() {
                 {Description} {/* this is where we will put the description */}
               </div>
             </div>
-          </li>
+          </a>
           <li class="reccomendedMentorSessionPanel"></li>
           <li class="reccomendedMentorSessionPanel"></li>
           <li class="reccomendedMentorSessionPanel"></li>
@@ -97,50 +102,7 @@ function LoggedInHomePage() {
           <li class="reccomendedMentorSessionPanel"></li>
         </div>
       </div>
-      <div class="bottomBar">
-        <div class="bottomBarFlexContainer">
-          <div class="bottomBarContentContainer">
-            <li>
-              <a>Privacy Policy</a>
-            </li>
-          </div>
-          <div class="bottomBarContentContainer">
-            <li>
-              <a>Terms of Service</a>
-            </li>
-          </div>
-          <div class="bottomBarContentContainer">
-            <li>
-              <a>Help & Support</a>
-            </li>
-          </div>
-          <div class="bottomBarContentContainer">
-            <li>
-              <a>Contact Us</a>
-            </li>
-          </div>
-        </div>
-        <div class="followUsText">
-          <center>Follow Us</center>
-        </div>
-        <div class="socialMediaContainer">
-          <li class="socialMediaButtons">
-            <a>
-              <img src="tiktok.svg" class="socialMediaButtonImg"></img>
-            </a>
-          </li>
-          <li class="socialMediaButtons">
-            <a>
-              <img src="twitter.svg" class="socialMediaButtonImgTwitter"></img>
-            </a>
-          </li>
-          <li class="socialMediaButtonInstagram">
-            <a>
-              <img src="Instagram.svg" class="socialMediaButtonImgInsta"></img>
-            </a>
-          </li>
-        </div>
-      </div>
+      <BottomBar />
       <script></script>
     </div>
   );
