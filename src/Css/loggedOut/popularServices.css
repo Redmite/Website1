@@ -93,8 +93,10 @@
 .popularCategoriesImgLanguage:hover,
 .popularCategoriesImgOnlineBusiness:hover,
 .popularCategoriesImgWebsiteDesign:hover {
-  filter: brightness(110%);
-  border: 0.1px solid var(--blue);
+  filter: brightness(103%);
+  height: 102.4%;
+  width: 101%;
+  background: 2px solid black;
 }
 @media only screen and (max-width: 1400px) {
   .reccomendedCategoriesPanelLD {
@@ -134,6 +136,16 @@ and (max-width : 1024px)  {
   .popularServiceText{
     text-align: center;
   }
+  .popularCategoriesImg:hover,
+  .popularCategoriesImgIllustrations:hover,
+  .popularCategoriesImgLanguage:hover,
+  .popularCategoriesImgOnlineBusiness:hover,
+  .popularCategoriesImgWebsiteDesign:hover {
+    filter: brightness(103%);
+    height: 100%;
+    width: 100%;
+    background: 2px solid black;
+}
 
 }
 @media only screen 

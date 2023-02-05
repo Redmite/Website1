@@ -23,6 +23,10 @@
   margin: 0.4%;
 
 }
+.socialMediaButtons:hover{
+  cursor: pointer;
+  filter: brightness(110%);
+}
 .socialMediaButtonImg{
   height: 100%;
   

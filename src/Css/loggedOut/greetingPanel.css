@@ -190,6 +190,7 @@ and (max-width : 550px) {
     margin: auto;
     display: block;
     width: 80%;
+    padding-bottom: 7px;
     
   }
   .searchBar{
