@@ -5,9 +5,9 @@ import "../Css/loggedIn/topBar.css";
 import "../Css/loggedIn/mainContentLoggedIn.css";
 
 // images
-import logo from "../images/logo.svg";
-import inbox from "../images/inbox.svg";
-import placeHolder from "../images/placeHolder.jpg";
+import logo from "../Images/logo.svg";
+import inbox from "../Images/inbox.svg";
+import placeHolder from "../Images/placeHolder.jpg";
 // import whatever line to get the data from the database
 
 // this will be where we initialize the data from the database, if we need to
