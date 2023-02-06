@@ -6,7 +6,7 @@ import "../Css/loggedIn/topBar.css";
 import "../Css/loggedOut/topBar.css";
 import "../Css/loggedIn/mainContentLoggedIn.css";
 // images
-import logo from "../images/logo.svg";
+import logo from "../Images/logo.svg";
 
 // home page function, this is what we actually see
 import SearchBar from "../Script/SearchBar";

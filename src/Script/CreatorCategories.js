@@ -5,8 +5,8 @@ import "../Css/loggedIn/topBar.css";
 import "../Css/loggedOut/topBar.css";
 import "../Css/loggedIn/mainContentLoggedIn.css";
 // images
-import hispanicManSmiling from "../images/hispanicManSmiling.JPG";
-import espanol from "../images/espanol.webp";
+import hispanicManSmiling from "../Images/hispanicManSmiling.JPG";
+import espanol from "../Images/espanol.webp";
 // import whatever line to get the data from the database
 import BottomBar from "../Script/BottomBar.js";
 // this will be where we initialize the data from the database, if we need to
