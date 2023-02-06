@@ -10,6 +10,7 @@ import inbox from "../Images/inbox.svg";
 import placeHolder from "../Images/placeHolder.jpg";
 import hispanicManSmiling from "../Images/hispanicManSmiling.JPG";
 import espanol from "../Images/espanol.webp";
+import ratings from "../Images/FakeRatings.JPG";
 // import whatever line to get the data from the database
 import BottomBar from "../Script/BottomBar";
 // this will be where we initialize the data from the database, if we need to
@@ -83,6 +84,12 @@ function LoggedInHomePage() {
               <div class="reccomendedMentorSessionPanel-Description">
                 {Description} {/* this is where we will put the description */}
               </div>
+            </div>
+            <div class="reccomendedMentorSessionPanel-paymentMethods">
+              <img src={ratings}></img>
+              <a href="/SignUpPage" id="join-button" class="bookButton">
+                Book
+              </a>
             </div>
           </a>
           <li class="reccomendedMentorSessionPanel"></li>
