@@ -2,11 +2,9 @@ import React from "react";
 // CSS imports
 import "../Css/main.css";
 import "../Css/loggedIn/topBar.css";
+import "../Css/loggedOut/topBar.css";
 import "../Css/loggedIn/mainContentLoggedIn.css";
 // images
-import logo from "../images/logo.svg";
-import inbox from "../images/inbox.svg";
-import placeHolder from "../images/placeHolder.jpg";
 import hispanicManSmiling from "../images/hispanicManSmiling.JPG";
 import espanol from "../images/espanol.webp";
 // import whatever line to get the data from the database
@@ -38,41 +36,9 @@ function CreatorCategories(props) {
     // sessions that are in that catagory
     return (
 <div class="mainWrapper">
-      <div class="topBar-LoggedIn">
-        <div class="logo">
-          <img src={logo} class="logoImg" alt="missing logo" />
-        </div>
-        <form class="topSearch" action="#news">
-          <input
-            type="text"
-            placeholder="What skill do you want to learn?"
-            class="searchBar"
-          />
-        </form>
-        <div class="topBar-LoggedInRightSide">
-          <li class="topBarCoach">
-            <a href="/MentorInfoPage">Creator</a>
-          </li>
-          <li class="topBarOrders">
-            <a href="#news">Orders</a>
-          </li>
-          <li class="topBarSchedule">
-            <a>Schedule</a>
-          </li>
-          <li class="topBarInbox">
-            <a href="#news">
-              <img src={inbox} class="topBarInboximg"></img>
-            </a>
-          </li>
-          <li class="topBarAccountProfile">
-            <a href="#news">
-              <img src={placeHolder} class="topBarAccountProfileImg"></img>
-            </a>
-          </li>
-        </div>
-      </div>
+
       <div class="mainContentLoggedIn">
-        <div class="reccomendedMentorText">Reccomended Mentors</div>
+        <div class="reccomendedMentorText">Language -</div>
         <div class="reccomendedMentorSession">
           <a class="reccomendedMentorSessionPanel" href="/PlaceholderSession">
             <div class="reccomendedMentorSessionPanel-topSection">
