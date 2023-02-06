@@ -31,6 +31,8 @@ function BottomBar() {
               <a class="bottomBarContentLinks" href="#">Contact Us</a>
             </li>
           </div>
+          <div class="bottomBarContentContainer">
+          </div>
         </div>
         <div class="followUsText">
           <center>Follow Us</center>
