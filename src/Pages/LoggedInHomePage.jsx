@@ -13,6 +13,8 @@ import espanol from "../Images/espanol.webp";
 import ratings from "../Images/FakeRatings.JPG";
 // import whatever line to get the data from the database
 import BottomBar from "../Script/BottomBar";
+import SessionTemplate from "../Script/creatorSessionTemplate";
+
 // this will be where we initialize the data from the database, if we need to
 var Description = (
   <div>
@@ -62,36 +64,10 @@ function LoggedInHomePage() {
       <div class="mainContentLoggedIn">
         <div class="reccomendedMentorText">Reccomended Mentors</div>
         <div class="reccomendedMentorSession">
-          <a class="reccomendedMentorSessionPanel" href="/PlaceholderSession">
-            <div class="reccomendedMentorSessionPanel-topSection">
-              <a>
-                <img
-                  class="reccomendedMentorSessionPanel-img"
-                  src={espanol}
-                ></img>
-              </a>
-            </div>
-            <div class="reccomendedMentorSessionPanel-bottomSection">
-              <div class="reccomendedMentorSessionPanel-titleCreatorContainer">
-                <a class="reccomendedMentorSessionPanel-title">{Title}</a>
-                <a class="reccomendedMentorSessionPanel-creatorImgContainer">
-                  <img
-                    class="reccomendedMentorSessionPanel-creatorImg"
-                    src={hispanicManSmiling}
-                  ></img>
-                </a>
-              </div>
-              <div class="reccomendedMentorSessionPanel-Description">
-                {Description} {/* this is where we will put the description */}
-              </div>
-            </div>
-            <div class="reccomendedMentorSessionPanel-paymentMethods">
-              <img src={ratings}></img>
-              <a href="/SignUpPage" id="join-button" class="bookButton">
-                Book
-              </a>
-            </div>
-          </a>
+          <SessionTemplate
+            sessionImg={espanol}
+            creatorProfileImg={hispanicManSmiling}
+          />
           <li class="reccomendedMentorSessionPanel"></li>
           <li class="reccomendedMentorSessionPanel"></li>
           <li class="reccomendedMentorSessionPanel"></li>
@@ -116,3 +92,37 @@ function LoggedInHomePage() {
 }
 
 export default LoggedInHomePage;
+
+{
+  /*<a class="reccomendedMentorSessionPanel" href="/PlaceholderSession">
+            <div class="reccomendedMentorSessionPanel-topSection">
+              <a>
+                <img
+                  class="reccomendedMentorSessionPanel-img"
+                  src={espanol}
+                ></img>
+              </a>
+            </div>
+            <div class="reccomendedMentorSessionPanel-bottomSection">
+              <div class="reccomendedMentorSessionPanel-titleCreatorContainer">
+                <a class="reccomendedMentorSessionPanel-title">{Title}</a>
+                <a class="reccomendedMentorSessionPanel-creatorImgContainer">
+                  <img
+                    class="reccomendedMentorSessionPanel-creatorImg"
+                    src={hispanicManSmiling}
+                  ></img>
+                </a>
+              </div>
+              <div class="reccomendedMentorSessionPanel-Description">
+                {Description} {/* this is where we will put the description
+                </div>
+                </div>
+                <div class="reccomendedMentorSessionPanel-paymentMethods">
+                  <img src={ratings}></img>
+                  <a href="/SignUpPage" id="join-button" class="bookButton">
+                    Book
+                  </a>
+                </div>
+              </a>
+            */
+}
