@@ -14,10 +14,11 @@
 }
 .reccomendedMentorSessionPanel{
   height: 90%;
-  width: 20%;
-  margin: 0.1%;
+  width: 10px;
+  margin: 0;
   border: 1px solid var(--gray);
   padding: 0;
+
 }
 .reccomendedMentorSessionPanel:hover{
   cursor: pointer;

@@ -1,3 +1,5 @@
+// backendAPI.js
+
 export const getSessions = () => {
   return [
     {
@@ -23,3 +25,4 @@ export const getSessions = () => {
     }
   ];
 };
+export default getSessions;
