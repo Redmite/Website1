@@ -1,4 +1,6 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
+import { getSessions } from "./backendAPI";
+import axios from "axios";
 // CSS imports
 import "../Css/main.css";
 import "../Css/loggedIn/topBar.css";
@@ -64,25 +66,29 @@ function LoggedInHomePage() {
       <div class="mainContentLoggedIn">
         <div class="reccomendedMentorText">Reccomended Mentors</div>
         <div class="reccomendedMentorSession">
-          <SessionTemplate
-            sessionImg={espanol}
-            creatorProfileImg={hispanicManSmiling}
-          />
-          <li class="reccomendedMentorSessionPanel"></li>
-          <li class="reccomendedMentorSessionPanel"></li>
-          <li class="reccomendedMentorSessionPanel"></li>
-        </div>
-        <div class="reccomendedMentorSession">
-          <li class="reccomendedMentorSessionPanel"></li>
-          <li class="reccomendedMentorSessionPanel"></li>
-          <li class="reccomendedMentorSessionPanel"></li>
-          <li class="reccomendedMentorSessionPanel"></li>
-        </div>
-        <div class="reccomendedMentorSession">
-          <li class="reccomendedMentorSessionPanel"></li>
-          <li class="reccomendedMentorSessionPanel"></li>
-          <li class="reccomendedMentorSessionPanel"></li>
-          <li class="reccomendedMentorSessionPanel"></li>
+          {function MainContentLoggedIn() {
+            const [sessions, setSessions] = useState([]);
+
+            useEffect(() => {
+              // fetch sessions data from backend and store it in the state
+              axios
+                .get("/api/sessions")
+                .then((res) => setSessions(res.data))
+                .catch((error) => console.error(error));
+            }, []);
+
+            return (
+              <div class="reccomendedMentorSessions">
+                {sessions.map((session, index) => (
+                  <SessionTemplate
+                    key={session.id}
+                    sessionImg={session.sessionImg}
+                    creatorProfileImg={session.creatorProfileImg}
+                  />
+                ))}
+              </div>
+            );
+          }}
         </div>
       </div>
       <BottomBar />
