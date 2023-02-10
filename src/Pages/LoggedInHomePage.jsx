@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { getSessions } from "./backendAPI";
+import { getSessions } from "./backendAPI.js";
 import axios from "axios";
 // CSS imports
 import "../Css/main.css";
