@@ -1,6 +1,7 @@
 import React from "react";
 import { useState } from "react";
 import GoogleButton from "../Script/GoogleButton";
+import { saveData, getData } from "../Script/database.js";
 
 import "../Css/loggedOut/SignUpPage.css";
 import logo from "../Images/logo.svg";
@@ -8,49 +9,77 @@ import logo from "../Images/logo.svg";
 var info = [];
 
 function SignUpPage() {
-  const [first, setFirst] = useState();
-  const [user, setUser] = useState();
-  const [email, setEmail] = useState();
-  const [password, setPassword] = useState();
-  const [passwordCheck, setPasswordCheck] = useState();
+  const [first, setFirst] = useState("");
+  const [user, setUser] = useState("");
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const [passwordCheck, setPasswordCheck] = useState("");
   const [remember, setRemember] = useState(false);
   const [newsletter, setNewsletter] = useState(false);
 
   const handleFirst = (event) => {
     setFirst(event.target.value);
   };
+
   const handleUser = (event) => {
     setUser(event.target.value);
   };
+
   const handleEmail = (event) => {
     setEmail(event.target.value);
   };
+
   const handlePassword = (event) => {
     setPassword(event.target.value);
   };
+
   const handlePasswordCheck = (event) => {
     setPasswordCheck(event.target.value);
   };
-  const handleRemember = (e) => {
-    const checked = e.target.checked;
-    checked ? setRemember(true) : setRemember(false);
-  };
-  const handleNewsletter = (e) => {
-    const checked = e.target.checked;
-    checked ? setNewsletter(true) : setNewsletter(false);
-  };
-  const submitInfo = () => {
-    var passCheck = password === passwordCheck;
 
-    info = [first, user, email, password, remember, newsletter];
-
-    // passCheck ? submit info : display error message
-
-    // some line to submit it to the database
-    // maybe a return boolean
-    // if true, then redirect to the logged in page
-    // if false then display an error message
+  const handleRemember = (event) => {
+    setRemember(event.target.checked);
   };
+
+  const handleNewsletter = (event) => {
+    setNewsletter(event.target.checked);
+  };
+
+  const submitInfo = (e) => {
+    e.preventDefault();
+
+    const data = {
+      first: first,
+      user: user,
+      email: email,
+      password: password,
+      passwordCheck: passwordCheck,
+      remember: remember,
+      newsletter: newsletter,
+    };
+
+    saveData(data);
+
+    console.log(getData());
+
+    // Example of sending the data to the backend
+    // fetch("https://your-backend-api.com/sign-up", {
+    //   method: "POST",
+    //   headers: {
+    //     "Content-Type": "application/json",
+    //   },
+    //   body: JSON.stringify(data),
+    // })
+    //   .then((response) => response.json())
+    //   .then((data) => {
+    //     console.log(data);
+    //     // Do something with the data from the backend
+    //   })
+    //   .catch((error) => {
+    //     console.error(error);
+    //   });
+  };
+
   return (
     <div class="mainWrapper">
       <div class="topBar-SignIn-UpPage">
