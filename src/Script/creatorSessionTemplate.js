@@ -1,3 +1,4 @@
+//creatorSessionTemplate.js
 import React from 'react';
 // CSS imports
 import "../Css/loggedIn/mainContentLoggedIn.css";
@@ -13,7 +14,7 @@ import "../Css/main.css";
 
 function SessionTemplate(props) {
   return (
-    <a className="reccomendedMentorSessionPanel" href="/PlaceholderSession">
+    <div className="reccomendedMentorSessionPanel" href="/PlaceholderSession">
       <div className="reccomendedMentorSessionPanel-topSection">
         <a>
           <img
@@ -44,7 +45,7 @@ function SessionTemplate(props) {
           Book
         </a>
       </div>
-    </a>
+  </div>
   );
 }
 

@@ -1,3 +1,5 @@
+//SignUpPage.jsx
+
 import React from "react";
 import { useState } from "react";
 import GoogleButton from "../Script/GoogleButton";
@@ -61,23 +63,6 @@ function SignUpPage() {
     saveData(data);
 
     console.log(getData());
-
-    // Example of sending the data to the backend
-    // fetch("https://your-backend-api.com/sign-up", {
-    //   method: "POST",
-    //   headers: {
-    //     "Content-Type": "application/json",
-    //   },
-    //   body: JSON.stringify(data),
-    // })
-    //   .then((response) => response.json())
-    //   .then((data) => {
-    //     console.log(data);
-    //     // Do something with the data from the backend
-    //   })
-    //   .catch((error) => {
-    //     console.error(error);
-    //   });
   };
 
   return (

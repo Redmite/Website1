@@ -4,7 +4,7 @@
     width: inherit;
     height: 1200px;
 }
-.reccomendedMentorSession{
+.recommendedMentorSession{
   width: 1350px;
   height: 380px;
   display: flex;
@@ -13,8 +13,8 @@
   margin: auto;
 }
 .reccomendedMentorSessionPanel{
-  height: 90%;
-  width: 10px;
+  height: 91%;
+  width: 19%;
   margin: 0;
   border: 1px solid var(--gray);
   padding: 0;

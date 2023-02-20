@@ -1,16 +1,26 @@
+//LoggedInHomePage.jsx
+
 import React, { useState, useEffect } from "react";
 import getSessions from "./backendAPI.js";
 import BottomBar from "../Script/BottomBar";
 import SessionTemplate from "../Script/creatorSessionTemplate";
 import TopBarLoggedIn from "../Script/TopBarLoggedIn";
+import "../Css/loggedIn/mainContentLoggedIn.css";
 
-class RecommendedMentorSessions extends React.Component {
-  render() {
-    const { sessions } = this.props;
+function RecommendedMentorSessions({ sessions }) {
+  const [numSessionsPerRow, setNumSessionsPerRow] = useState(4);
+  const numSessions = sessions.length;
+  const numRows = Math.ceil(numSessions / numSessionsPerRow);
 
-    return (
-      <div>
-        {sessions.map((session, index) => (
+  const rows = [];
+  for (let i = 0; i < numRows; i++) {
+    const start = i * numSessionsPerRow;
+    const end = Math.min(start + numSessionsPerRow, numSessions);
+    const rowSessions = sessions.slice(start, end);
+
+    const row = (
+      <div key={i} className="recommendedMentorSession">
+        {rowSessions.map((session) => (
           <SessionTemplate
             key={session.id}
             sessionImg={session.sessionImg}
@@ -20,7 +30,11 @@ class RecommendedMentorSessions extends React.Component {
         ))}
       </div>
     );
+
+    rows.push(row);
   }
+
+  return <div className="recommendedMentorSessions">{rows}</div>;
 }
 
 function LoggedInHomePage() {
@@ -34,13 +48,8 @@ function LoggedInHomePage() {
     <div class="mainWrapper">
       <TopBarLoggedIn />
       <div class="mainContentLoggedIn">
-        <div class="reccomendedMentorText">Reccomended Mentors</div>
-        <div class="reccomendedMentorSession">
-          <RecommendedMentorSessions
-            sessions={sessions}
-            class="reccomendedMentorSessionPanel"
-          />
-        </div>
+        <div class="reccomendedMentorText">Recommended Mentors</div>
+        <RecommendedMentorSessions sessions={sessions} />
       </div>
       <BottomBar />
     </div>
@@ -48,37 +57,3 @@ function LoggedInHomePage() {
 }
 
 export default LoggedInHomePage;
-
-{
-  /*<a class="reccomendedMentorSessionPanel" href="/PlaceholderSession">
-            <div class="reccomendedMentorSessionPanel-topSection">
-              <a>
-                <img
-                  class="reccomendedMentorSessionPanel-img"
-                  src={espanol}
-                ></img>
-              </a>
-            </div>
-            <div class="reccomendedMentorSessionPanel-bottomSection">
-              <div class="reccomendedMentorSessionPanel-titleCreatorContainer">
-                <a class="reccomendedMentorSessionPanel-title">{Title}</a>
-                <a class="reccomendedMentorSessionPanel-creatorImgContainer">
-                  <img
-                    class="reccomendedMentorSessionPanel-creatorImg"
-                    src={hispanicManSmiling}
-                  ></img>
-                </a>
-              </div>
-              <div class="reccomendedMentorSessionPanel-Description">
-                {Description} {/* this is where we will put the description
-                </div>
-                </div>
-                <div class="reccomendedMentorSessionPanel-paymentMethods">
-                  <img src={ratings}></img>
-                  <a href="/SignUpPage" id="join-button" class="bookButton">
-                    Book
-                  </a>
-                </div>
-              </a>
-            */
-}
