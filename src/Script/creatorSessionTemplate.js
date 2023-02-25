@@ -36,7 +36,7 @@ function SessionTemplate(props) {
           </a>
         </div>
         <div className="reccomendedMentorSessionPanel-Description">
-          {props.sessionDescription}
+          {props.Description}
         </div>
       </div>
       <div className="reccomendedMentorSessionPanel-paymentMethods">

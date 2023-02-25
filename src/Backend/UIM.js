@@ -1,6 +1,13 @@
 //UIM.js
 // JavaScript SDK
 import PocketBase from 'pocketbase';
+
+const pb = new PocketBase(process.env.REACT_APP_PB_URL);
+
+export default pb;
+
+/*
+import PocketBase from 'pocketbase';
 import fetch from 'node-fetch';
 
 globalThis.fetch = fetch;
@@ -16,3 +23,4 @@ async function login(user, password) {
 }
 
 login('user', 'password');
+*/

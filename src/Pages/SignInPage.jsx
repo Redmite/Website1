@@ -1,40 +1,43 @@
 import React from "react";
 import { useState } from "react";
 import GoogleButton from "../Script/GoogleButton";
-
 import "../Css/loggedOut/SignUpPage.css";
 import logo from "../Images/logo.svg";
-var info = [];
+import { useForm } from "react-hook-form";
+import pb from "../Backend/UIM.js";
 
-function SignInPage() {
-  const [email, setEmail] = useState();
-  const [password, setPassword] = useState();
-  const [remember, setRemember] = useState(false);
+export default function Auth() {
+  const { register, handleSubmit } = useForm();
+  const [isLoading, setLoading] = useState(false);
+  const isLoggedIn = pb.authStore.isValid;
+  const [dummy, setDummy] = useState(0);
 
-  const handleEmail = (event) => {
-    setEmail(event.target.value);
-  };
-  const handlePassword = (event) => {
-    setPassword(event.target.value);
-  };
-  const handleRemember = (e) => {
-    const checked = e.target.checked;
-    checked ? setRemember(true) : setRemember(false);
-  };
-  const submitInfo = () => {
-    info = [email, password, remember];
-    // some line to submit it to the database
-    // maybe a return boolean
-    // if (passed === true) {
-    //   window.location.href = "/LoggedInHomePage";
-    // } else {
-    //   document.getElementById("error").innerHTML = "Incorrect email or password";
-    // }
-    // if true, then redirect to the logged in page
-    // if false then display an error message
-  };
+  async function login(data) {
+    setLoading(true);
+    try {
+      const authData = await pb
+        .collection("users")
+        .authWithPassword(data.email, data.password);
+    } catch (e) {
+      alert(e);
+    }
+    setLoading(false);
+  }
+  function logout() {
+    pb.authStore.clear();
+    setDummy(Math.random);
+  }
+  if (isLoggedIn)
+    return (
+      <>
+        <h1>Logged In: {pb.authStore.model.email}</h1>
+        <button onClick={logout}>Log Out</button>
+      </>
+    );
   return (
     <div class="mainWrapper">
+      <h1> Logged In: {isLoggedIn && pb.authStore.model.email}</h1>
+      {isLoading && <p>Loading...</p>}
       <div class="topBar-SignIn-UpPage">
         <div class="topPanel">
           <div class="logoSignIn-UpPage">
@@ -42,45 +45,41 @@ function SignInPage() {
           </div>
         </div>
       </div>
-      <div class="signUpContainer">
+      <form class="signUpContainer" onSubmit={handleSubmit(login)}>
         <h2 class="signUpText">Log in</h2>
         <div class="userInputSignUpContainer">
           <input
             type="text"
-            id="email"
-            placeholder="Enter Email"
-            onChange={handleEmail}
-            value={email}
+            placeholder="email"
             class="userInputSignUp"
+            {...register("email")}
           />
         </div>
         <div class="userInputSignUpContainer">
           <input
             type="password"
-            id="password"
-            placeholder="Enter Password"
-            onChange={handlePassword}
-            value={password}
+            placeholder="password"
             class="userInputSignUp"
+            {...register("password")}
           />
         </div>
         <div class="userInputSignUpContainer">
           <input
             type="checkbox"
             id="remember-me"
-            onChange={handleRemember}
-            value={remember}
             class="userInputSignUp-checkBox"
           />
           <label for="remember-me">Remember me</label>
         </div>
         <div class="signUpContinueContainer">
-          <input
+          <button
             type="submit"
             value="Continue"
-            onClick={submitInfo}
             class="signUpContinue"
-          />
+            disabled={isLoading}
+          >
+            {isLoading ? "Loading" : "Continue"}
+          </button>
         </div>
         <div class="bottomTexth1Container">
           <li class="bottomTexth1">
@@ -94,12 +93,10 @@ function SignInPage() {
           </li>
         </div>
         <p id="error"></p>
-      </div>
+      </form>
       <div class="form-element">
         <GoogleButton />
       </div>
     </div>
   );
 }
-
-export default SignInPage;

@@ -26,6 +26,7 @@ function RecommendedMentorSessions({ sessions }) {
             sessionImg={session.sessionImg}
             creatorProfileImg={session.creatorProfileImg}
             sessionTitle={session.title}
+            sessionDescription={session.Description}
           />
         ))}
       </div>

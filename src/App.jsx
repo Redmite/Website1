@@ -3,6 +3,7 @@
 
 // importing components from react-router-dom package
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import Auth from "Backend/auth";
 
 import HomePage from "./Pages/HomePage";
 import SignInPage from "./Pages/SignInPage";
@@ -25,6 +26,9 @@ function App() {
     <Link to="./ListingCreationPage">ListingCreationPage</Link>
     */}
       </nav>
+      <>
+        <Auth />
+      </>
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/SignInPage" element={<SignInPage />} />
