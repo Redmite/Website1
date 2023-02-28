@@ -8,7 +8,6 @@ import "../Css/bottomBar.css";
 import "../Css/searchedContent.css";
 
 // images
-import logo from "../Images/logo.svg";
 import GreetingPanelImg from "../Images/GreetingPanelImg.svg";
 import math from "../Images/math.jpeg";
 import onlineBusiness from "../Images/onlineBusiness.jpeg";
@@ -18,51 +17,16 @@ import websiteDesign from "../Images/websiteDesign.jpeg";
 import illustrations from "../Images/Illustrations.jpeg";
 
 // component imports
-import SearchBar from "../Script/SearchBar";
-import BottomBar from "../Script/BottomBar";
+import SearchBar from "../jshooks/SearchBar.js";
+import BottomBar from "../jshooks/BottomBar.js";
+import UseTopBarLoggedOut from "../jshooks/UseTopBarLoggedOut.js";
 
 // home page function, this is what we actually see
 
 function HomePage() {
   return (
     <div class="mainWrapper">
-      <div class="backgroundTopBar">
-        <div class="topBar">
-          <div class="topPanel">
-            <div class="logo">
-              <img src={logo} class="logoImg" alt="missing logo" />
-            </div>
-            <form class="topSearch" action="#news">
-              <SearchBar
-                placeholder="What skill do you want to learn?"
-                class="searchBar"
-              />
-            </form>
-            <div class="topOptionsRightSide">
-              <li class="displayMd">
-                <a href="#news" class="topBarOptionsLoggedOut">
-                  Become a Mentor
-                </a>
-              </li>
-              <li class="displayMd">
-                <a href="/LoggedInHomePage" class="topBarOptionsLoggedOut">
-                  Language
-                </a>
-              </li>
-              <li class="displaySd">
-                <a href="/SignInPage" class="signIn" id="show-login">
-                  Sign in
-                </a>
-              </li>
-              <li class="displaySd">
-                <a href="/SignUpPage" id="join-button" class="joinButton">
-                  Join
-                </a>
-              </li>
-            </div>
-          </div>
-        </div>
-      </div>
+      <UseTopBarLoggedOut />
       <div class="greetingPanel">
         <div class="greetingPanelSideTextBox">
           <h1 class="h1-greetingPanel">Seeking a mentor?</h1>
@@ -82,7 +46,7 @@ function HomePage() {
             Get Started
           </button>
         </div>
-        <img src={GreetingPanelImg} class="greetingPanelImg" />
+        <img src={GreetingPanelImg} class="greetingPanelImg" alt="Greeting" />
       </div>
 
       <div class="popularServices">
@@ -90,7 +54,11 @@ function HomePage() {
         <div class="reccomendedCategories">
           <li class="reccomendedCategoriesPanelMobile">
             <a href="/SearchLoggedOutPage/commonCore">
-              <img src={math} class="popularCategoriesImg" />
+              <img
+                src={math}
+                class="popularCategoriesImg"
+                alt="websiteDesign"
+              />
               <div class="innerTextPopularCategories">Common Core</div>
             </a>
           </li>
@@ -99,13 +67,18 @@ function HomePage() {
               <img
                 src={websiteDesign}
                 class="popularCategoriesImgWebsiteDesign"
+                alt="websiteDesign"
               ></img>
               <div class="innerTextPopularCategories">Website Design</div>
             </a>
           </li>
           <li class="reccomendedCategoriesPanelMobile">
             <a href="/SearchLoggedOutPage/language">
-              <img src={language} class="popularCategoriesImgLanguage"></img>
+              <img
+                src={language}
+                class="popularCategoriesImgLanguage"
+                alt="websiteDesign"
+              ></img>
               <div class="innerTextPopularCategories">Language</div>
             </a>
           </li>
@@ -114,6 +87,7 @@ function HomePage() {
               <img
                 src={onlineBusiness}
                 class="popularCategoriesImgOnlineBusiness"
+                alt="websiteDesign"
               ></img>
               <div class="innerTextPopularCategories">Online Business</div>
             </a>
@@ -123,6 +97,7 @@ function HomePage() {
               <img
                 src={illustrations}
                 class="popularCategoriesImgIllustrations"
+                alt="websiteDesign"
               ></img>
               <div class="innerTextPopularCategories">Designing</div>
             </a>
@@ -134,6 +109,7 @@ function HomePage() {
               <img
                 src={onlineBusiness}
                 class="popularCategoriesImgOnlineBusiness"
+                alt="websiteDesign"
               ></img>
               <div class="innerTextPopularCategories">Online Business</div>
             </a>
@@ -143,6 +119,7 @@ function HomePage() {
               <img
                 src={websiteDesign}
                 class="popularCategoriesImgWebsiteDesignMobile"
+                alt="websiteDesign"
               ></img>
               <div class="innerTextPopularCategories">Website Design</div>
             </a>

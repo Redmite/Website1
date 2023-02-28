@@ -12,7 +12,7 @@ import "../Css/main.css";
 
 
 
-function SessionTemplate(props) {
+function UseSessionTemplate(props) {
   return (
     <div className="reccomendedMentorSessionPanel" href="/PlaceholderSession">
       <div className="reccomendedMentorSessionPanel-topSection">
@@ -49,4 +49,4 @@ function SessionTemplate(props) {
   );
 }
 
-export default SessionTemplate;
+export default UseSessionTemplate;

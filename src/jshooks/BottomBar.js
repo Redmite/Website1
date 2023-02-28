@@ -4,10 +4,10 @@ import "../Css/bottomBar.css";
 
 import facebook from "../Images/facebook.svg";
 import tiktok from "../Images/tiktok.svg";
-import instagram from "../Images/instagram.svg";
+import instagram from "./../Images/instagram.svg";
 import twitter from "../Images/twitter.svg";
 
-function BottomBar() {
+function UseBottomBar() {
   return (
     <div class="bottomBar">
         <div class="bottomBarFlexContainer">
@@ -63,4 +63,4 @@ function BottomBar() {
   )
 }
 
-export default BottomBar;
+export default UseBottomBar;

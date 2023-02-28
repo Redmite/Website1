@@ -5,7 +5,7 @@ import "../Css/loggedIn/listingCreation.css";
 import Time from "../Script/Time.js";
 import { Checkbox } from "../Script/GeneralFunctions.js";
 
-import SearchBar from "../Script/SearchBar";
+import SearchBar from "../jshooks/SearchBar";
 
 import "../Css/loggedIn/listingCreation.css";
 
