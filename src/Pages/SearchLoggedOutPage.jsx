@@ -9,7 +9,7 @@ import "../Css/loggedIn/mainContentLoggedIn.css";
 import logo from "../Images/logo.svg";
 
 // home page function, this is what we actually see
-import SearchBar from "../jshooks/SearchBar";
+import SearchBar from "../jshooks/UseSearchBar";
 import UseTopBarLoggedOut from "../jshooks/UseTopBarLoggedOut.js";
 function SearchLoggedOutPage(props) {
   return (

@@ -1,8 +1,8 @@
 //LoggedInHomePage.jsx
 import React, { useState, useEffect } from "react";
 import getSessions from "./backendAPI.js";
-import UseBottomBar from "../jshooks/BottomBar";
-import TopBarLoggedIn from "../jshooks/TopBarLoggedIn";
+import UseBottomBar from "../jshooks/UseBottomBar";
+import TopBarLoggedIn from "../jshooks/UseTopBarLoggedIn";
 import "../Css/loggedIn/mainContentLoggedIn.css";
 import UseMentorSessions from "../jshooks/UseMentorSessions";
 

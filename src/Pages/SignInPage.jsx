@@ -1,31 +1,21 @@
 import React from "react";
-import { useState } from "react";
 import GoogleButton from "../Script/GoogleButton";
 import "../Css/loggedOut/SignUpPage.css";
 import logo from "../Images/logo.svg";
 import { useForm } from "react-hook-form";
 import pb from "../Backend/UIM.js";
+import useLogout from "jshooks/UseLogout";
+import useLogin from "jshooks/useLogin";
 
 export default function Auth() {
-  const { register, handleSubmit } = useForm();
-  const [isLoading, setLoading] = useState(false);
+  const logout = useLogout();
+  const { register, handleSubmit, reset } = useForm();
+  const { mutate: login, isLoading, isError } = useLogin();
   const isLoggedIn = pb.authStore.isValid;
-  const [dummy, setDummy] = useState(0);
 
-  async function login(data) {
-    setLoading(true);
-    try {
-      const authData = await pb
-        .collection("users")
-        .authWithPassword(data.email, data.password);
-    } catch (e) {
-      alert(e);
-    }
-    setLoading(false);
-  }
-  function logout() {
-    pb.authStore.clear();
-    setDummy(Math.random);
+  async function onSubmit(data) {
+    login({ email: data.email, password: data.password });
+    reset();
   }
   if (isLoggedIn)
     return (
@@ -38,6 +28,8 @@ export default function Auth() {
     <div class="mainWrapper">
       <h1> Logged In: {isLoggedIn && pb.authStore.model.email}</h1>
       {isLoading && <p>Loading...</p>}
+      {isError && <p>Invalid email or password</p>}
+
       <div class="topBar-SignIn-UpPage">
         <div class="topPanel">
           <div class="logoSignIn-UpPage">
@@ -45,7 +37,7 @@ export default function Auth() {
           </div>
         </div>
       </div>
-      <form class="signUpContainer" onSubmit={handleSubmit(login)}>
+      <form class="signUpContainer" onSubmit={handleSubmit(onSubmit)}>
         <h2 class="signUpText">Log in</h2>
         <div class="userInputSignUpContainer">
           <input

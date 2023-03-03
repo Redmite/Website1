@@ -17,8 +17,8 @@ import websiteDesign from "../Images/websiteDesign.jpeg";
 import illustrations from "../Images/Illustrations.jpeg";
 
 // component imports
-import SearchBar from "../jshooks/SearchBar.js";
-import BottomBar from "../jshooks/BottomBar.js";
+import SearchBar from "../jshooks/UseSearchBar.js";
+import BottomBar from "../jshooks/UseBottomBar.js";
 import UseTopBarLoggedOut from "../jshooks/UseTopBarLoggedOut.js";
 
 // home page function, this is what we actually see
