@@ -9,7 +9,7 @@ import hispanicManSmiling from "../Images/hispanicManSmiling.JPG";
 import espanol from "../Images/espanol.webp";
 import ratings from "../Images/FakeRatings.JPG"
 // import whatever line to get the data from the database
-import BottomBar from "../jshooks/UseBottomBar.js";
+import BottomBar from "../HtmlHooks/UseBottomBar.js";
 // this will be where we initialize the data from the database, if we need to
 var Description = (
   <div>

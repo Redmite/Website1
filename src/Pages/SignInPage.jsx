@@ -4,8 +4,8 @@ import "../Css/loggedOut/SignUpPage.css";
 import logo from "../Images/logo.svg";
 import { useForm } from "react-hook-form";
 import pb from "../Backend/UIM.js";
-import useLogout from "jshooks/UseLogout";
-import useLogin from "jshooks/useLogin";
+import useLogout from "JSHooks/UseLogout";
+import useLogin from "JSHooks/useLogin";
 
 export default function Auth() {
   const logout = useLogout();
@@ -17,6 +17,7 @@ export default function Auth() {
     login({ email: data.email, password: data.password });
     reset();
   }
+
   if (isLoggedIn)
     return (
       <>

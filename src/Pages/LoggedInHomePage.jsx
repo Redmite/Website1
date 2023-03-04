@@ -1,10 +1,10 @@
 //LoggedInHomePage.jsx
 import React, { useState, useEffect } from "react";
 import getSessions from "./backendAPI.js";
-import UseBottomBar from "../jshooks/UseBottomBar";
-import TopBarLoggedIn from "../jshooks/UseTopBarLoggedIn";
+import UseBottomBar from "../HtmlHooks/UseBottomBar";
+import TopBarLoggedIn from "../HtmlHooks/UseTopBarLoggedIn";
 import "../Css/loggedIn/mainContentLoggedIn.css";
-import UseMentorSessions from "../jshooks/UseMentorSessions";
+import UseMentorSessions from "../JSHooks/UseMentorSessions";
 
 //This Function needs to be a hook
 

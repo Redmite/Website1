@@ -1,6 +1,6 @@
 import React from 'react';
 import logo from "../Images/logo.svg";
-import SearchBar from "./UseSearchBar.js";
+import SearchBar from "../JSHooks/UseSearchBar.js";
 
 import "../Css/main.css";
 import "../Css/loggedOut/topBar.css";
