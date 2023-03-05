@@ -10,8 +10,8 @@ import useLogin from "JSHooks/useLogin";
 /*
 
 Data to be Collected
-data.email -- Completed in { Uselogin.js }
-data.password -- Completed in { Uselogin.js }
+data.email -- Completed in { jshooks/uselogin.js }
+data.password -- Completed in { jshooks/uselogin.js }
 data.rememberMe
 
 */
