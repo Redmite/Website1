@@ -11,9 +11,9 @@ import placeHolder from "../Images/placeHolder.jpg";
 const TopBarLoggedIn = () => {
   return (
     <div className="topBar-LoggedIn">
-      <div className="logo">
+      <a className="logo" href="https://gomentors.online/">
         <img src={logo} className="logoImg" alt="missing logo" />
-      </div>
+      </a>
       <form className="topSearch" action="#news">
         <input
           type="text"

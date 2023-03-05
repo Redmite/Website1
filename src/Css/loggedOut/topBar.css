@@ -27,6 +27,10 @@
   height: 70px;
   padding: 0.8%;
   width: auto;
+  cursor: pointer;
+}
+.logo:hover{
+  filter: brightness(107%);
 }
 .logoImg{
   height: inherit;

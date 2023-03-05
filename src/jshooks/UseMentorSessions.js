@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import SessionTemplate from "./UseCreatorSessionTemplate.js";
+import SessionTemplate from "../HtmlHooks/UseCreatorSessionTemplate.js";
 
 export default function UseMentorSessions({ sessions }) {
   const [numSessionsPerRow] = useState(4);

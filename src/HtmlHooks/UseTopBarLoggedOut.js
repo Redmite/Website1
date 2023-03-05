@@ -11,9 +11,9 @@ function UseTopBarLoggedOut() {
   return(
   <div class="topBar">
     <div class="topPanel">
-      <div class="logo">
-        <img src={logo} class="logoImg" alt="missing logo" />
-      </div>
+    <a className="logo" href="https://gomentors.online/">
+        <img src={logo} className="logoImg" alt="missing logo" />
+      </a>
       <form class="topSearch" action="#news">
         <SearchBar
           placeholder="What skill do you want to learn?"

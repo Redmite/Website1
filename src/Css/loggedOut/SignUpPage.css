@@ -48,7 +48,10 @@ color: var(--text);
   margin: 2%;
 }
 .signUpContinueContainer{
-  width: 18em;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .signUpContinue{
   font-family: Rubik-Regular;
@@ -64,6 +67,9 @@ color: var(--text);
 }
 .bottomTexth1Container{
   height: 50px;
+  display: grid;
+  place-items: left;
+
 }
 .bottomTexth1{
   margin: 1% 0px!important;
@@ -77,12 +83,21 @@ a.bottomTexth1-clickHere{
 a.bottomTexth1-clickHere:visited{
   color: purple
 }
+.invalidMessage{
+  color: red;
+}
+.invalidMessageContainer{
+  display: grid;
+  place-items: center;
+  margin-top: 10px;
+}
 @media only screen 
 and (max-width : 1024px) {
   .signUpContinueContainer{
     margin: 5px 6.2em;
     width: 40%;
     padding-right: 20px;
+
   }
   .signUpContinue{
     content: "";

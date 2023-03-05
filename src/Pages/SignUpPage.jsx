@@ -36,7 +36,7 @@ export default function Auther() {
             type="text"
             placeholder="username"
             class="userInputSignUp"
-            {...register("username")}
+            {...register("username", { required: true })}
           />
         </div>
         <div class="userInputSignUpContainer">
@@ -44,7 +44,7 @@ export default function Auther() {
             type="text"
             placeholder="email"
             class="userInputSignUp"
-            {...register("email")}
+            {...register("email", { required: "This is Required" })}
           />
         </div>
         <div class="userInputSignUpContainer">
@@ -72,9 +72,14 @@ export default function Auther() {
             Would you like to sign up for our Newsletter?
           </label>
         </div>
-        <div class="signUpContinueContainer">
-          <input type="submit" value="Continue" class="signUpContinue" />
-        </div>
+        <button
+          type="submit"
+          value="Continue"
+          class="signUpContinue"
+          disabled={isLoading}
+        >
+          {isLoading ? "Loading" : "Continue"}
+        </button>
         <div class="bottomTexth1Container">
           <a href="/SignInPage">
             Already have an account?
@@ -82,9 +87,6 @@ export default function Auther() {
               Click Here
             </a>
           </a>
-        </div>
-        <div class="form-element">
-          <GoogleButton />
         </div>
       </form>
     </div>

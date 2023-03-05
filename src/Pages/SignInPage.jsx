@@ -5,8 +5,16 @@ import logo from "../Images/logo.svg";
 import { useForm } from "react-hook-form";
 import pb from "../Backend/UIM.js";
 import useLogout from "JSHooks/UseLogout";
-import useLogin from "JSHooks/useLogin";
+import useLogin from "JSHooks/UseLogin";
 
+/*
+
+Data to be Collected
+data.email -- Completed in { Uselogin.js }
+data.password -- Completed in { Uselogin.js }
+data.rememberMe
+
+*/
 export default function Auth() {
   const logout = useLogout();
   const { register, handleSubmit, reset } = useForm();
@@ -28,8 +36,6 @@ export default function Auth() {
   return (
     <div class="mainWrapper">
       <h1> Logged In: {isLoggedIn && pb.authStore.model.email}</h1>
-      {isLoading && <p>Loading...</p>}
-      {isError && <p>Invalid email or password</p>}
 
       <div class="topBar-SignIn-UpPage">
         <div class="topPanel">
@@ -38,6 +44,11 @@ export default function Auth() {
           </div>
         </div>
       </div>
+      {isError && (
+        <div className="invalidMessageContainer">
+          <p className="invalidMessage">Invalid email or password</p>
+        </div>
+      )}
       <form class="signUpContainer" onSubmit={handleSubmit(onSubmit)}>
         <h2 class="signUpText">Log in</h2>
         <div class="userInputSignUpContainer">
@@ -61,8 +72,9 @@ export default function Auth() {
             type="checkbox"
             id="remember-me"
             class="userInputSignUp-checkBox"
+            {...register("rememberMe")}
           />
-          <label for="remember-me">Remember me</label>
+          <label>Remember me</label>
         </div>
         <div class="signUpContinueContainer">
           <button
@@ -71,7 +83,7 @@ export default function Auth() {
             class="signUpContinue"
             disabled={isLoading}
           >
-            {isLoading ? "Loading" : "Continue"}
+            {isLoading ? "Loading..." : "Continue"}
           </button>
         </div>
         <div class="bottomTexth1Container">
