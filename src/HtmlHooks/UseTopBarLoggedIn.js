@@ -23,7 +23,7 @@ const TopBarLoggedIn = () => {
       </form>
       <div className="topBar-LoggedInRightSide">
         <li className="topBarCoach">
-          <a href="/MentorInfoPage">Creator</a>
+          <a href="/ListingCreationPage">Create Sessions</a>
         </li>
         <li className="topBarOrders">
           <a href="#news">Orders</a>
