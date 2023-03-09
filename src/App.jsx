@@ -13,7 +13,7 @@ import MentorInfoPage from "./Pages/MentorInfoPage";
 import ErrorPage from "./Pages/ErrorPage";
 import SearchLoggedOutPage from "./Pages/SearchLoggedOutPage";
 import ListingCreationPage from "./Pages/ListingCreationPage";
-import AccountManagment from "./Pages/AccountManagment.jsx";
+import AccountManagment from "./Pages/AccountManagement.jsx";
 
 function App() {
   return (
@@ -37,7 +37,7 @@ function App() {
         <Route path="/LoggedInHomePage" element={<LoggedInHomePage />} />
         <Route path="/MentorInfoPage" element={<MentorInfoPage />} />
         <Route path="/ListingCreationPage" element={<ListingCreationPage />} />
-        <Route path="/AccountManagment" element={<AccountManagment />} />
+        <Route path="/AccountManagement" element={<AccountManagment />} />
         <Route path="*" element={<ErrorPage />} />
         <Route
           path="/SearchLoggedOutPage"

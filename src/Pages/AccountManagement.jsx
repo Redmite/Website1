@@ -1,5 +1,5 @@
 import React from "react";
-import "../Css/loggedIn/AccountManagment.css";
+import "../Css/loggedIn/AccountManagement.css";
 import { useForm } from "react-hook-form";
 import TopBarLoggedIn from "../HtmlHooks/UseTopBarLoggedIn";
 import placeHolder from "../Images/placeHolder.jpg";
