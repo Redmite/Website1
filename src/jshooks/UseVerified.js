@@ -1,4 +1,4 @@
-import pb from "Backend/UIM.js"
+import pb from "Backend/pocketbase.js"
 import { useEffect, useState } from "react";
 
 export default function useVerified() {

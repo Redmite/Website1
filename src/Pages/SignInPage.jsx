@@ -3,7 +3,7 @@ import GoogleButton from "../Script/GoogleButton";
 import "../Css/loggedOut/SignUpPage.css";
 import logo from "../Images/logo.svg";
 import { useForm } from "react-hook-form";
-import pb from "../Backend/UIM.js";
+import pb from "../Backend/pocketbase.js";
 import useLogout from "JSHooks/UseLogout";
 import useLogin from "JSHooks/useLogin";
 import useVerified from "JSHooks/UseVerified";

@@ -21,7 +21,7 @@ import illustrations from "../Images/Illustrations.jpeg";
 import SearchBar from "../JSHooks/UseSearchBar.js";
 import BottomBar from "../HtmlHooks/UseBottomBar.js";
 import UseTopBarLoggedOut from "../HtmlHooks/UseTopBarLoggedOut.js";
-import pb from "../Backend/UIM.js";
+import pb from "../Backend/pocketbase.js";
 import getSessions from "./backendAPI.js";
 import UseBottomBar from "../HtmlHooks/UseBottomBar";
 import TopBarLoggedIn from "../HtmlHooks/UseTopBarLoggedIn";
