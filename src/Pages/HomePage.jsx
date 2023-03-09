@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 // CSS imports
 import "../Css/loggedOut/greetingPanel.css";
 import "../Css/main.css";
@@ -6,6 +6,7 @@ import "../Css/loggedOut/popularServices.css";
 import "../Css/loggedOut/topBar.css";
 import "../Css/bottomBar.css";
 import "../Css/searchedContent.css";
+import "../Css/loggedIn/mainContentLoggedIn.css";
 
 // images
 import GreetingPanelImg from "../Images/GreetingPanelImg.svg";
@@ -20,10 +21,32 @@ import illustrations from "../Images/Illustrations.jpeg";
 import SearchBar from "../JSHooks/UseSearchBar.js";
 import BottomBar from "../HtmlHooks/UseBottomBar.js";
 import UseTopBarLoggedOut from "../HtmlHooks/UseTopBarLoggedOut.js";
+import pb from "../Backend/UIM.js";
+import getSessions from "./backendAPI.js";
+import UseBottomBar from "../HtmlHooks/UseBottomBar";
+import TopBarLoggedIn from "../HtmlHooks/UseTopBarLoggedIn";
+import UseMentorSessions from "../JSHooks/UseMentorSessions";
 
 // home page function, this is what we actually see
 
 function HomePage() {
+  const [sessions, setSessions] = useState([]);
+
+  useEffect(() => {
+    setSessions(getSessions());
+  }, []);
+  const isLoggedIn = pb.authStore.isValid;
+  if (isLoggedIn)
+    return (
+      <div class="mainWrapper">
+        <TopBarLoggedIn />
+        <div class="mainContentLoggedIn">
+          <div class="reccomendedMentorText">Recommended Mentors</div>
+          <UseMentorSessions sessions={sessions} />
+        </div>
+        <UseBottomBar />
+      </div>
+    );
   return (
     <div class="mainWrapper">
       <UseTopBarLoggedOut />

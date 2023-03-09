@@ -37,7 +37,7 @@ const TopBarLoggedIn = () => {
           </a>
         </li>
         <li className="topBarAccountProfile">
-          <a href="#news">
+          <a href="/AccountManagment">
             <img src={placeHolder} className="topBarAccountProfileImg"></img>
           </a>
         </li>
