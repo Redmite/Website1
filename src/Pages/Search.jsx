@@ -1,7 +1,7 @@
 //LoggedInHomePage.jsx
 import React, { useState, useEffect } from "react";
-import pb from "Backend/pocketbase";
 import getSessions from "./backendAPI.js";
+import pb from "Backend/pocketbase";
 import UseBottomBar from "../HtmlHooks/UseBottomBar";
 import TopBarLoggedIn from "../HtmlHooks/UseTopBarLoggedIn";
 import UseTopBarLoggedOut from "../HtmlHooks/UseTopBarLoggedOut.js";
@@ -10,7 +10,7 @@ import UseMentorSessions from "../JSHooks/UseMentorSessions";
 
 //This Function needs to be a hook
 
-function LoggedInHomePage() {
+export default function Search() {
   const isLoggedIn = pb.authStore.isValid;
   const [sessions, setSessions] = useState([]);
 
@@ -20,14 +20,14 @@ function LoggedInHomePage() {
 
   return (
     <div class="mainWrapper">
-      <TopBarLoggedIn />
+      <div>
+        {isLoggedIn && <TopBarLoggedIn />}
+        {!isLoggedIn && <UseTopBarLoggedOut />}
+      </div>
       <div class="mainContentLoggedIn">
-        <div class="reccomendedMentorText">Recommended Mentors</div>
         <UseMentorSessions sessions={sessions} />
       </div>
       <UseBottomBar />
     </div>
   );
 }
-
-export default LoggedInHomePage;

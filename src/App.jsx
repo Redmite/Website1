@@ -11,9 +11,12 @@ import SignUpPage from "./Pages/SignUpPage";
 import LoggedInHomePage from "./Pages/LoggedInHomePage";
 import MentorInfoPage from "./Pages/MentorInfoPage";
 import ErrorPage from "./Pages/ErrorPage";
-import SearchLoggedOutPage from "./Pages/SearchLoggedOutPage";
 import ListingCreationPage from "./Pages/ListingCreationPage";
 import AccountManagment from "./Pages/AccountManagement.jsx";
+import SessionPage from "./Pages/SessionPage.jsx";
+import MessagesPage from "Pages/Messages";
+import OrdersPage from "Pages/Orders";
+import SearchPage from "Pages/Search";
 
 function App() {
   return (
@@ -38,31 +41,11 @@ function App() {
         <Route path="/MentorInfoPage" element={<MentorInfoPage />} />
         <Route path="/ListingCreationPage" element={<ListingCreationPage />} />
         <Route path="/AccountManagement" element={<AccountManagment />} />
+        <Route path="/SessionPage" element={<SessionPage />} />
+        <Route path="/Messages" element={<MessagesPage />} />
+        <Route path="/Search" element={<SearchPage />} />
+        <Route path="/Orders" element={<OrdersPage />} />
         <Route path="*" element={<ErrorPage />} />
-        <Route
-          path="/SearchLoggedOutPage"
-          element={<SearchLoggedOutPage category="null" />}
-        />
-        <Route
-          path="/SearchLoggedOutPage/commonCore"
-          element={<SearchLoggedOutPage category="commonCore" />}
-        />
-        <Route
-          path="/SearchLoggedOutPage/websiteDesign"
-          element={<SearchLoggedOutPage category="websiteDesign" />}
-        />
-        <Route
-          path="/SearchLoggedOutPage/language"
-          element={<SearchLoggedOutPage category="language" />}
-        />
-        <Route
-          path="/SearchLoggedOutPage/onlineBusiness"
-          element={<SearchLoggedOutPage category="onlineBusiness" />}
-        />
-        <Route
-          path="/SearchLoggedOutPage/designing"
-          element={<SearchLoggedOutPage category="designing" />}
-        />
       </Routes>
     </Router>
   );

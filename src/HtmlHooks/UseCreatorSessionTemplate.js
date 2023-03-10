@@ -16,7 +16,7 @@ function UseSessionTemplate(props) {
   return (
     <div className="reccomendedMentorSessionPanel" href="/PlaceholderSession">
       <div className="reccomendedMentorSessionPanel-topSection">
-        <a>
+        <a href='/SessionPage'>
           <img
             className="reccomendedMentorSessionPanel-img"
             src={props.sessionImg}

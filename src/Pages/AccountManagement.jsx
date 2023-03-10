@@ -20,8 +20,10 @@ export default function AccountManager() {
           Username or email of said user       
         */}
         <div className="formRow">
+          {/*
+          Not sure how to allow users to upload files and display them     
+        */}
           <label>Profile Picture</label>
-
           <input
             type="image"
             alt="ProfilePicture"

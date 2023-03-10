@@ -1,0 +1,61 @@
+.messagesWrapper{
+  width: 80%;
+  margin:  50px auto;
+  display: flex;
+  height: 700px;
+;
+}
+.usersContainer{
+  border: 1px solid rgb(235, 235, 235);
+  flex: 1;
+}
+.messageInputContainer{
+  border-top: 1px solid rgb(235, 235, 235);
+  border-bottom: 1px solid rgb(235, 235, 235);
+  border-right: 1px solid rgb(235, 235, 235);
+  flex: 4;
+  display: flex;
+  flex-direction: column;
+}
+.userMessage{
+  border-bottom: 1px var(--gray) solid;
+  height: 80px;
+  display: flex;
+  align-items: center;
+}
+.userImg{
+  border-radius: 100px;
+  height: 60px;
+  margin: 0 10px;
+}
+.messagesContainer{
+  flex: 7;
+}
+.messageForm{
+  border-top: 1px var(--gray) solid;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.textContainer{
+  border: 1px var(--gray) solid;
+  height: 76%;
+  flex: 1;
+  font-size: 16px;
+  padding: 10px;
+}
+.send{
+  margin: 0 30px;
+  width: fit-content;
+  font-family: Rubik-Regular;
+  padding: 7px 17px;
+  cursor: pointer;
+  border-radius: 10px;
+  color: rgb(255, 255, 255);
+  background-color: var(--blue);
+  font-size: 16px;
+  border: 0px;
+  font-weight: 100;
+  color: white!important;
+}

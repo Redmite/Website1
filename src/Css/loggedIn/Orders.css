@@ -1,0 +1,36 @@
+.orderContainer{
+  width: 60%;
+  margin: 50px auto;
+  border: 1px var(--gray) solid;
+}
+.orderLegend{
+display: flex;
+align-items: center;
+justify-content: flex-end;
+padding: 10px;
+}
+.orderLegendInfo{
+  flex: 1.4;
+}
+.orderLegendName{
+  flex: 10;
+}
+
+.activeOrderContainer{
+  border-top: 1px var(--gray) solid;
+  padding: 10px;
+}
+.order{
+  display: flex;
+  justify-content:flex-end;
+  border-bottom: 1px var(--gray) solid;
+}
+a.orderDescription{
+  display: flex;
+  align-items: center;
+  flex: 10;
+  vertical-align:middle;
+}
+.orderInfo{
+  flex: 1.4;
+}

@@ -26,10 +26,10 @@ const TopBarLoggedIn = () => {
           <a href="/ListingCreationPage">Create Sessions</a>
         </li>
         <li className="topBarOrders">
-          <a href="#news">Orders</a>
+          <a href="/Orders">Orders</a>
         </li>
         <li className="topBarSchedule">
-          <a>Schedule</a>
+          <a href='/Messages'>Messages</a>
         </li>
         <li className="topBarInbox">
           <a href="#news">
